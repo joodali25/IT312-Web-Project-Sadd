@@ -1,0 +1,268 @@
+/* Base Styles - التنسيقات الأساسية للموقع */
+body {
+font-family: 'Century Gothic', AppleGothic, sans-serif;
+    margin: 0; /* إلغاء الهوامش الافتراضية للمتصفح */
+    padding: 0; /* إلغاء المسافات الداخلية الافتراضية */
+    color: #000; /* تحديد لون النص الأساسي بالأسود */
+    background-color: #f8fafc; /* تحديد لون خلفية الصفحة بالأبيض */
+}
+
+.container {
+    width: 90%; /* تحديد عرض الحاوية بـ 90% من عرض الشاشة */
+    max-width: 1200px; /* تحديد أقصى عرض ممكن للحاوية لضمان عدم تمددها بشكل مفرط */
+    margin: 0 auto; /* توسيط الحاوية في منتصف الصفحة */
+	
+}
+
+/* --- التحكم في حجم اللوجو --- */
+.logo-img {
+    width: 150px; /* تحديد عرض شعار الموقع */
+    height: auto; /* الحفاظ على تناسق الطول مع العرض تلقائياً */
+    display: block; /* جعل الصورة عنصر كتلة لسهولة التحكم بموقعها */
+}
+
+/* تنسيق صور الكورسات */
+.card-img {
+    width: 100%; /* جعل صورة الكورس تأخذ كامل عرض الكرت */
+    height: auto; /* الحفاظ على تناسق الأبعاد */
+    border: 2px solid solid var(#00AEEF); /* إضافة إطار أسود حول الصورة */
+    display: block; /* إلغاء أي مسافات افتراضية أسفل الصورة */
+}
+
+/* Header & Navigation - قسم الرأس وشريط التنقل */
+.navbar {
+    border-bottom: 2px solid #000; /* إضافة خط أسود أسفل الهيدر */
+    padding: 15px 0; /* إضافة مسافة داخلية من الأعلى والأسفل */
+}
+
+.nav-container {
+    display: flex; /* تفعيل نظام الفليكس لتوزيع العناصر */
+    justify-content: space-between; /* توزيع الشعار والروابط على أطراف الهيدر */
+    align-items: center; /* توسيط الشعار والروابط عمودياً على نفس الخط */
+}
+
+.nav-logo {
+    display: flex; /* تفعيل نظام الفليكس للوجو */
+    flex-direction: column; /* ترتيب العناصر داخل اللوجو عمودياً */
+    align-items: flex-start; /* محاذاة اللوجو لجهة اليسار */
+    margin-left: -10px; /* تحريك اللوجو لليسار زيادة ليكون أقرب للحافة بناءً على طلبك */
+}
+
+/* في حال أردت إضافة نص صغير جداً كـ Slogan مستقبلاً */
+.nav-logo span {
+    display: none; /* إخفاء النص المكرر ليكون التصميم أنظف */
+}
+
+/* ضبط منطقة الروابط */
+.nav-links {
+    display: flex; /* تفعيل نظام الفليكس للروابط */
+    align-items: center; /* توسيط الروابط عمودياً */
+	
+    margin-right: -50px; /*ء إضافة هامش بسيط من جهة اليمين */
+	
+    height: 80px; /* تحديد ارتفاع منطقة الروابط لتتناسق مع الهيدر */
+}
+
+.nav-links a {
+    text-decoration: none; /* إزالة الخط الموجود عادة تحت الروابط */
+    color: #000; /* تحديد لون نص الروابط بالأسود */
+    padding: 0 60px; /* إضافة مسافة أفقية كبيرة بين الروابط */
+    text-align: center; /* توسيط النص داخل الرابط */
+    font-size: 15px; /* تحديد حجم خط الروابط */
+    font-weight: bold; /* جعل خط الروابط عريضاً */
+    line-height: 1.2; /* تحديد المسافة بين السطور */
+    display: flex; /* تفعيل الفليكس داخل الرابط */
+    align-items: center; /* توسيط النص عمودياً داخل الرابط */
+    justify-content: center; /* توسيط النص أفقياً داخل الرابط */
+    height: 100%; /* جعل الرابط يمتد بكامل ارتفاع منطقة الروابط */
+    min-width: 100px; /* تحديد أقل عرض ممكن لكل رابط */
+    white-space: nowrap; /* منع النص من النزول لسطر جديد */
+}
+
+/* الخط الفاصل العمودي */
+.border-left {
+    border-left: 2px solid #000; /* رسم الخط الفاصل باللون الأسود */
+    height: 45px; /* تحديد طول الخط الفاصل */
+    display: block; /* جعل الخط عنصراً مرئياً */
+    align-self: center; /* توسيط الخط عمودياً بين الروابط */
+}
+
+/* Breadcrumbs - شريط المسار العلوي */
+.breadcrumbs {
+    background-color: #555; /* تحديد خلفية رمادية غامقة */
+    color: #fff; /* تحديد لون النص بالأبيض */
+    padding: 10px 0; /* إضافة مسافة داخلية بسيطة */
+}
+.breadcrumbs ol {
+    list-style: none; /* إزالة نقاط القائمة */
+    margin: 0; /* إلغاء الهوامش */
+    padding: 0; /* إلغاء المسافات الداخلية */
+}
+.breadcrumbs li {
+    font-size: 14px; /* تحديد حجم الخط */
+    font-weight: bold; /* جعل الخط عريضاً */
+}
+
+/* Vision Section - قسم الرؤية */
+.vision {
+    background-color: #d1d5db; /* تحديد لون خلفية رمادي فاتح */
+    border: 2px solid #000; /* إضافة إطار أسود حول القسم */
+    padding: 40px; /* إضافة مسافات داخلية واسعة */
+    margin: 40px 0; /* إضافة هوامش خارجية من الأعلى والأسفل */
+}
+.vision h1 {
+    margin-top: 0; /* إلغاء الهامش العلوي للعنوان */
+    font-size: 32px; /* تحديد حجم عنوان الرؤية */
+}
+.vision p {
+    font-size: 18px; /* تحديد حجم نص الرؤية */
+    line-height: 1.5; /* تحديد تباعد الأسطر لسهولة القراءة */
+}
+
+/* Courses Section - قسم الدورات */
+.category {
+    margin-bottom: 60px; /* إضافة مسافة كبيرة أسفل قسم الدورات */
+}
+.cards-title {
+    font-size: 28px; /* تحديد حجم عنوان الدورات */
+    margin-bottom: 30px; /* إضافة مسافة تحت العنوان */
+}
+.cards-wrapper {
+    display: flex; /* تفعيل الفليكس لتنظيم الكروت والأسهم */
+    align-items: center; /* محاذاة الأسهم والكروت عمودياً */
+    gap: 20px; /* إضافة مسافة بين الأسهم ومجموعة الكروت */
+}
+.arrow {
+    font-size: 40px; /* تحديد حجم الأسهم الجانبية */
+    cursor: pointer; /* تغيير شكل الماوس ليد عند الوقوف على السهم */
+    user-select: none; /* منع تحديد الأسهم عند النقر المتكرر */
+}
+.cards {
+    display: grid; /* استخدام نظام الجريد لترتيب الكروت */
+    grid-template-columns: repeat(3, 1fr); /* تقسيم المساحة لثلاثة أعمدة متساوية */
+    gap: 30px; /* إضافة مسافة بين الكروت */
+    flex-grow: 1; /* جعل مجموعة الكروت تأخذ أكبر مساحة ممكنة بين الأسهم */
+}
+.course-card {
+    border: 2px solid #000; /* إضافة إطار أسود لكل كرت كورس */
+    padding: 15px; /* إضافة مسافات داخلية للكرت */
+    text-align: center; /* توسيط النص داخل الكرت */
+}
+.course-card h3 {
+    font-size: 18px; /* حجم عنوان الكورس */
+    margin: 15px 0 10px; /* توزيع الهوامش حول العنوان */
+}
+.course-card p {
+    font-size: 12px; /* حجم وصف الكورس */
+    color: #444; /* تحديد لون الوصف برمادي غامق */
+}
+
+.divider {
+    border: 0; /* إلغاء الإطار الافتراضي */
+    border-top: 1px solid #000; /* رسم خط فاصل أسود رفيع */
+    margin: 40px 0; /* تباعد الخط عن الأقسام المحيطة */
+}
+
+/* Feedback Section - قسم آراء الطلاب */
+.feedback-title {
+    text-align: center; /* توسيط عنوان آراء الطلاب */
+    font-size: 28px; /* حجم الخط للعنوان */
+    margin-bottom: 40px; /* مسافة تحت العنوان */
+}
+.feedback-grid {
+    display: grid; /* نظام الجريد لتوزيع المراجعات */
+    grid-template-columns: repeat(3, 1fr); /* تقسيم المساحة لثلاثة مراجعات */
+    gap: 30px; /* مسافة بين المراجعات */
+}
+.feedback-card {
+    border: 2px solid #000; /* إطار أسود لكرت المراجعة */
+    border-radius: 15px; /* جعل زوايا الكرت دائرية */
+    padding: 20px; /* مسافات داخلية للكرت */
+}
+.user-info {
+    display: flex; /* ترتيب أيقونة المستخدم والاسم أفقياً */
+    align-items: center; /* توسيط الأيقونة والاسم عمودياً */
+    margin-bottom: 10px; /* مسافة تحت بيانات المستخدم */
+}
+.user-icon {
+    font-size: 40px; /* تحديد حجم أيقونة المستخدم */
+    margin-right: 15px; /* مسافة بين الأيقونة والاسم */
+}
+.user-details h4 {
+    margin: 0; /* إلغاء الهوامش الافتراضية لاسم الطالب */
+    font-size: 18px; /* حجم خط اسم الطالب */
+}
+.stars {
+    font-size: 14px; /* حجم النجوم التعبيرية */
+}
+.feedback-divider {
+    border: 0; /* إلغاء الإطار */
+    border-top: 1px solid #ccc; /* خط فاصل خفيف بين بيانات المستخدم والمراجعة */
+    margin: 15px 0; /* تباعد الخط */
+}
+.review-content {
+    text-align: center; /* توسيط نص المراجعة */
+}
+.review-for {
+    font-style: italic; /* جعل نص "مراجعة لـ" مائلاً */
+    font-weight: bold; /* جعل اسم المعلم عريضاً */
+    font-size: 14px; /* حجم الخط */
+    margin-bottom: 10px; /* مسافة بسيطة تحت الاسم */
+}
+.review-text {
+    font-size: 12px; /* حجم نص المراجعة الحقيقي */
+    line-height: 1.4; /* تباعد أسطر المراجعة */
+}
+
+/* Footer - تذييل الصفحة */
+.site-footer {
+    background-color: #9ca3af; /* خلفية رمادية متوسطة */
+    padding: 60px 0 20px; /* مسافات داخلية واسعة */
+    margin-top: 80px; /* مسافة تفصل الفوتر عن محتوى الصفحة */
+}
+.footer-grid {
+    display: grid; /* توزيع عناصر الفوتر بنظام الجريد */
+    grid-template-columns: 1fr 1fr 1fr; /* ثلاثة أعمدة متساوية للفوتر */
+    align-items: flex-start; /* محاذاة العناصر للأعلى */
+}
+.footer-col h4 {
+    margin-top: 0; /* إلغاء الهامش العلوي للعناوين */
+    font-size: 20px; /* حجم خط عناوين الفوتر */
+    margin-bottom: 20px; /* مسافة تحت العناوين */
+}
+.footer-col.center {
+    text-align: center; /* توسيط محتوى العمود الأوسط (اللوجو) */
+}
+.footer-col.right {
+    text-align: right; /* محاذاة محتوى العمود الأيمن لليمين */
+}
+.brand {
+    font-size: 48px; /* حجم خط كلمة logo في الفوتر */
+    font-weight: bold; /* جعل الخط عريضاً جداً */
+    margin-bottom: 40px; /* مسافة تحت اللوجو */
+}
+.social {
+    list-style: none; /* إزالة نقاط القائمة لروابط التواصل */
+    padding: 0; /* إلغاء المسافات */
+    display: flex; /* ترتيب أيقونات التواصل أفقياً */
+    gap: 20px; /* مسافة بين أيقونات التواصل */
+}
+.social-icon {
+    width: 30px; /* تحديد عرض دائرة الأيقونة */
+    height: 30px; /* تحديد طول دائرة الأيقونة */
+    border: 1px solid #000; /* رسم إطار دائري رقيق */
+    border-radius: 50%; /* جعل الشكل دائرياً تماماً */
+    display: flex; /* توسيط حرف الأيقونة بداخل الدائرة */
+    align-items: center; /* توسيط عمودي للحرف */
+    justify-content: center; /* توسيط أفقي للحرف */
+    text-decoration: none; /* إزالة الخط تحت الرابط */
+    color: #000; /* تحديد لون حرف الأيقونة بالأسود */
+    font-weight: bold; /* جعل الحرف عريضاً */
+}
+.copyright {
+    display: block; /* جعل سطر الحقوق يأخذ عرضاً كاملاً */
+    text-align: center; /* توسيط سطر حقوق الملكية */
+    margin-top: 40px; /* مسافة تفصله عن محتوى الفوتر العلوي */
+    font-size: 12px; /* حجم خط سطر الحقوق */
+    font-weight: bold; /* جعل سطر الحقوق عريضاً */
+}
