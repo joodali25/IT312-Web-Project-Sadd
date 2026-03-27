@@ -15,7 +15,7 @@ body {
 
 /* --- التحكم في حجم اللوجو --- */
 .logo-img {
-    width: 155px; /* تحديد عرض شعار الموقع */
+    width: 160px; /* تحديد عرض شعار الموقع */
     height: auto; /* الحفاظ على تناسق الطول مع العرض تلقائياً */
     display: block; /* جعل الصورة عنصر كتلة لسهولة التحكم بموقعها */
 }
@@ -31,7 +31,7 @@ body {
 /* Header & Navigation - قسم الرأس وشريط التنقل */
 .navbar {
     border-bottom: 2px solid #000; /* إضافة خط أسود أسفل الهيدر */
-    padding: 15px 0; /* إضافة مسافة داخلية من الأعلى والأسفل */
+    padding: 20px 0; /* إضافة مسافة داخلية من الأعلى والأسفل */
     background-color: #fff;
 }
 
@@ -249,55 +249,114 @@ body {
     line-height: 1.4; /* تباعد أسطر المراجعة */
 }
 
+
 /* Footer - تذييل الصفحة */
 .site-footer {
-    background-color: #9ca3af; /* خلفية رمادية متوسطة */
-    padding: 60px 0 20px; /* مسافات داخلية واسعة */
+    /* تغيير اللون لدرجة أغمق وأفخم (Dark Teal/Black) */
+    background-color: #051b1a; 
+    padding: 60px 0 40px; /* مسافات داخلية واسعة */
     margin-top: 80px; /* مسافة تفصل الفوتر عن محتوى الصفحة */
+    color: #ffffff;
 }
+
 .footer-grid {
     /* تم استبدال Grid بنظام Flexbox للالتزام بالمنهج */
     display: flex; 
-    justify-content: space-around;
-    align-items: flex-start; 
+    justify-content: space-between; 
+    /* التوسيط العمودي لضمان توازي اللوجو مع النصوص */
+    align-items: center; 
 }
+
+.footer-col {
+    /* إضافة flex: 1 لتقسيم الأعمدة بالتساوي */
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-col h4 {
-    margin-top: 0; /* إلغاء الهامش العلوي للعناوين */
-    font-size: 20px; /* حجم خط عناوين الفوتر */
-    margin-bottom: 20px; /* مسافة تحت العناوين */
+    color: #ffffff;
+    /* صفرنا المارجن هنا عشان الـ center يشتغل صح */
+    margin-top: 0; 
+    font-size: 19px; /* حجم خط عناوين الفوتر */
+    margin-bottom: 15px; /* مسافة تحت العناوين */
 }
+
+/* تصغير حجم أرقام الهاتف وأي نصوص فرعية في الأعمدة */
+.footer-col p, .footer-col span {
+    font-size: 13px; 
+    line-height: 1.6;
+    color: #e0f2f1; 
+}
+
+/* محاذاة عمود اليسار (Quick Links) */
+.footer-col.left {
+    align-items: flex-start;
+    text-align: left;
+}
+
 .footer-col.center {
-    text-align: center; /* توسيط محتوى العمود الأوسط (اللوجو) */
+    align-items: center; 
+    text-align: center;
 }
+
 .footer-col.right {
-    text-align: right; /* محاذاة محتوى العمود الأيمن لليمين */
+    align-items: flex-end; 
+    text-align: right; 
 }
+
+/* تعديل حاوية اللوجو في الفوتر */
 .brand {
-    font-size: 48px; /* حجم خط كلمة logo في الفوتر */
-    font-weight: bold; /* جعل الخط عريضاً جداً */
-    margin-bottom: 40px; /* مسافة تحت اللوجو */
+    /* حذفنا أي إزاحة يدوية لأن التوسيط صار تلقائي */
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
 }
+
+/* التنسيق الخاص بصورة اللوجو في الفوتر */
+.footer-logo {
+    width: 180px; /* حجم متوازن للوجو الطولي */
+    height: auto; 
+    display: block;
+    /* تم حذف filter لعدم وجودها في المنهج */
+}
+
 .social {
-    list-style: none; /* إزالة نقاط القائمة لروابط التواصل */
-    padding: 0; /* إلغاء المسافات */
-    display: flex; /* ترتيب أيقونات التواصل أفقياً */
-    gap: 20px; /* مسافة بين أيقونات التواصل */
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    gap: 15px; 
 }
+
 .social-icon {
-    width: 30px; /* تحديد عرض دائرة الأيقونة */
-    height: 30px; /* تحديد طول دائرة الأيقونة */
-    border: 1px solid #000; /* رسم إطار رقيق */
-    display: flex; /* توسيط حرف الأيقونة بداخل الدائرة */
-    align-items: center; /* توسيط عمودي للحرف */
-    justify-content: center; /* توسيط أفقي للحرف */
-    text-decoration: none; /* إزالة الخط تحت الرابط */
-    color: #000; /* تحديد لون حرف الأيقونة بالأسود */
-    font-weight: bold; /* جعل الحرف عريضاً */
+    width: 32px; 
+    height: 32px; 
+    /* تم توضيح الإطار باستخدام لون Hex بدلاً من rgba الشفاف جداً */
+    border: 1px solid #ffffff; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+    color: #ffffff; 
+    font-weight: bold; 
+    border-radius: 50%; 
+    /* تم حذف transition للالتزام بالمنهج */
 }
+
+.social-icon:hover {
+    background-color: #ffffff;
+    color: #051b1a;
+    border-color: #ffffff;
+}
+
 .copyright {
-    display: block; /* جعل سطر الحقوق يأخذ عرضاً كاملاً */
-    text-align: center; /* توسيط سطر حقوق الملكية */
-    margin-top: 40px; /* مسافة تفصله عن محتوى الفوتر العلوي */
-    font-size: 12px; /* حجم خط سطر الحقوق */
-    font-weight: bold; /* جعل سطر الحقوق عريضاً */
+    display: block; 
+    text-align: center; 
+    margin-top: 50px; 
+    font-size: 12px; 
+    font-weight: bold; 
+    color: #aebfb1; 
+    /* تم توضيح الخط هنا بجعله أبيض بنسبة شفافية مقبولة أو لون صريح */
+    border-top: 1px solid #3d5a58; 
+    padding-top: 25px;
 }
