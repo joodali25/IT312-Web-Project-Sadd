@@ -1,22 +1,21 @@
 /* Base Styles - التنسيقات الأساسية للموقع */
 body {
-font-family: 'Century Gothic', AppleGothic, sans-serif;
+    font-family: 'Century Gothic', AppleGothic, sans-serif; 
     margin: 0; /* إلغاء الهوامش الافتراضية للمتصفح */
     padding: 0; /* إلغاء المسافات الداخلية الافتراضية */
     color: #000; /* تحديد لون النص الأساسي بالأسود */
-    background-color: #f8fafc; /* تحديد لون خلفية الصفحة بالأبيض */
+    background-color: #d5e8ea;
 }
 
 .container {
     width: 90%; /* تحديد عرض الحاوية بـ 90% من عرض الشاشة */
     max-width: 1200px; /* تحديد أقصى عرض ممكن للحاوية لضمان عدم تمددها بشكل مفرط */
     margin: 0 auto; /* توسيط الحاوية في منتصف الصفحة */
-	
 }
 
 /* --- التحكم في حجم اللوجو --- */
 .logo-img {
-    width: 150px; /* تحديد عرض شعار الموقع */
+    width: 155px; /* تحديد عرض شعار الموقع */
     height: auto; /* الحفاظ على تناسق الطول مع العرض تلقائياً */
     display: block; /* جعل الصورة عنصر كتلة لسهولة التحكم بموقعها */
 }
@@ -25,7 +24,7 @@ font-family: 'Century Gothic', AppleGothic, sans-serif;
 .card-img {
     width: 100%; /* جعل صورة الكورس تأخذ كامل عرض الكرت */
     height: auto; /* الحفاظ على تناسق الأبعاد */
-    border: 2px solid solid var(#00AEEF); /* إضافة إطار أسود حول الصورة */
+    border: 2px solid #00AEEF; /* تم إزالة var لأنها غير مذكورة بالسلايدات */
     display: block; /* إلغاء أي مسافات افتراضية أسفل الصورة */
 }
 
@@ -33,10 +32,11 @@ font-family: 'Century Gothic', AppleGothic, sans-serif;
 .navbar {
     border-bottom: 2px solid #000; /* إضافة خط أسود أسفل الهيدر */
     padding: 15px 0; /* إضافة مسافة داخلية من الأعلى والأسفل */
+    background-color: #fff;
 }
 
 .nav-container {
-    display: flex; /* تفعيل نظام الفليكس لتوزيع العناصر */
+    display: flex; /* تفعيل نظام الفليكس لتوزيع العناصر - Ch16 */
     justify-content: space-between; /* توزيع الشعار والروابط على أطراف الهيدر */
     align-items: center; /* توسيط الشعار والروابط عمودياً على نفس الخط */
 }
@@ -45,7 +45,7 @@ font-family: 'Century Gothic', AppleGothic, sans-serif;
     display: flex; /* تفعيل نظام الفليكس للوجو */
     flex-direction: column; /* ترتيب العناصر داخل اللوجو عمودياً */
     align-items: flex-start; /* محاذاة اللوجو لجهة اليسار */
-    margin-left: -10px; /* تحريك اللوجو لليسار زيادة ليكون أقرب للحافة بناءً على طلبك */
+    margin-left: -25px; /* تحريك اللوجو لليسار زيادة ليكون أقرب للحافة بناءً على طلبك */
 }
 
 /* في حال أردت إضافة نص صغير جداً كـ Slogan مستقبلاً */
@@ -57,20 +57,18 @@ font-family: 'Century Gothic', AppleGothic, sans-serif;
 .nav-links {
     display: flex; /* تفعيل نظام الفليكس للروابط */
     align-items: center; /* توسيط الروابط عمودياً */
-	
-    margin-right: -50px; /*ء إضافة هامش بسيط من جهة اليمين */
-	
+    margin-right: -50px; /* إضافة هامش بسيط من جهة اليمين */
     height: 80px; /* تحديد ارتفاع منطقة الروابط لتتناسق مع الهيدر */
 }
 
 .nav-links a {
-    text-decoration: none; /* إزالة الخط الموجود عادة تحت الروابط */
-    color: #000; /* تحديد لون نص الروابط بالأسود */
+    text-decoration: none; /* إزالة الخط الموجود عادة تحت الروابط - Ch6 */
+    color: #135951; /* تحديد لون نص الروابط */
     padding: 0 60px; /* إضافة مسافة أفقية كبيرة بين الروابط */
     text-align: center; /* توسيط النص داخل الرابط */
     font-size: 15px; /* تحديد حجم خط الروابط */
     font-weight: bold; /* جعل خط الروابط عريضاً */
-    line-height: 1.2; /* تحديد المسافة بين السطور */
+    line-height: 1.2; /* تحديد المسافة بين السطور - Ch12 */
     display: flex; /* تفعيل الفليكس داخل الرابط */
     align-items: center; /* توسيط النص عمودياً داخل الرابط */
     justify-content: center; /* توسيط النص أفقياً داخل الرابط */
@@ -81,7 +79,7 @@ font-family: 'Century Gothic', AppleGothic, sans-serif;
 
 /* الخط الفاصل العمودي */
 .border-left {
-    border-left: 2px solid #000; /* رسم الخط الفاصل باللون الأسود */
+    border-left: 1.5px solid #045148; /* رسم الخط الفاصل باللون الأسود */
     height: 45px; /* تحديد طول الخط الفاصل */
     display: block; /* جعل الخط عنصراً مرئياً */
     align-self: center; /* توسيط الخط عمودياً بين الروابط */
@@ -89,68 +87,101 @@ font-family: 'Century Gothic', AppleGothic, sans-serif;
 
 /* Breadcrumbs - شريط المسار العلوي */
 .breadcrumbs {
-    background-color: #555; /* تحديد خلفية رمادية غامقة */
+    background-color: #082d2b;
     color: #fff; /* تحديد لون النص بالأبيض */
-    padding: 10px 0; /* إضافة مسافة داخلية بسيطة */
+    padding: 4px 0; /* إضافة مسافة داخلية بسيطة */
 }
 .breadcrumbs ol {
-    list-style: none; /* إزالة نقاط القائمة */
+    list-style: none; /* إزالة نقاط القائمة - Ch12 */
     margin: 0; /* إلغاء الهوامش */
     padding: 0; /* إلغاء المسافات الداخلية */
 }
 .breadcrumbs li {
-    font-size: 14px; /* تحديد حجم الخط */
-    font-weight: bold; /* جعل الخط عريضاً */
+    font-size: 13px; /* تحديد حجم الخط */
+    font-weight: bold;  /*جعل الخط عريضاً */
+	margin-left: -15px;
 }
 
 /* Vision Section - قسم الرؤية */
 .vision {
-    background-color: #d1d5db; /* تحديد لون خلفية رمادي فاتح */
-    border: 2px solid #000; /* إضافة إطار أسود حول القسم */
-    padding: 40px; /* إضافة مسافات داخلية واسعة */
-    margin: 40px 0; /* إضافة هوامش خارجية من الأعلى والأسفل */
+    background-image: url('images/vision-gradient.png'); /* اسم صورة التدريج الخاصة بك */
+    background-repeat: no-repeat; /* منع تكرار الصورة */
+    
+    /* السر الثاني: جعل الصورة تغطي القسم بالكامل وتتوسطه */
+    background-size: cover; /* جعل الصورة تتمدد لتغطي كل المساحة */
+    background-position: center; /* توسيط الصورة عمودياً وأفقياً */	
+    padding: 30px 40px; 
+    margin-bottom: 50px; /* زدنا المسافة تحت الصندوق الأخضر */
+    margin-top: 40px;
 }
 .vision h1 {
-    margin-top: 0; /* إلغاء الهامش العلوي للعنوان */
-    font-size: 32px; /* تحديد حجم عنوان الرؤية */
+    margin-top: 10px; 
+    font-size: 37px; /* تكبير حجم العنوان - Ch12 */
+    color: #ffffff; /* تغيير اللون للأبيض - Ch13 */
+    margin-bottom: 25px;
 }
+
 .vision p {
-    font-size: 18px; /* تحديد حجم نص الرؤية */
-    line-height: 1.5; /* تحديد تباعد الأسطر لسهولة القراءة */
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: #e0f2f1; /* تغيير لون النص لسهولة القراءة */
 }
 
 /* Courses Section - قسم الدورات */
 .category {
-    margin-bottom: 60px; /* إضافة مسافة كبيرة أسفل قسم الدورات */
+    margin-top: 20px; /* مسافة بسيطة فوق العنوان */
+    margin-bottom: 60px; 
 }
 .cards-title {
-    font-size: 28px; /* تحديد حجم عنوان الدورات */
-    margin-bottom: 30px; /* إضافة مسافة تحت العنوان */
+    font-size: 30px; /* تحديد حجم عنوان الدورات */
+	font-weight: bold;
+    margin-bottom: 40px; /* إضافة مسافة تحت العنوان */
+	color: #082e20;
 }
 .cards-wrapper {
-    display: flex; /* تفعيل الفليكس لتنظيم الكروت والأسهم */
+    display: flex; /* تفعيل الفليكس لتنظيم الكروت والأسهم - Ch16 */
     align-items: center; /* محاذاة الأسهم والكروت عمودياً */
     gap: 20px; /* إضافة مسافة بين الأسهم ومجموعة الكروت */
+}
+.card-img {
+    width: 290px;       /* حدد العرض اللي يناسبك بالبكسل بدل الـ % */
+    height: 190px;      /* حدد طول ثابت لجميع الصور */
+    object-fit: cover;  /* هذا السطر السحري عشان الصور ما تخرب */   
+    border: 1.5px solid #333;       /* احذف السطر القديم أو استبدله بهذا لإخفاء الحدود */
 }
 .arrow {
     font-size: 40px; /* تحديد حجم الأسهم الجانبية */
     cursor: pointer; /* تغيير شكل الماوس ليد عند الوقوف على السهم */
-    user-select: none; /* منع تحديد الأسهم عند النقر المتكرر */
+	color: #0f3d3a;
+}
+.arrow:hover{
+	color: #fff;
 }
 .cards {
-    display: grid; /* استخدام نظام الجريد لترتيب الكروت */
-    grid-template-columns: repeat(3, 1fr); /* تقسيم المساحة لثلاثة أعمدة متساوية */
-    gap: 30px; /* إضافة مسافة بين الكروت */
-    flex-grow: 1; /* جعل مجموعة الكروت تأخذ أكبر مساحة ممكنة بين الأسهم */
+    display: flex;
+    gap: 30px; /* المسافة ثابتة ومذكورة في المنهج */
+    overflow: hidden; /* لإخفاء الكرت الرابع */
+    flex-grow: 1;
 }
+
 .course-card {
-    border: 2px solid #000; /* إضافة إطار أسود لكل كرت كورس */
-    padding: 15px; /* إضافة مسافات داخلية للكرت */
-    text-align: center; /* توسيط النص داخل الكرت */
+    /* بدل النسبة المئوية، استخدم عرض ثابت بالبكسل (Length) */
+    /* هذا العرض محسوب ليكون 3 كروت مع المسافات يملؤون الـ container عندك */
+    flex: 0 0 290px; 
+    
+    border: 2px solid #0f3d3a;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fcfcfc;
+    box-sizing: border-box; /* ضروري جداً عشان البادينج ما يكبر الكرت */
 }
+
 .course-card h3 {
     font-size: 18px; /* حجم عنوان الكورس */
-    margin: 15px 0 10px; /* توزيع الهوامش حول العنوان */
+    margin: 18px 0 0px; /* توزيع الهوامش حول العنوان */
 }
 .course-card p {
     font-size: 12px; /* حجم وصف الكورس */
@@ -158,9 +189,10 @@ font-family: 'Century Gothic', AppleGothic, sans-serif;
 }
 
 .divider {
-    border: 0; /* إلغاء الإطار الافتراضي */
-    border-top: 1px solid #000; /* رسم خط فاصل أسود رفيع */
-    margin: 40px 0; /* تباعد الخط عن الأقسام المحيطة */
+    border: 0;
+    border-top: 1px solid #0f3d3a;
+    margin: 50px 0; /* مسافة 50px فوق وتحت الخط */
+    opacity: 0.4; 
 }
 
 /* Feedback Section - قسم آراء الطلاب */
@@ -168,16 +200,19 @@ font-family: 'Century Gothic', AppleGothic, sans-serif;
     text-align: center; /* توسيط عنوان آراء الطلاب */
     font-size: 28px; /* حجم الخط للعنوان */
     margin-bottom: 40px; /* مسافة تحت العنوان */
+	color:#082e20;
 }
 .feedback-grid {
-    display: grid; /* نظام الجريد لتوزيع المراجعات */
-    grid-template-columns: repeat(3, 1fr); /* تقسيم المساحة لثلاثة مراجعات */
-    gap: 30px; /* مسافة بين المراجعات */
+    /* تم استبدال Grid بنظام Flexbox للالتزام بالمنهج */
+    display: flex; 
+    justify-content: space-between;
+    gap: 30px; 
 }
 .feedback-card {
-    border: 2px solid #000; /* إطار أسود لكرت المراجعة */
-    border-radius: 15px; /* جعل زوايا الكرت دائرية */
+   border: 2px solid #0f3d3a;
     padding: 20px; /* مسافات داخلية للكرت */
+    flex: 1;
+	 background-color: #fcfcfc;
 }
 .user-info {
     display: flex; /* ترتيب أيقونة المستخدم والاسم أفقياً */
@@ -193,15 +228,15 @@ font-family: 'Century Gothic', AppleGothic, sans-serif;
     font-size: 18px; /* حجم خط اسم الطالب */
 }
 .stars {
-    font-size: 14px; /* حجم النجوم التعبيرية */
+    font-size: 14px; 
 }
 .feedback-divider {
-    border: 0; /* إلغاء الإطار */
-    border-top: 1px solid #ccc; /* خط فاصل خفيف بين بيانات المستخدم والمراجعة */
-    margin: 15px 0; /* تباعد الخط */
+    border: 0; 
+    border-top: 1px solid #ccc; 
+    margin: 15px 0; 
 }
 .review-content {
-    text-align: center; /* توسيط نص المراجعة */
+    text-align: center; 
 }
 .review-for {
     font-style: italic; /* جعل نص "مراجعة لـ" مائلاً */
@@ -221,9 +256,10 @@ font-family: 'Century Gothic', AppleGothic, sans-serif;
     margin-top: 80px; /* مسافة تفصل الفوتر عن محتوى الصفحة */
 }
 .footer-grid {
-    display: grid; /* توزيع عناصر الفوتر بنظام الجريد */
-    grid-template-columns: 1fr 1fr 1fr; /* ثلاثة أعمدة متساوية للفوتر */
-    align-items: flex-start; /* محاذاة العناصر للأعلى */
+    /* تم استبدال Grid بنظام Flexbox للالتزام بالمنهج */
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-start; 
 }
 .footer-col h4 {
     margin-top: 0; /* إلغاء الهامش العلوي للعناوين */
@@ -250,8 +286,7 @@ font-family: 'Century Gothic', AppleGothic, sans-serif;
 .social-icon {
     width: 30px; /* تحديد عرض دائرة الأيقونة */
     height: 30px; /* تحديد طول دائرة الأيقونة */
-    border: 1px solid #000; /* رسم إطار دائري رقيق */
-    border-radius: 50%; /* جعل الشكل دائرياً تماماً */
+    border: 1px solid #000; /* رسم إطار رقيق */
     display: flex; /* توسيط حرف الأيقونة بداخل الدائرة */
     align-items: center; /* توسيط عمودي للحرف */
     justify-content: center; /* توسيط أفقي للحرف */
