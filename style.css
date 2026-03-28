@@ -195,58 +195,111 @@ body {
     opacity: 0.4; 
 }
 
-/* Feedback Section - قسم آراء الطلاب */
-.feedback-title {
-    text-align: center; /* توسيط عنوان آراء الطلاب */
-    font-size: 28px; /* حجم الخط للعنوان */
-    margin-bottom: 40px; /* مسافة تحت العنوان */
-	color:#082e20;
-}
+
+/* تنسيق قسم الفيدباك بالكامل */
 .feedback-grid {
-    /* تم استبدال Grid بنظام Flexbox للالتزام بالمنهج */
-    display: flex; 
-    justify-content: space-between;
-    gap: 30px; 
+    display: flex; /* ذكر في Lecture 6 - Ch 16A */
+    justify-content: space-between; /* ذكر في Lecture 6 - Ch 16A */
+    gap: 25px;
+    padding: 20px 0;
 }
+
 .feedback-card {
-   border: 2px solid #0f3d3a;
-    padding: 20px; /* مسافات داخلية للكرت */
-    flex: 1;
-	 background-color: #fcfcfc;
+    background-color: #ffffff;
+    /* الحواف حادة 90 درجة لعدم وجود border-radius في المنهج */
+    border: 1px solid #d1d1d1; /* ذكر في Lecture 6 - Ch 14 */
+    /* زيادة الـ padding تعطي مساحة للمحتوى كما في الواير فريم */
+    padding: 30px 20px; /* ذكر في Lecture 6 - Ch 14 */
+    flex: 1; /* ذكر في Lecture 6 - Ch 16A */
+    display: flex;
+    flex-direction: column; /* ذكر في Lecture 6 - Ch 16A */
 }
+
 .user-info {
-    display: flex; /* ترتيب أيقونة المستخدم والاسم أفقياً */
-    align-items: center; /* توسيط الأيقونة والاسم عمودياً */
-    margin-bottom: 10px; /* مسافة تحت بيانات المستخدم */
+    display: flex; /* ترتيب الأفاتار والاسم أفقياً */
+    align-items: center; /* توسيطهم عمودياً */
+    margin-bottom: 20px; /* مساحة تحت معلومات المستخدم - Ch 14 */
 }
-.user-icon {
-    font-size: 40px; /* تحديد حجم أيقونة المستخدم */
-    margin-right: 15px; /* مسافة بين الأيقونة والاسم */
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+    /* تم حذف border-radius: 50% لأنها غير موجودة في الملفات */
+    /* الصورة ستكون مربعة كما هو المعتاد في المنهج */
+    margin-right: 15px; /* مسافة لليسار - Ch 14 */
+    display: block;
 }
+
 .user-details h4 {
-    margin: 0; /* إلغاء الهوامش الافتراضية لاسم الطالب */
-    font-size: 18px; /* حجم خط اسم الطالب */
+    margin: 0;
+    font-size: 18px;
+    color: #051b1a;
 }
-.stars {
-    font-size: 14px; 
+
+.stars-list {
+    display: flex;
+    margin-top: 5px;
 }
+
+.star-img {
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+}
+
 .feedback-divider {
-    border: 0; 
-    border-top: 1px solid #ccc; 
-    margin: 15px 0; 
+    /* الـ Divider عبارة عن border علوي فقط - Ch 14 */
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 15px 0;
 }
+
 .review-content {
-    text-align: center; 
+    /* المحاذاة لليسار هي الافتراضية كما في الواير فريم */
+    text-align: left;
 }
+
 .review-for {
-    font-style: italic; /* جعل نص "مراجعة لـ" مائلاً */
-    font-weight: bold; /* جعل اسم المعلم عريضاً */
-    font-size: 14px; /* حجم الخط */
-    margin-bottom: 10px; /* مسافة بسيطة تحت الاسم */
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    color: #0f3d3a;
+    font-size: 14px;
+    margin-bottom: 8px;
 }
+
 .review-text {
-    font-size: 12px; /* حجم نص المراجعة الحقيقي */
-    line-height: 1.4; /* تباعد أسطر المراجعة */
+    font-size: 13px;
+    /* تباعد الأسطر ذكر في Lecture 5 - Ch 12 */
+    line-height: 1.6;
+    color: #555;
+}
+
+/* --- Content Layout --- */
+.intro-box {
+    background-color: #f2f2f2; border: 1px solid #d1d1d1;
+    padding: 30px; margin: 40px 0; text-align: left;
+}
+
+.lesson-content-grid { display: flex; justify-content: space-between; gap: 40px; align-items: flex-start; }
+
+.text-side { flex: 1.6; border: 1px solid #052419; padding: 30px; background-color: #ffffff; }
+
+.side-title-wrapper {font-size: 18px; text-align: center; margin-bottom: 30px; }
+.side-title-line { width: 90%; height: 1px; background-color: #052419; margin: 10px auto 0; }
+
+.risk-group li span { display: block; font-size: 13px; color: #777; font-style: italic; }
+
+.image-side { flex: 1; display: flex; flex-direction: column; align-items: center; }
+.illustration-placeholder {
+    width: 100%; height: 250px; border: 1px solid #052419;
+    background-color: #fff; display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.illustration-placeholder img { max-width: 100%; height: auto; object-fit: contain; }
+
+.next-lesson-btn {
+    display: inline-block; padding: 10px 45px; border: 1px solid #051b1a;
+    color: #051b1a; text-decoration: none; font-weight: bold; margin-top: 20px; align-self: flex-end;
 }
 
 
@@ -359,4 +412,102 @@ body {
     /* تم توضيح الخط هنا بجعله أبيض بنسبة شفافية مقبولة أو لون صريح */
     border-top: 1px solid #3d5a58; 
     padding-top: 25px;
+}
+
+/* --- تعديل سكشن التواصل ليطابق الواير فريم --- */
+
+.contact-section {
+    padding: 80px 0; /* زيادة المساحة فوق وتحت السكشن */
+    background-color: #d5e8ea; /* نفس خلفية الموقع اللي طلبتيها */
+}
+
+.contact-title {
+    font-size: 35px;
+    color: #052419;
+    font-weight: bold;
+    text-align: center;
+    width: 280px; /* طول الخط تحت العنوان كما في الواير فريم */
+    border-bottom: 2px solid #051b1a; 
+    padding-bottom: 12px;
+    margin: 0 auto 60px auto; /* مسافة كبيرة تحت العنوان */
+    display: block;
+}
+
+.contact-container {
+    background-color: #ffffff;
+    border: 1.5px solid #052419; /* حدود صريحة مثل الواير فريم */
+    padding: 50px 60px; /* مسافات داخلية راهية */
+    max-width: 500px; /* جعل النموذج أنحف ليطابق الرسمة */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 30px; /* مسافة ثابتة ومريحة بين الحقول */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #052419;
+    font-size: 15px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #052419; /* توحيد لون الحدود مع الهوية */
+    background-color: #fcfcfc; /* لون خفيف جداً داخل الحقل */
+    box-sizing: border-box;
+    font-family: inherit;
+    resize: none; /* منع اليوزر من التخريب */
+}
+
+/* زر الإرسال بنفس ستايل الواير فريم */
+.submit-btn {
+    background-color: #051b1a;
+    color: #ffffff;
+    padding: 15px 40px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0 auto; /* توسيط الزر في الأسفل */
+    width: 100%; /* جعل الزر بعرض النموذج ليعطي شكلاً منظماً */
+}
+
+
+/* --- Lesson 1: Risk Management Page Styles --- */
+
+/* --- ضبط صفحة الليسون (Risk Management) --- */
+/* --- Lesson Page Structure --- */
+.lesson-page { padding: 40px 0; }
+
+.lesson-header { margin-bottom: 50px; text-align: center; }
+
+.lesson-title {
+    font-size: 35px; color: #052419; font-weight: bold;
+    margin-bottom: 10px; letter-spacing: 2px;
+}
+
+/* 1. الخط القصير تحت العنوان الرئيسي */
+.main-title-short-line {
+    width: 410px; height: 0.5px; 
+    background-color: #a0a0a0; margin: 0 auto 10px auto;
+}
+
+.lesson-subtitle {
+    font-size: 19px; color: #555; font-weight: normal;
+    margin-top: 15px; margin-bottom: 40px; letter-spacing: 2px;
+}
+
+/* 2. الخط الطويل تحت العنوان الفرعي */
+.subtitle-long-line {
+    width: 100%; height: 1.5px; 
+    background-color: #0b3e36; margin: 0 auto;
 }
