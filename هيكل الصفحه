@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SADD | Home</title>
+    <!-- ربط ملف الـ CSS الخارجي -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,8 +13,8 @@
     <header class="navbar">
         <div class="container nav-container">
             <div class="nav-logo">
-                <img src="images/logo.png" alt="SADD Logo" class="logo-img">
-                <span>sadd</span>
+                <!-- استبدال الديف بصورة اللوجو -->
+<a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>                <span>sadd</span>
             </div>
             
             <nav class="nav-links">
@@ -38,11 +39,9 @@
     </nav>
 
     <main class="container">
-	
-	<--! محتوى الصفحه هنا -->
-	
+ <!-- محتوى الصفحه هنا -->
 	</main>
-
+ 
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-box">
