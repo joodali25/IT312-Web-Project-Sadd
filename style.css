@@ -1,174 +1,192 @@
-/* Base Styles - التنسيقات الأساسية للموقع */
+/* Base Styles */
 body {
     font-family: 'Century Gothic', AppleGothic, sans-serif; 
-    margin: 0; /* إلغاء الهوامش الافتراضية للمتصفح */
-    padding: 0; /* إلغاء المسافات الداخلية الافتراضية */
-    color: #000; /* تحديد لون النص الأساسي بالأسود */
+    margin: 0; /* Reset default browser margins */
+    padding: 0; /* Reset default browser padding */
+    color: #000;
     background-color: #d5e8ea;
 }
 
 .container {
-    width: 90%; /* تحديد عرض الحاوية بـ 90% من عرض الشاشة */
-    max-width: 1200px; /* تحديد أقصى عرض ممكن للحاوية لضمان عدم تمددها بشكل مفرط */
-    margin: 0 auto; /* توسيط الحاوية في منتصف الصفحة */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
 }
 
-/* --- التحكم في حجم اللوجو --- */
+/* --- Logo Size Control --- */
 .logo-img {
-    width: 160px; /* تحديد عرض شعار الموقع */
-    height: auto; /* الحفاظ على تناسق الطول مع العرض تلقائياً */
-    display: block; /* جعل الصورة عنصر كتلة لسهولة التحكم بموقعها */
+    width: 160px; 
+    height: auto;
+    display: block; /* for better positioning control */
 }
 
-/* تنسيق صور الكورسات */
+/* Course Cards Images Styling */
 .card-img {
-    width: 100%; /* جعل صورة الكورس تأخذ كامل عرض الكرت */
-    height: auto; /* الحفاظ على تناسق الأبعاد */
-    border: 2px solid #00AEEF; /* تم إزالة var لأنها غير مذكورة بالسلايدات */
-    display: block; /* إلغاء أي مسافات افتراضية أسفل الصورة */
+    width: 290px;
+    height: 190px;
+    object-fit: cover; /* Ensures images are resized correctly without losing their proportions */
+    border: 1.5px solid #333;
+    display: block; /* Removes any default whitespace below the image */
 }
 
-/* Header & Navigation - قسم الرأس وشريط التنقل */
+/* Header & Navigation */
 .navbar {
-    border-bottom: 2px solid #000; /* إضافة خط أسود أسفل الهيدر */
-    padding: 20px 0; /* إضافة مسافة داخلية من الأعلى والأسفل */
+    border-bottom: 2px solid #000; /* Add a line below the header */
+    padding: 20px 0;
     background-color: #fff;
 }
 
 .nav-container {
-    display: flex; /* تفعيل نظام الفليكس لتوزيع العناصر - Ch16 */
-    justify-content: space-between; /* توزيع الشعار والروابط على أطراف الهيدر */
-    align-items: center; /* توسيط الشعار والروابط عمودياً على نفس الخط */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-logo {
-    display: flex; /* تفعيل نظام الفليكس للوجو */
-    flex-direction: column; /* ترتيب العناصر داخل اللوجو عمودياً */
-    align-items: flex-start; /* محاذاة اللوجو لجهة اليسار */
-    margin-left: -25px; /* تحريك اللوجو لليسار زيادة ليكون أقرب للحافة بناءً على طلبك */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -25px; /* Shift the logo further to the left */
 }
 
-/* في حال أردت إضافة نص صغير جداً كـ Slogan مستقبلاً */
-.nav-logo span {
-    display: none; /* إخفاء النص المكرر ليكون التصميم أنظف */
-}
-
-/* ضبط منطقة الروابط */
+/* Links Area Styling */
 .nav-links {
-    display: flex; /* تفعيل نظام الفليكس للروابط */
-    align-items: center; /* توسيط الروابط عمودياً */
-    margin-right: -50px; /* إضافة هامش بسيط من جهة اليمين */
-    height: 80px; /* تحديد ارتفاع منطقة الروابط لتتناسق مع الهيدر */
+    display: flex;
+    align-items: center;
+    margin-right: -50px; /* Add margin to the right side */
+    height: 80px;
 }
 
 .nav-links a {
-    text-decoration: none; /* إزالة الخط الموجود عادة تحت الروابط - Ch6 */
-    color: #135951; /* تحديد لون نص الروابط */
-    padding: 0 60px; /* إضافة مسافة أفقية كبيرة بين الروابط */
-    text-align: center; /* توسيط النص داخل الرابط */
-    font-size: 15px; /* تحديد حجم خط الروابط */
-    font-weight: bold; /* جعل خط الروابط عريضاً */
-    line-height: 1.2; /* تحديد المسافة بين السطور - Ch12 */
-    display: flex; /* تفعيل الفليكس داخل الرابط */
-    align-items: center; /* توسيط النص عمودياً داخل الرابط */
-    justify-content: center; /* توسيط النص أفقياً داخل الرابط */
-    height: 100%; /* جعل الرابط يمتد بكامل ارتفاع منطقة الروابط */
-    min-width: 100px; /* تحديد أقل عرض ممكن لكل رابط */
-    white-space: nowrap; /* منع النص من النزول لسطر جديد */
+    text-decoration: none;
+    color: #135951;
+    padding: 0 60px; /* Horizontal spacing between links */
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 100px;
+    white-space: nowrap;
 }
 
-/* الخط الفاصل العمودي */
+/* Vertical Divider Line */
 .border-left {
-    border-left: 1.5px solid #045148; /* رسم الخط الفاصل باللون الأسود */
-    height: 45px; /* تحديد طول الخط الفاصل */
-    display: block; /* جعل الخط عنصراً مرئياً */
-    align-self: center; /* توسيط الخط عمودياً بين الروابط */
+    border-left: 1.5px solid #045148;
+    height: 45px;
+    display: block;
+    align-self: center; /* Center the line vertically between links */
 }
 
-/* Breadcrumbs - شريط المسار العلوي */
+/* ----- Breadcrumbs Styles ----- */
 .breadcrumbs {
     background-color: #082d2b;
-    color: #fff; /* تحديد لون النص بالأبيض */
-    padding: 4px 0; /* إضافة مسافة داخلية بسيطة */
-}
-.breadcrumbs ol {
-    list-style: none; /* إزالة نقاط القائمة - Ch12 */
-    margin: 0; /* إلغاء الهوامش */
-    padding: 0; /* إلغاء المسافات الداخلية */
-}
-.breadcrumbs li {
-    font-size: 13px; /* تحديد حجم الخط */
-    font-weight: bold;  /*جعل الخط عريضاً */
-	margin-left: -15px;
+    color: #fff;
+    padding: 10px 0;
 }
 
-/* Vision Section - قسم الرؤية */
+.breadcrumbs ol.trail {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs li {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Breadcrumbs Links Styling */
+.breadcrumbs li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumbs li a:hover {
+    text-decoration: underline; /* Show underline on hover for accessibility */
+}
+
+/* Separator Symbol (>) Styling */
+.separator {
+    margin: 0 10px;
+    color: #aebfb1;
+    font-weight: normal;
+}
+
+/* Highlight Current Page (Text only, not a link) */
+.current {
+    color: #aebfb1; 
+    font-weight: normal;
+}
+
+/*========== Home Page ==========*/
+/* Vision Section */
 .vision {
-    background-image: url('images/vision-gradient.png'); /* اسم صورة التدريج الخاصة بك */
-    background-repeat: no-repeat; /* منع تكرار الصورة */
-    
-    /* السر الثاني: جعل الصورة تغطي القسم بالكامل وتتوسطه */
-    background-size: cover; /* جعل الصورة تتمدد لتغطي كل المساحة */
-    background-position: center; /* توسيط الصورة عمودياً وأفقياً */	
+    background-image: url('images/vision-gradient.png');
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center; /* Ensures the image covers the section and is centered */
     padding: 30px 40px; 
-    margin-bottom: 50px; /* زدنا المسافة تحت الصندوق الأخضر */
+    margin-bottom: 50px;
     margin-top: 40px;
 }
+
 .vision h1 {
     margin-top: 10px; 
-    font-size: 37px; /* تكبير حجم العنوان - Ch12 */
-    color: #ffffff; /* تغيير اللون للأبيض - Ch13 */
+    font-size: 37px;
+    color: #ffffff;
     margin-bottom: 25px;
 }
 
 .vision p {
     font-size: 18px; 
     line-height: 1.6; 
-    color: #e0f2f1; /* تغيير لون النص لسهولة القراءة */
+    color: #e0f2f1;
 }
 
-/* Courses Section - قسم الدورات */
+/* Top Courses Section */
 .category {
-    margin-top: 20px; /* مسافة بسيطة فوق العنوان */
+    margin-top: 20px;
     margin-bottom: 60px; 
 }
+
 .cards-title {
-    font-size: 30px; /* تحديد حجم عنوان الدورات */
-	font-weight: bold;
-    margin-bottom: 40px; /* إضافة مسافة تحت العنوان */
-	color: #082e20;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px; /* Space below the section title */
+    color: #082e20;
 }
+
 .cards-wrapper {
-    display: flex; /* تفعيل الفليكس لتنظيم الكروت والأسهم - Ch16 */
-    align-items: center; /* محاذاة الأسهم والكروت عمودياً */
-    gap: 20px; /* إضافة مسافة بين الأسهم ومجموعة الكروت */
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-.card-img {
-    width: 290px;       /* حدد العرض اللي يناسبك بالبكسل بدل الـ % */
-    height: 190px;      /* حدد طول ثابت لجميع الصور */
-    object-fit: cover;  /* هذا السطر السحري عشان الصور ما تخرب */   
-    border: 1.5px solid #333;       /* احذف السطر القديم أو استبدله بهذا لإخفاء الحدود */
-}
+
 .arrow {
-    font-size: 40px; /* تحديد حجم الأسهم الجانبية */
-    cursor: pointer; /* تغيير شكل الماوس ليد عند الوقوف على السهم */
-	color: #0f3d3a;
+    font-size: 40px;
+    cursor: pointer;
+    color: #0f3d3a;
 }
-.arrow:hover{
-	color: #fff;
+
+.arrow:hover {
+    color: #fff;
 }
+
 .cards {
     display: flex;
-    gap: 30px; /* المسافة ثابتة ومذكورة في المنهج */
-    overflow: hidden; /* لإخفاء الكرت الرابع */
+    gap: 30px;
+    overflow: hidden;
     flex-grow: 1;
 }
 
 .course-card {
-    /* بدل النسبة المئوية، استخدم عرض ثابت بالبكسل (Length) */
-    /* هذا العرض محسوب ليكون 3 كروت مع المسافات يملؤون الـ container عندك */
-    flex: 0 0 290px; 
-    
+    flex: 0 0 290px;    
     border: 2px solid #0f3d3a;
     padding: 15px;
     display: flex;
@@ -176,57 +194,53 @@ body {
     align-items: center;
     text-align: center;
     background-color: #fcfcfc;
-    box-sizing: border-box; /* ضروري جداً عشان البادينج ما يكبر الكرت */
+    box-sizing: border-box; /* Prevents layout breaking by containing padding within the defined width */ 
 }
 
 .course-card h3 {
-    font-size: 18px; /* حجم عنوان الكورس */
-    margin: 18px 0 0px; /* توزيع الهوامش حول العنوان */
+    font-size: 18px;
+    margin: 18px 0 0px;
 }
+
 .course-card p {
-    font-size: 12px; /* حجم وصف الكورس */
-    color: #444; /* تحديد لون الوصف برمادي غامق */
+    font-size: 12px;
+    color: #444;
 }
 
 .divider {
     border: 0;
     border-top: 1px solid #0f3d3a;
-    margin: 50px 0; /* مسافة 50px فوق وتحت الخط */
+    margin: 50px 0;
     opacity: 0.4; 
 }
 
-
-/* تنسيق قسم الفيدباك بالكامل */
+/* Feedback Section Styling */
 .feedback-grid {
-    display: flex; /* ذكر في Lecture 6 - Ch 16A */
-    justify-content: space-between; /* ذكر في Lecture 6 - Ch 16A */
+    display: flex;
+    justify-content: space-between;
     gap: 25px;
     padding: 20px 0;
 }
 
 .feedback-card {
     background-color: #ffffff;
-    /* الحواف حادة 90 درجة لعدم وجود border-radius في المنهج */
-    border: 1px solid #d1d1d1; /* ذكر في Lecture 6 - Ch 14 */
-    /* زيادة الـ padding تعطي مساحة للمحتوى كما في الواير فريم */
-    padding: 30px 20px; /* ذكر في Lecture 6 - Ch 14 */
-    flex: 1; /* ذكر في Lecture 6 - Ch 16A */
+    border: 1px solid #d1d1d1;
+    padding: 30px 20px;
+    flex: 1;
     display: flex;
-    flex-direction: column; /* ذكر في Lecture 6 - Ch 16A */
+    flex-direction: column;
 }
 
 .user-info {
-    display: flex; /* ترتيب الأفاتار والاسم أفقياً */
-    align-items: center; /* توسيطهم عمودياً */
-    margin-bottom: 20px; /* مساحة تحت معلومات المستخدم - Ch 14 */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .user-avatar {
     width: 60px;
     height: 60px;
-    /* تم حذف border-radius: 50% لأنها غير موجودة في الملفات */
-    /* الصورة ستكون مربعة كما هو المعتاد في المنهج */
-    margin-right: 15px; /* مسافة لليسار - Ch 14 */
+    margin-right: 15px;
     display: block;
 }
 
@@ -248,14 +262,13 @@ body {
 }
 
 .feedback-divider {
-    /* الـ Divider عبارة عن border علوي فقط - Ch 14 */
+    /* Divider consisting of a top border only */
     border: 0;
     border-top: 1px solid #e0e0e0;
     margin: 15px 0;
 }
 
 .review-content {
-    /* المحاذاة لليسار هي الافتراضية كما في الواير فريم */
     text-align: left;
 }
 
@@ -270,58 +283,25 @@ body {
 
 .review-text {
     font-size: 13px;
-    /* تباعد الأسطر ذكر في Lecture 5 - Ch 12 */
     line-height: 1.6;
     color: #555;
 }
 
-/* --- Content Layout --- */
-.intro-box {
-    background-color: #f2f2f2; border: 1px solid #d1d1d1;
-    padding: 30px; margin: 40px 0; text-align: left;
-}
-
-.lesson-content-grid { display: flex; justify-content: space-between; gap: 40px; align-items: flex-start; }
-
-.text-side { flex: 1.6; border: 1px solid #052419; padding: 30px; background-color: #ffffff; }
-
-.side-title-wrapper {font-size: 18px; text-align: center; margin-bottom: 30px; }
-.side-title-line { width: 90%; height: 1px; background-color: #052419; margin: 10px auto 0; }
-
-.risk-group li span { display: block; font-size: 13px; color: #777; font-style: italic; }
-
-.image-side { flex: 1; display: flex; flex-direction: column; align-items: center; }
-.illustration-placeholder {
-    width: 100%; height: 250px; border: 1px solid #052419;
-    background-color: #fff; display: flex; align-items: center; justify-content: center; overflow: hidden;
-}
-.illustration-placeholder img { max-width: 100%; height: auto; object-fit: contain; }
-
-.next-lesson-btn {
-    display: inline-block; padding: 10px 45px; border: 1px solid #051b1a;
-    color: #051b1a; text-decoration: none; font-weight: bold; margin-top: 20px; align-self: flex-end;
-}
-
-
-/* Footer - تذييل الصفحة */
+/*-------- Footer -------- */
 .site-footer {
-    /* تغيير اللون لدرجة أغمق وأفخم (Dark Teal/Black) */
     background-color: #051b1a; 
-    padding: 60px 0 40px; /* مسافات داخلية واسعة */
-    margin-top: 80px; /* مسافة تفصل الفوتر عن محتوى الصفحة */
+    padding: 60px 0 40px;
+    margin-top: 80px;
     color: #ffffff;
 }
 
 .footer-grid {
-    /* تم استبدال Grid بنظام Flexbox للالتزام بالمنهج */
     display: flex; 
     justify-content: space-between; 
-    /* التوسيط العمودي لضمان توازي اللوجو مع النصوص */
     align-items: center; 
 }
 
 .footer-col {
-    /* إضافة flex: 1 لتقسيم الأعمدة بالتساوي */
     flex: 1; 
     display: flex;
     flex-direction: column;
@@ -329,20 +309,18 @@ body {
 
 .footer-col h4 {
     color: #ffffff;
-    /* صفرنا المارجن هنا عشان الـ center يشتغل صح */
     margin-top: 0; 
-    font-size: 19px; /* حجم خط عناوين الفوتر */
-    margin-bottom: 15px; /* مسافة تحت العناوين */
+    font-size: 19px;
+    margin-bottom: 15px; /* Space below column titles */
 }
 
-/* تصغير حجم أرقام الهاتف وأي نصوص فرعية في الأعمدة */
+/* Styling for phone numbers and sub-text in footer columns */
 .footer-col p, .footer-col span {
     font-size: 13px; 
     line-height: 1.6;
     color: #e0f2f1; 
 }
 
-/* محاذاة عمود اليسار (Quick Links) */
 .footer-col.left {
     align-items: flex-start;
     text-align: left;
@@ -358,20 +336,17 @@ body {
     text-align: right; 
 }
 
-/* تعديل حاوية اللوجو في الفوتر */
 .brand {
-    /* حذفنا أي إزاحة يدوية لأن التوسيط صار تلقائي */
     margin: 0; 
     display: flex;
     justify-content: center; 
 }
 
-/* التنسيق الخاص بصورة اللوجو في الفوتر */
+/* Styling for the site logo in the footer */
 .footer-logo {
-    width: 180px; /* حجم متوازن للوجو الطولي */
+    width: 180px; 
     height: auto; 
     display: block;
-    /* تم حذف filter لعدم وجودها في المنهج */
 }
 
 .social {
@@ -384,7 +359,6 @@ body {
 .social-icon {
     width: 32px; 
     height: 32px; 
-    /* تم توضيح الإطار باستخدام لون Hex بدلاً من rgba الشفاف جداً */
     border: 1px solid #ffffff; 
     display: flex; 
     align-items: center; 
@@ -393,7 +367,6 @@ body {
     color: #ffffff; 
     font-weight: bold; 
     border-radius: 50%; 
-    /* تم حذف transition للالتزام بالمنهج */
 }
 
 .social-icon:hover {
@@ -409,16 +382,14 @@ body {
     font-size: 12px; 
     font-weight: bold; 
     color: #aebfb1; 
-    /* تم توضيح الخط هنا بجعله أبيض بنسبة شفافية مقبولة أو لون صريح */
     border-top: 1px solid #3d5a58; 
     padding-top: 25px;
 }
 
-/* --- تعديل سكشن التواصل ليطابق الواير فريم --- */
-
+/*========== Contact Us Page =========*/
 .contact-section {
-    padding: 80px 0; /* زيادة المساحة فوق وتحت السكشن */
-    background-color: #d5e8ea; /* نفس خلفية الموقع اللي طلبتيها */
+    padding: 60px 0; 
+    background-color: #d5e8ea;
 }
 
 .contact-title {
@@ -426,31 +397,31 @@ body {
     color: #052419;
     font-weight: bold;
     text-align: center;
-    width: 280px; /* طول الخط تحت العنوان كما في الواير فريم */
+    width: 280px; 
     border-bottom: 2px solid #051b1a; 
     padding-bottom: 12px;
-    margin: 0 auto 60px auto; /* مسافة كبيرة تحت العنوان */
+    margin: 0 auto 30px auto; 
     display: block;
 }
 
 .contact-container {
     background-color: #ffffff;
-    border: 1.5px solid #052419; /* حدود صريحة مثل الواير فريم */
-    padding: 50px 60px; /* مسافات داخلية راهية */
-    max-width: 500px; /* جعل النموذج أنحف ليطابق الرسمة */
+    border: 1.5px solid #052419; 
+    padding: 50px 60px;
+    max-width: 550px; /* Reduced width slightly for a more balanced look */
     margin: 0 auto;
     box-sizing: border-box;
 }
 
 .form-group {
-    margin-bottom: 30px; /* مسافة ثابتة ومريحة بين الحقول */
+    margin-bottom: 25px; 
     text-align: left;
 }
 
 .form-group label {
-    display: block;
+    display: block; 
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: #052419;
     font-size: 15px;
 }
@@ -458,16 +429,16 @@ body {
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
-    width: 100%;
+    width: 100%; 
     padding: 12px;
-    border: 1px solid #052419; /* توحيد لون الحدود مع الهوية */
-    background-color: #fcfcfc; /* لون خفيف جداً داخل الحقل */
-    box-sizing: border-box;
+    border: 1px solid #052419;
+    background-color: #fcfcfc;
+    box-sizing: border-box; 
     font-family: inherit;
-    resize: none; /* منع اليوزر من التخريب */
+    display: block; 
+    resize: none; 
 }
 
-/* زر الإرسال بنفس ستايل الواير فريم */
 .submit-btn {
     background-color: #051b1a;
     color: #ffffff;
@@ -477,107 +448,97 @@ body {
     font-size: 16px;
     cursor: pointer;
     display: block;
-    margin: 20px auto 0 auto; /* توسيط الزر في الأسفل */
-    width: 100%; /* جعل الزر بعرض النموذج ليعطي شكلاً منظماً */
+    margin: 37px auto 0 auto; /* Centers the button horizontally */
+    width: auto;
+    min-width: 180px;
 }
 
+.submit-btn:hover {
+    background-color: #135951;
+}
+/* ======= Lesson 1: Risk Management Page Styles ======= */
 
-
-
-
-
-/* --- Lesson 1: Risk Management Page Styles --- */
-
-/* --- ضبط صفحة الليسون (Risk Management) --- */
-/* --- Lesson Page Structure --- */
-/* --- Lesson Page Structure --- */
-/* --- Lesson Page Structure --- */
+/* --- Global Lesson Styles (Unified for all lessons) --- */
 .lesson-page { 
-    padding: 40px 0; 
+    padding: 30px 0;
 }
 
-/* محاذاة الهيدر لليسار وتنسيق العناوين */
+.lesson-title {
+    font-size: 37px;
+    color: #04302b; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+/* Header Section */
 .lesson-header { 
     margin-bottom: 50px; 
     text-align: left; 
 }
 
-.lesson-title {
-    font-size: 40px; 
-    color: #135951; 
-    font-weight: bold;
-    margin-bottom: 10px; 
-    letter-spacing: 2px;
-}
-
-/* 1. الخط القصير تحت العنوان الرئيسي (محاذاة لليسار) */
 .main-title-short-line {
     width: 370px; 
     height: 1px; 
     background-color: #a0a0a0; 
-    margin: 0 0 10px 0; 
+    margin-bottom: 10px; 
 }
 
 .lesson-subtitle {
     font-size: 17px; 
     color: #555; 
-    font-weight: normal;
-    margin-top: 15px; 
     margin-bottom: 40px; 
-    letter-spacing: 2px;
 }
 
-/* 2. الخط الطويل تحت العنوان الفرعي (كامل العرض) */
 .subtitle-long-line {
     width: 100%; 
     height: 1.5px; 
-    background-color: #135951; 
-    margin: 0; 
+    background-color: #054d44; 
 }
 
-/* --- صندوق المقدمة (Introduction) --- */
+/* --- Introduction Box --- */
 .intro-box {
-    background-color: #f0f7f6; /* لون أخضر فاتح ناعم */
-    border: 1px solid #d1d1d1;
+    background-color: #f9fcfc;
+    border: 1px solid #04302b;
     padding: 30px; 
     margin: 40px 0; 
     text-align: left;
 }
 
-.intro-box h3 {
+.intro-box h3, 
+.common-risk-types h3 {
     margin-top: 0;
+    margin-bottom: 20px;
     color: #052419;
+    font-size: 25px; 
+    font-weight: bold;
     display: flex;
     align-items: center;
 }
 
-/* الأيقونة بجانب كلمة Introduction */
 .intro-icon {
     margin-right: 10px;
-    font-style: normal;
 }
 
-/* --- شبكة المحتوى (توازي الأطوال) --- */
+/* --- Content Grid (The fix for equal heights) --- */
 .lesson-content-grid { 
     display: flex; 
     justify-content: space-between; 
     gap: 40px; 
-    align-items: stretch; /* يضمن توازي طول المربع مع الزر */
+    align-items: stretch; /* This ensures equal heights for both sides */
     margin-top: 50px;
 }
 
-/* المربع الأبيض (الجهة اليسرى) */
 .text-side { 
     flex: 1.6; 
-    border: 1px solid #052419; 
+    border: 1px solid #04302b; 
     padding: 30px; 
     background-color: #ffffff; 
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+	min-height: 400px;
 }
 
-/* العنوان الجانبي مع خط تحته */
 .side-title-wrapper {
     margin-bottom: 30px;
     text-align: left;
@@ -586,54 +547,25 @@ body {
 .side-title-wrapper h3 {
     font-size: 22px;
     color: #052419;
-    display: inline-block;
-    border-bottom: 2px solid #052419; /* الخط تحت العنوان */
+    display: inline-block; 
+    border-bottom: 2px solid #052419; 
     padding-bottom: 8px;
     margin: 0;
 }
 
-/* تنسيق القائمة الجانبية (الأيقونات) */
-.cyber-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.cyber-list li {
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-/* وضع علامة الصح قبل عناصر القائمة */
-.cyber-list li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #135951;
-    font-weight: bold;
-}
-
-.risk-group li span {
-    display: block;
-    font-size: 13px;
-    color: #777;
-    font-style: italic;
-}
-
-/* الجهة اليمنى (الصورة والزر) */
+/* Right Side: Image and Button */
 .image-side { 
     flex: 1; 
     display: flex; 
     flex-direction: column; 
-    justify-content: space-between; /* يدفع الزر للأسفل تماماً */
+    justify-content: space-between; /* Pushes button to the bottom */
     align-items: center; 
 }
 
 .illustration-placeholder {
     width: 100%; 
     height: 300px; 
-    border: 1px solid #052419;
+    border: 1px solid #04302b;
     background-color: #fff; 
     display: flex; 
     align-items: center; 
@@ -647,33 +579,148 @@ body {
     object-fit: contain; 
 }
 
-.image-caption {
-    font-size: 14px;
-    color: #666;
-    margin-top: 10px;
-    text-align: center;
-}
-
-/* --- تنسيق الزر وتوسيطه --- */
-.next-btn-container {
-    text-align: center; 
-    width: 100%;
-    margin-top: auto; /* يضمن التصاق الزر بالأسفل */
-    padding-top: 20px;
-}
-
+/* --- Navigation Button --- */
 .next-lesson-btn {
     background-color: #051b1a;
     color: #ffffff;
-    border: none;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
     padding: 12px 50px;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: auto; /* Ensures button sticks to the bottom line of the left box */
 }
 
 .next-lesson-btn:hover {
-    background-color: #0b3e36;
+    background-color: #135951;
 }
+/*========== Lesson 2 Page Structure ==========*/
+
+.lesson-header { 
+    margin-bottom: 30px; 
+    text-align: left; 
+}
+
+
+.main-title-short-line {
+    width: 410px; 
+    height: 1px; 
+    background-color: #a0a0a0; 
+    margin: 0 0 10px 0; 
+}
+
+.lesson-subtitle {
+    font-size: 19px; 
+    color: #555; 
+}
+
+.subtitle-long-line {
+    width: 100%; 
+    height: 1.5px; 
+    background-color: #135951; 
+    margin: 0; 
+}
+
+/* --- Table Styles --- */
+.table-section {
+    margin: 40px 0; 
+}
+
+.table-title {
+    font-size: 26px; 
+    color: #052419;
+    margin-bottom: 25px; 
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse; /* Essential for clean table borders */
+    border: 1px solid #052419;
+}
+
+/* Applying gradient background to the header row */
+.table-header-row {
+    background-image: url('images/vision-gradient.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.summary-table th, 
+.summary-table td {
+    border: 1px solid #052419;
+    padding: 15px 20px; 
+    text-align: left;
+}
+
+.summary-table th {
+    background-color: transparent; /* Allows row background to show through */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.summary-table td {
+    background-color: #fcfcfc; 
+    color: #333;
+}
+
+.summary-table td:first-child {
+    font-weight: bold; /* Highlights the first column as per design */
+}
+
+/* --- Action Area (Buttons & Tip) --- */
+.action-area {
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    gap: 60px; 
+    margin: 40px auto; 
+    width: 95%;
+    max-width: 1100px;
+}
+
+.simple-btn {
+    display: flex;            
+    align-items: center;
+    justify-content: center;
+    width: 130px; 
+    height: 42px;            
+    background-color: #051b1a;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid #051b1a;
+}
+
+.simple-btn:hover {
+    background-color: #135951;
+}
+
+.tip-box {
+    border: 1.5px solid #052419;
+    padding: 12px 20px;
+    background-color: #fcfcfc;
+    text-align: center;
+    flex-grow: 1;            
+    max-width: 550px;
+}
+
+.tip-box p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    font-style: italic; 
+    color: #04302b;
+}
+
+.tip-box p strong {
+    color: #04302b;
+    font-weight: bold; 
+    font-style: italic; 
+}
+/*----------------------- JOOD ---------------------*/
+
+/*---------------------- DALIA ---------------------*/
+
+/*---------------------- ARYAM ---------------------*/
