@@ -8,15 +8,14 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header class="navbar">
         <div class="container nav-container">
             <div class="nav-logo">
-			<a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
+                <a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
             </div>
             
             <nav class="nav-links">
-                <a href="student-dashboard.html">student Dashboard</a>
+                <a href="student-dashboard.html">Student Dashboard</a>
                 <div class="border-left"></div>
                 <a href="course-content.html">Course Content</a>
                 <div class="border-left"></div>
@@ -26,57 +25,91 @@
             </nav>
         </div>
     </header>
-
-    <!-- Breadcrumbs -->
+   <!-- Breadcrumbs -->
     <nav class="breadcrumbs">
         <div class="container">
             <ol class="trail">
-                <li>Home</li>
+                <li><a href="index.html">Home</a></li>
+                <li class="separator">></li>
+                <li><a href="course-content.html">Course Content</a></li>
+                <li class="separator">></li>
+                <li class="current">Lesson 1</li>
             </ol>
         </div>
-<main class="container lesson-page">
- <section class="lesson-header">
-    <h1 class="lesson-title">Risk Management</h1>
-    <div class="main-title-short-line"></div> 
-    <p class="lesson-subtitle">Part 1: Intro & Identification</p>
-    <div class="subtitle-long-line"></div>
-</section>
+    </nav>
 
-<section class="intro-box">
-    <h3><span class="intro-icon">💡</span> Introduction:</h3>
-    <p>Risk Management is the process of identifying, assessing, and controlling threats to an organization's capital and earnings[cite: 1]. It ensures that potential problems are dealt with before they occur[cite: 1].</p>
-</section>
+    <main class="container lesson-page">
+        <section class="lesson-header">
+            <h1 class="lesson-title">Risk Management</h1>
+            <div class="main-title-short-line"></div> 
+            <p class="lesson-subtitle">Part 1: Intro & Identification</p>
+            <div class="subtitle-long-line"></div>
+        </section>
 
-<section class="lesson-content-grid">
-    <div class="text-side">
-        <div class="side-title-wrapper">
-            <h3>Common Risk Types</h3>
-        </div>
-        <div class="risk-group">
-            <p class="group-title">Project Risks</p>
-            <ul class="cyber-list">
-                <li>Budget Overrun <br> <span>Exceeding the allocated financial resources[cite: 2].</span></li>
-                <li>Schedule Delays <br> <span>Missing critical project deadlines[cite: 2].</span></li>
-            </ul>
-        </div>
-    </div>
-    <div class="image-side">
-        <div class="illustration-placeholder">
-            <img src="images/risk-matrix.png" alt="Risk Assessment Matrix">
-        </div>
-        <p class="image-caption">Visual representation of risk impact and likelihood.</p>
-        <div class="next-btn-container">
-            <a href="lesson1_p2.html" class="next-lesson-btn">Next</a>
-        </div>
-    </div>
-</section>
-</main>
-    <!-- Footer -->
+        <section class="intro-box">
+            <h2><span class="intro-icon">💡</span> Introduction:</h2>
+            <p>
+                Risk management in cybersecurity is the process of identifying, analyzing, and reducing potential security risks that may affect systems, networks, or data. Organizations use this to minimize damage before an attack happens.
+            </p>
+        </section>
+
+        <section class="lesson-content-grid">
+            <div class="text-side">
+                <div class="side-title-wrapper">
+                    <h2>Common Risk Types</h2>
+                </div>
+                
+                <div class="risk-group">
+                    <ul class="cyber-list">
+    <li>Operational Risks
+        <ul class="nested-list">
+            <li><span>Human Errors (e.g., accidental data deletion).</span></li>
+            <li><span>Internal Process Failures (e.g., poor workflow).</span></li>
+        </ul>
+    </li>
+
+    <li>Technical Risks
+        <ul class="nested-list">
+            <li><span>Software Vulnerabilities (e.g., unpatched bugs).</span></li>
+            <li><span>Outdated Systems (e.g., legacy hardware).</span></li>
+        </ul>
+    </li>
+
+    <li>Financial Risks
+        <ul class="nested-list">
+            <li><span>Direct Loss of Money (e.g., ransomware payments).</span></li>
+            <li><span>Operational Downtime (e.g., loss of business hours).</span></li>
+        </ul>
+    </li>
+
+    <li>Compliance Risks
+        <ul class="nested-list">
+            <li><span>Regulatory Fines (e.g., GDPR violations).</span></li>
+            <li><span>Legal Actions (e.g., lawsuits after data breach).</span></li>
+        </ul>
+    </li>
+</ul>
+                </div>
+            </div>
+
+            <div class="image-side">
+                <div class="illustration-placeholder">
+                    <img src="images/risk-cycle.png" alt="Risk Management Cycle Diagram">
+                </div>
+                <p class="image-caption">The Risk Management Cycle: Identify → Assess → Mitigate → Monitor.</p>
+                
+                <div class="next-btn-container">
+                    <a href="lesson1_p2.html" class="next-lesson-btn">Next</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="site-footer">
         <div class="container footer-box">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Find Us</h4>
+                    <p class="footer-title">Find Us</p>
                     <div class="social">
                         <a href="#" class="social-icon">f</a>
                         <a href="#" class="social-icon">ig</a>
@@ -84,14 +117,14 @@
                     </div>
                 </div>
 
-				<div class="footer-col center">
-    <div class="brand">
-        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
-    </div>
-</div>
+                <div class="footer-col center">
+                    <div class="brand">
+                        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
+                    </div>
+                </div>
 
                 <div class="footer-col right">
-                    <h4>Contact info</h4>
+                    <p class="footer-title">Contact info</p>
                     <p>+96XXXXXXXXXX</p>
                     <p>saddacadmey@hotmail.com</p>
                 </div>
