@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SADD | Lesson 1 - Part 2</title>
+    <title>SADD | Lesson 2 - Part 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Header -->
     <header class="navbar">
         <div class="container nav-container">
             <div class="nav-logo">
-                <a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
+			<a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
             </div>
+            
             <nav class="nav-links">
                 <a href="student-dashboard.html">student Dashboard</a>
                 <div class="border-left"></div>
@@ -24,81 +27,78 @@
         </div>
     </header>
 
+    <!-- Breadcrumbs -->
     <nav class="breadcrumbs">
         <div class="container">
             <ol class="trail">
-                <li><a href="index.html">Home</a></li>
-                <li class="separator">></li>
-                <li><a href="course-content.html">Course Content</a></li>
-                <li class="separator">></li>
-                <li><a href="lesson1_p1.html">Lesson 1</a></li>
-                <li class="separator">></li>
-                <li class="current">Part 2</li>
+                <li>Home</li>
             </ol>
         </div>
     </nav>
+	<main class="container lesson-page">
+    <section class="lesson-header">
+        <h1 class="lesson-title">Introduction to Cybersecurity</h1>
+        <div class="main-title-short-line"></div> 
+        <p class="lesson-subtitle">Part 1: Intro & Key Concepts</p>
+        <div class="subtitle-long-line"></div>
+    </section>
 
-    <main class="container lesson-page">
-        <section class="lesson-header">
-            <h1 class="lesson-title">Risk Management</h1>
-            <div class="main-title-short-line"></div> 
-            <p class="lesson-subtitle">Part 2: Risk Response & Tips</p>
-            <div class="subtitle-long-line"></div>
-        </section>
+    <section class="intro-box">
+        <h3><span class="intro-icon">💡</span> Introduction:</h3>
+        <p>Cybersecurity protects computer systems, networks, and digital data from attacks or unauthorized access[cite: 18].</p>
+    </section>
 
-        <section class="table-section">
-            <h3 class="table-title">Risk Response Strategies Summary</h3>
-            <table class="summary-table">
-                <tr class="table-header-row">
-                    <th>Strategy</th>
-                    <th>Description</th>
-                    <th>Example</th>
-                </tr>
-                <tr>
-                    <td>Risk Avoidance</td>
-                    <td>Eliminate the risk entirely</td>
-                    <td>Not starting a risky project</td>
-                </tr>
-                <tr>
-                    <td>Risk Mitigation</td>
-                    <td>Reduce the impact or likelihood</td>
-                    <td>Installing a firewall</td>
-                </tr>
-                <tr>
-                    <td>Risk Transfer</td>
-                    <td>Shift the risk to a third party</td>
-                    <td>Purchasing insurance</td>
-                </tr>
-                <tr>
-                    <td>Risk Acceptance</td>
-                    <td>Acknowledge and proceed</td>
-                    <td>Accepting minor bugs</td>
-                </tr>
-                <tr>
-                    <td>Risk Assessment</td>
-                    <td>Analyze and prioritize risks</td>
-                    <td>Using a risk matrix</td>
-                </tr>
-            </table>
-        </section>
-
-        <div class="action-area">
-            <a href="lesson1_p1.html" class="simple-btn">Back</a>
-            
-            <div class="tip-box">
-                <p><strong>Expert Tip:</strong> Transferring risk is common in cloud computing via Service Level Agreements (SLAs).</p>
+    <section class="lesson-content-grid">
+        <div class="text-side">
+            <div class="side-title-wrapper">
+                <h3>Core Security Areas</h3>
             </div>
-
-            <a href="quiz1.html" class="simple-btn">Quiz</a>
+            <div class="risk-group">
+                <ul class="cyber-list">
+                    <li>Network Security <br> <span>Protects network infrastructure[cite: 20].</span></li>
+                    <li>Application Security <br> <span>Focuses on securing software[cite: 21].</span></li>
+                    <li>Information Security <br> <span>Protects sensitive data[cite: 22].</span></li>
+                    <li>Cloud Security <br> <span>Protects online storage systems[cite: 23].</span></li>
+                </ul>
+            </div>
         </div>
-    </main>
 
+        <div class="image-side">
+            <div class="illustration-placeholder">
+                <img src="images/cyber-intro.png" alt="Cybersecurity Overview">
+            </div>
+            <p class="image-caption">Protecting digital infrastructure across all levels.</p>
+            <div class="next-btn-container">
+                <a href="lesson1_p2.html" class="next-lesson-btn">Next</a>
+            </div>
+        </div>
+    </section>
+</main>
+   </main>
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container footer-box">
             <div class="footer-grid">
-                <div class="footer-col"><h4>Find Us</h4></div>
-                <div class="footer-col center"><img src="images/logo.png" alt="Logo" class="footer-logo"></div>
-                <div class="footer-col right"><h4>Contact info</h4></div>
+                <div class="footer-col">
+                    <h4>Find Us</h4>
+                    <div class="social">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">ig</a>
+                        <a href="#" class="social-icon">x</a>
+                    </div>
+                </div>
+
+				<div class="footer-col center">
+    <div class="brand">
+        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
+    </div>
+</div>
+
+                <div class="footer-col right">
+                    <h4>Contact info</h4>
+                    <p>+96XXXXXXXXXX</p>
+                    <p>saddacadmey@hotmail.com</p>
+                </div>
             </div>
             <small class="copyright">@2026 SADD Academy. All Rights Reserved</small>
         </div>
