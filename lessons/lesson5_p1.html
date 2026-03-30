@@ -8,15 +8,13 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header class="navbar">
         <div class="container nav-container">
             <div class="nav-logo">
-			<a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
+                <a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
             </div>
-            
             <nav class="nav-links">
-                <a href="student-dashboard.html">student Dashboard</a>
+                <a href="student-dashboard.html">Student Dashboard</a>
                 <div class="border-left"></div>
                 <a href="course-content.html">Course Content</a>
                 <div class="border-left"></div>
@@ -27,76 +25,93 @@
         </div>
     </header>
 
-    <!-- Breadcrumbs -->
     <nav class="breadcrumbs">
         <div class="container">
             <ol class="trail">
-                <li>Home</li>
+                <li><a href="index.html">Home</a></li>
+                <li class="separator">></li>
+                <li><a href="course-content.html">Course Content</a></li>
+                <li class="separator">></li>
+                <li class="current">Lesson 5</li>
             </ol>
         </div>
     </nav>
-    <main class="container">
-<main class="container lesson-page">
-    <section class="lesson-header">
-        <h1 class="lesson-title">Mobile Security Basics</h1>
-        <div class="main-title-short-line"></div> 
-        <p class="lesson-subtitle">Part 1: Protecting Devices</p>
-        <div class="subtitle-long-line"></div>
-    </section>
 
-    <section class="intro-box">
-        <h3><span class="intro-icon">💡</span> Introduction:</h3>
-        <p>Mobile devices store sensitive personal data, making them common targets for cyber attacks[cite: 82].</p>
-    </section>
+    <main class="container lesson-page">
+        <section class="lesson-header">
+            <h1 class="lesson-title">Mobile Security Basics</h1>
+            <div class="main-title-short-line"></div> 
+            <p class="lesson-subtitle">Part 1: Protecting Devices</p>
+            <div class="subtitle-long-line"></div>
+        </section>
 
-    <section class="lesson-content-grid">
-        <div class="text-side">
-            <div class="side-title-wrapper">
-                <h3>Best Practices</h3>
-            </div>
-            <div class="risk-group">
-                <ul class="cyber-list">
-                    <li>Strong Screen Locks <br> <span>Preventing unauthorized physical access[cite: 84].</span></li>
-                    <li>Trusted Apps Only <br> <span>Download only from official stores[cite: 86].</span></li>
-                    <li>Device Encryption <br> <span>Enabling built-in security features[cite: 87].</span></li>
-                </ul>
-            </div>
-        </div>
+        <section class="intro-box">
+            <h2><span class="intro-icon">💡</span> Introduction:</h2>
+            <p>Our smartphones carry our entire digital lives. Mobile security involves protecting these portable devices and the personal data they store from threats like theft, malware, and unauthorized access.</p>
+        </section>
 
-        <div class="image-side">
-            <div class="illustration-placeholder">
-                <img src="images/mobile-sec.png" alt="Mobile Security Features">
+        <section class="lesson-content-grid">
+            <div class="text-side">
+                <div class="side-title-wrapper">
+                    <h2>Best Practices</h2>
+                </div>
+                <div class="risk-group">
+                    <ul class="cyber-list">
+                        <li>Strong Screen Locks
+                            <ul class="nested-list">
+                                <li><span>Use biometric locks like fingerprints or face recognition.</span></li>
+                                <li><span>Avoid simple patterns or common PINs like 1234.</span></li>
+                                <li><span>Set a short auto-lock timeout for better protection.</span></li>
+                            </ul>
+                        </li>
+                        <li>Trusted Apps Only
+                            <ul class="nested-list">
+                                <li><span>Install apps only from official stores like Google Play or Apple App Store.</span></li>
+                                <li><span>Always check app permissions before installation.</span></li>
+                                <li><span>Keep your installed apps updated to the latest versions.</span></li>
+                            </ul>
+                        </li>
+                        <li>Public Wi-Fi Safety
+                            <ul class="nested-list">
+                                <li><span>Avoid accessing sensitive accounts on open public networks.</span></li>
+                                <li><span>Use a VPN to encrypt your connection when necessary.</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p class="image-caption">Layers of security for modern smartphones.</p>
-            <div class="next-btn-container">
-                <a href="lesson4_p2.html" class="next-lesson-btn">Next</a>
+
+            <div class="image-side">
+                <div class="illustration-placeholder">
+                    <img src="images/mobile-sec.png" alt="Mobile Security Features">
+                </div>
+                <p class="image-caption">Strengthening mobile security by combining biometric physical scans (the fingerprint) with secure access keys and digital locks for robust device and data protection."</p>
+                <div class="next-btn-container">
+                    <a href="lesson5_p2.html" class="next-lesson-btn">Next</a>
+                </div>
             </div>
-        </div>
-    </section>
-</main>
-   </main>
-    <!-- Footer -->
-    <footer class="site-footer">
+        </section>
+    </main>
+ <!-- Footer -->
+<footer class="site-footer">
         <div class="container footer-box">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Find Us</h4>
-                    <div class="social">
+                    <p class="footer-title">Find Us</p> <div class="social">
                         <a href="#" class="social-icon">f</a>
                         <a href="#" class="social-icon">ig</a>
                         <a href="#" class="social-icon">x</a>
                     </div>
                 </div>
 
-				<div class="footer-col center">
-    <div class="brand">
-        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
-    </div>
-</div>
+                <div class="footer-col center">
+                    <div class="brand">
+                        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
+                    </div>
+                </div>
 
                 <div class="footer-col right">
-                    <h4>Contact info</h4>
-                    <p>+96XXXXXXXXXX</p>
+                    <p class="footer-title">Contact info</p> <p>+96XXXXXXXXXX</p>
                     <p>saddacadmey@hotmail.com</p>
                 </div>
             </div>
