@@ -16,7 +16,7 @@
             </div>
             
             <nav class="nav-links">
-                <a href="student-dashboard.html">student Dashboard</a>
+                <a href="student-dashboard.html">Student Dashboard</a>
                 <div class="border-left"></div>
                 <a href="course-content.html">Course Content</a>
                 <div class="border-left"></div>
@@ -28,12 +28,17 @@
     </header>
 
     <!-- Breadcrumbs -->
-    <nav class="breadcrumbs">
-        <div class="container">
-            <ol class="trail">
-                <li>Home</li>
-            </ol>
-        </div>
+<nav class="breadcrumbs">
+    <div class="container">
+        <ol class="trail">
+            <li><a href="index.html">Home</a></li>
+            <li class="separator">></li>
+            <li><a href="course-content.html">Course Content</a></li>
+            <li class="separator">></li>
+			<li class="current">Lesson 4</li>
+        </ol>
+    </div>
+</nav>
 <main class="container lesson-page">
     <section class="lesson-header">
         <h1 class="lesson-title">Encryption</h1>
@@ -42,58 +47,75 @@
         <div class="subtitle-long-line"></div>
     </section>
     <section class="intro-box">
-        <h3><span class="intro-icon">💡</span> Introduction:</h3>
-        <p>Encryption converts readable data into coded information so that unauthorized users cannot read it[cite: 61].</p>
+        <h2><span class="intro-icon">💡</span> Introduction:</h2>
+        <p>Encryption is the process of encoding information so that only authorized parties can access it. It plays a vital role in cybersecurity by ensuring data confidentiality and protecting sensitive information from hackers.</p>
     </section>
 
     <section class="lesson-content-grid">
         <div class="text-side">
             <div class="side-title-wrapper">
-                <h3>Key Methods</h3>
+                <h2>Key Methods</h2>
             </div>
             <div class="risk-group">
-                <ul class="cyber-list">
-                    <li>Symmetric Encryption <br> <span>Uses one key for the process[cite: 63].</span></li>
-                    <li>Asymmetric Encryption <br> <span>Uses public and private keys[cite: 64].</span></li>
-                    <li>Hashing <br> <span>Converts passwords into secure values[cite: 65].</span></li>
-                </ul>
-            </div>
+    <ul class="cyber-list">
+        <li>Symmetric Encryption
+            <ul class="nested-list">
+                <li><span>Uses a single shared key for both encryption and decryption.</span></li>
+                <li><span>Extremely fast and efficient for bulk data processing.</span></li>
+                <li><span>Commonly used in local file and database encryption.</span></li>
+            </ul>
+        </li>
+        
+        <li>Asymmetric Encryption
+            <ul class="nested-list">
+                <li><span>Utilizes a key pair: a Public key and a Private key.</span></li>
+                <li><span>Public keys are shared, while private keys are kept secret.</span></li>
+                <li><span>Provides high security for digital signatures and web communication.</span></li>
+            </ul>
+        </li>
+
+        <li>Hashing
+            <ul class="nested-list">
+                <li><span>A one-way mathematical function that cannot be reversed.</span></li>
+                <li><span>Ensures data integrity by detecting any unauthorized changes.</span></li>
+                <li><span>The standard method for storing user passwords securely.</span></li>
+            </ul>
+        </li>
+    </ul>
+</div>
         </div>
 
         <div class="image-side">
             <div class="illustration-placeholder">
-                <img src="images/encryption.png" alt="Encryption Process">
+                <img src="images/encryption_img.png" alt="Encryption Process">
             </div>
-            <p class="image-caption">How data is transformed into secure cipher text.</p>
+            <p class="image-caption">A visualization showing how readable data ('HELLO') is locked and converted into unreadable symbols, ensuring only authorized parties can use cryptographic keys to decipher the message.</p>
             <div class="next-btn-container">
-                <a href="lesson3_p2.html" class="next-lesson-btn">Next</a>
+                <a href="lesson4_p2.html" class="next-lesson-btn">Next</a>
             </div>
         </div>
     </section>
-</main>
    </main>
-    <!-- Footer -->
-    <footer class="site-footer">
+   <!-- Footer -->
+<footer class="site-footer">
         <div class="container footer-box">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Find Us</h4>
-                    <div class="social">
+                    <p class="footer-title">Find Us</p> <div class="social">
                         <a href="#" class="social-icon">f</a>
                         <a href="#" class="social-icon">ig</a>
                         <a href="#" class="social-icon">x</a>
                     </div>
                 </div>
 
-				<div class="footer-col center">
-    <div class="brand">
-        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
-    </div>
-</div>
+                <div class="footer-col center">
+                    <div class="brand">
+                        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
+                    </div>
+                </div>
 
                 <div class="footer-col right">
-                    <h4>Contact info</h4>
-                    <p>+96XXXXXXXXXX</p>
+                    <p class="footer-title">Contact info</p> <p>+96XXXXXXXXXX</p>
                     <p>saddacadmey@hotmail.com</p>
                 </div>
             </div>
