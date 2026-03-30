@@ -8,15 +8,14 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header class="navbar">
         <div class="container nav-container">
             <div class="nav-logo">
-			<a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
+                <a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
             </div>
             
             <nav class="nav-links">
-                <a href="student-dashboard.html">student Dashboard</a>
+                <a href="student-dashboard.html">Student Dashboard</a>
                 <div class="border-left"></div>
                 <a href="course-content.html">Course Content</a>
                 <div class="border-left"></div>
@@ -27,80 +26,96 @@
         </div>
     </header>
 
-    <!-- Breadcrumbs -->
     <nav class="breadcrumbs">
         <div class="container">
             <ol class="trail">
-                <li>Home</li>
+                <li><a href="index.html">Home</a></li>
+                <li class="separator">></li>
+                <li><a href="course-content.html">Course Content</a></li>
+                <li class="separator">></li>
+                <li class="current">Lesson 6</li>
             </ol>
         </div>
     </nav>
-<main class="container lesson-page">
-    <section class="lesson-header">
-        <h1 class="lesson-title">Common Vulnerability Types</h1>
-        <div class="main-title-short-line"></div> 
-        <p class="lesson-subtitle">Part 1: Software Flaws</p>
-        <div class="subtitle-long-line"></div>
-    </section>
 
-    <section class="intro-box">
-        <h3><span class="intro-icon">💡</span> Introduction:</h3>
-        <p>Security vulnerabilities are weaknesses in software or systems that attackers can exploit[cite: 104].</p>
-    </section>
+    <main class="container lesson-page">
+        <section class="lesson-header">
+            <h1 class="lesson-title">Common Vulnerability Types</h1>
+            <div class="main-title-short-line"></div> 
+            <p class="lesson-subtitle">Part 1: Software Flaws</p>
+            <div class="subtitle-long-line"></div>
+        </section>
 
-    <section class="lesson-content-grid">
-        <div class="text-side">
-            <div class="side-title-wrapper">
-                <h3>Common Weaknesses</h3>
-            </div>
-            <div class="risk-group">
-                <ul class="cyber-list">
-                    <li>SQL Injection <br> <span>Technique that targets databases[cite: 106].</span></li>
-                    <li>Cross-Site Scripting (XSS) <br> <span>Injecting malicious scripts into sites[cite: 107].</span></li>
-                    <li>Weak Passwords <br> <span>Allowing easy account compromise[cite: 108].</span></li>
-                </ul>
-            </div>
-        </div>
+        <section class="intro-box">
+            <h2><span class="intro-icon">💡</span> Introduction:</h2>
+            <p>Security vulnerabilities are unintentional flaws or weaknesses in software and hardware. If left unpatched, these flaws can be exploited by attackers to bypass security measures and gain unauthorized control over systems.</p>
+        </section>
 
-        <div class="image-side">
-            <div class="illustration-placeholder">
-                <img src="images/vulnerabilities.png" alt="Vulnerability Assessment">
+        <section class="lesson-content-grid">
+            <div class="text-side">
+                <div class="side-title-wrapper">
+                    <h2>Common Weaknesses</h2>
+                </div>
+                <div class="risk-group">
+                    <ul class="cyber-list">
+                        <li>SQL Injection
+                            <ul class="nested-list">
+                                <li><span>Targets databases by inserting malicious SQL queries.</span></li>
+                                <li><span>Can lead to unauthorized viewing or deletion of data.</span></li>
+                            </ul>
+                        </li>
+                        <li>Cross-Site Scripting (XSS)
+                            <ul class="nested-list">
+                                <li><span>Injects malicious scripts into trusted websites.</span></li>
+                                <li><span>Often used to steal session cookies or user personal data.</span></li>
+                            </ul>
+                        </li>
+                        <li>Weak Authentication
+                            <ul class="nested-list">
+                                <li><span>Includes weak passwords and lack of multi-factor authentication.</span></li>
+                                <li><span>Makes it easy for attackers to perform brute-force attacks.</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p class="image-caption">Identifying system flaws before they are exploited.</p>
-            <div class="next-btn-container">
-                <a href="lesson5_p2.html" class="next-lesson-btn">Next</a>
+
+            <div class="image-side">
+                <div class="illustration-placeholder">
+                    <img src="images/vulnerabilities_img.png" alt="Vulnerability Assessment">
+                </div>
+                <p class="image-caption">"Finding the Gap: Attackers exploit unpatched flaws and 'cracks' in software to bypass security measures.</p>
+                <div class="next-btn-container">
+                    <a href="lesson6_p2.html" class="next-lesson-btn">Next</a>
+                </div>
             </div>
-        </div>
-    </section>
-</main>
-   </main>
-    <!-- Footer -->
-    <footer class="site-footer">
+        </section>
+    </main>
+	  <!-- Footer -->
+<footer class="site-footer">
         <div class="container footer-box">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Find Us</h4>
-                    <div class="social">
+                    <p class="footer-title">Find Us</p> <div class="social">
                         <a href="#" class="social-icon">f</a>
                         <a href="#" class="social-icon">ig</a>
                         <a href="#" class="social-icon">x</a>
                     </div>
                 </div>
 
-				<div class="footer-col center">
-    <div class="brand">
-        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
-    </div>
-</div>
+                <div class="footer-col center">
+                    <div class="brand">
+                        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
+                    </div>
+                </div>
 
                 <div class="footer-col right">
-                    <h4>Contact info</h4>
-                    <p>+96XXXXXXXXXX</p>
+                    <p class="footer-title">Contact info</p> <p>+96XXXXXXXXXX</p>
                     <p>saddacadmey@hotmail.com</p>
                 </div>
             </div>
             <small class="copyright">@2026 SADD Academy. All Rights Reserved</small>
         </div>
     </footer>
-</body>
+    </body>
 </html>
