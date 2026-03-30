@@ -28,38 +28,38 @@
     </header>
 
     <!-- Breadcrumbs -->
-    <nav class="breadcrumbs">
-        <div class="container">
-            <ol class="trail">
-                <li>Home</li>
-            </ol>
-        </div>
-    </nav>
+<nav class="breadcrumbs">
+    <div class="container">
+        <ol class="trail">
+			<li class="current"> Home </li>
+        </ol>
+    </div>
+</nav>
     <main class="container">
+
  <!-- محتوى الصفحه هنا -->
+
    </main>
-    <!-- Footer -->
-    <footer class="site-footer">
+  <!-- Footer -->
+<footer class="site-footer">
         <div class="container footer-box">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Find Us</h4>
-                    <div class="social">
+                    <p class="footer-title">Find Us</p> <div class="social">
                         <a href="#" class="social-icon">f</a>
                         <a href="#" class="social-icon">ig</a>
                         <a href="#" class="social-icon">x</a>
                     </div>
                 </div>
 
-				<div class="footer-col center">
-    <div class="brand">
-        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
-    </div>
-</div>
+                <div class="footer-col center">
+                    <div class="brand">
+                        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
+                    </div>
+                </div>
 
                 <div class="footer-col right">
-                    <h4>Contact info</h4>
-                    <p>+96XXXXXXXXXX</p>
+                    <p class="footer-title">Contact info</p> <p>+96XXXXXXXXXX</p>
                     <p>saddacadmey@hotmail.com</p>
                 </div>
             </div>
