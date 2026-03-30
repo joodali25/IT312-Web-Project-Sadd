@@ -8,15 +8,14 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header class="navbar">
         <div class="container nav-container">
             <div class="nav-logo">
-			<a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
+                <a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
             </div>
             
             <nav class="nav-links">
-                <a href="student-dashboard.html">student Dashboard</a>
+                <a href="student-dashboard.html">Student Dashboard</a>
                 <div class="border-left"></div>
                 <a href="course-content.html">Course Content</a>
                 <div class="border-left"></div>
@@ -27,59 +26,83 @@
         </div>
     </header>
 
-    <!-- Breadcrumbs -->
     <nav class="breadcrumbs">
         <div class="container">
             <ol class="trail">
-                <li>Home</li>
+                <li><a href="index.html">Home</a></li>
+                <li class="separator">></li>
+                <li><a href="course-content.html">Course Content</a></li>
+                <li class="separator">></li>
+                <li class="current">Lesson 3</li>
             </ol>
         </div>
     </nav>
-<main class="container lesson-page">
-    <section class="lesson-header">
-        <h1 class="lesson-title">Common Cyber Attacks</h1>
-        <div class="main-title-short-line"></div> 
-        <p class="lesson-subtitle">Part 1: Threat Landscape</p>
-        <div class="subtitle-long-line"></div>
-    </section>
 
-    <section class="intro-box">
-        <h3><span class="intro-icon">💡</span> Introduction:</h3>
-        <p>Cyber attacks are attempts to damage systems or steal information through digital methods[cite: 40].</p>
-    </section>
+    <main class="container lesson-page">
+        <section class="lesson-header">
+            <h1 class="lesson-title">Common Cyber Attacks</h1>
+            <div class="main-title-short-line"></div> 
+            <p class="lesson-subtitle">Part 1: Threat Landscape</p>
+            <div class="subtitle-long-line"></div>
+        </section>
 
-    <section class="lesson-content-grid">
-        <div class="text-side">
-            <div class="side-title-wrapper">
-                <h3>Attack Types</h3>
-            </div>
-            <div class="risk-group">
-                <ul class="cyber-list">
-                    <li>Phishing <br> <span>Tricks users into revealing information[cite: 42].</span></li>
-                    <li>Malware <br> <span>Malicious software such as viruses[cite: 43].</span></li>
-                    <li>Ransomware <br> <span>Locks files until payment is made[cite: 44].</span></li>
-                </ul>
-            </div>
-        </div>
+        <section class="intro-box">
+            <h2><span class="intro-icon">💡</span> Introduction:</h2>
+            <p>In our interconnected world, cyber attacks have become a constant threat. These are deliberate attempts by unauthorized users to gain access to digital systems, steal sensitive data, or disrupt essential services.</p>
+        </section>
 
-        <div class="image-side">
-            <div class="illustration-placeholder">
-                <img src="images/attacks.png" alt="Cyber Attack Examples">
+        <section class="lesson-content-grid">
+            <div class="text-side">
+                <div class="side-title-wrapper">
+                    <h2>Attack Types</h2>
+                </div>
+                <div class="risk-group">
+                    <ul class="cyber-list">
+                        <li>Phishing Attacks
+                            <ul class="nested-list">
+                                <li><span>Sends deceptive emails to steal sensitive login credentials.</span></li>
+                                <li><span>Often mimics trusted banks or social media platforms.</span></li>
+                            </ul>
+                        </li>
+                        
+                        <li>Malware Threats
+                            <ul class="nested-list">
+                                <li><span>Malicious software designed to damage or disable computers.</span></li>
+                                <li><span>Includes various types like viruses, worms, and spyware.</span></li>
+                            </ul>
+                        </li>
+
+                        <li>Ransomware
+                            <ul class="nested-list">
+                                <li><span>Encrypts user files and demands payment for the decryption key.</span></li>
+                                <li><span>Can cause permanent data loss if backups are not available.</span></li>
+                            </ul>
+                        </li>
+
+                        <li>DoS Attacks
+                            <ul class="nested-list">
+                                <li><span>Floods systems with traffic to make them unavailable to users.</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div> <div class="image-side">
+                <div class="illustration-placeholder">
+                    <img src="images/attacks_img.png" alt="Cyber Attack Examples">
+                </div>
+                <p class="image-caption">Threat Landscape: Identifying common digital attack vectors, from deceptive social engineering to destructive malicious software and data-locking ransomware.</p>
+                <div class="next-btn-container">
+                    <a href="lesson3_p2.html" class="next-lesson-btn">Next</a>
+                </div>
             </div>
-            <p class="image-caption">Visualizing the most common digital threats today.</p>
-            <div class="next-btn-container">
-                <a href="lesson2_p2.html" class="next-lesson-btn">Next</a>
-            </div>
-        </div>
-    </section>
-</main>
-   </main>
-    <!-- Footer -->
+        </section>
+    </main>
+
     <footer class="site-footer">
         <div class="container footer-box">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Find Us</h4>
+                <div class="footer-col left">
+                    <p class="footer-title">Find Us</p>
                     <div class="social">
                         <a href="#" class="social-icon">f</a>
                         <a href="#" class="social-icon">ig</a>
@@ -87,14 +110,14 @@
                     </div>
                 </div>
 
-				<div class="footer-col center">
-    <div class="brand">
-        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
-    </div>
-</div>
+                <div class="footer-col center">
+                    <div class="brand">
+                        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
+                    </div>
+                </div>
 
                 <div class="footer-col right">
-                    <h4>Contact info</h4>
+                    <p class="footer-title">Contact info</p>
                     <p>+96XXXXXXXXXX</p>
                     <p>saddacadmey@hotmail.com</p>
                 </div>
