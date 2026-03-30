@@ -124,7 +124,7 @@ body {
     font-weight: normal;
 }
 
-/*========== Home Page ==========*/
+/*============= Home Page =============*/
 /* Vision Section */
 .vision {
     background-image: url('images/vision-gradient.png');
@@ -203,8 +203,14 @@ body {
 }
 
 .course-card p {
+    display: none;
     font-size: 12px;
     color: #444;
+}
+
+.course-card:hover p {
+    display: block;
+    margin-top: 10px;
 }
 
 .divider {
@@ -287,6 +293,7 @@ body {
     color: #555;
 }
 
+
 /*-------- Footer -------- */
 .site-footer {
     background-color: #051b1a; 
@@ -307,16 +314,18 @@ body {
     flex-direction: column;
 }
 
-.footer-col h4 {
+.footer-col .footer-title {
     color: #ffffff;
     margin-top: 0; 
-    font-size: 19px;
-    margin-bottom: 15px; /* Space below column titles */
+    font-size: 19px; 
+    margin-bottom: 15px;
+    font-weight: bold;
+    display: block; 
 }
 
 /* Styling for phone numbers and sub-text in footer columns */
 .footer-col p, .footer-col span {
-    font-size: 13px; 
+    font-size: 14px; 
     line-height: 1.6;
     color: #e0f2f1; 
 }
@@ -385,8 +394,7 @@ body {
     border-top: 1px solid #3d5a58; 
     padding-top: 25px;
 }
-
-/*========== Contact Us Page =========*/
+/*============ Contact Us Page ============*/
 .contact-section {
     padding: 60px 0; 
     background-color: #d5e8ea;
@@ -456,8 +464,7 @@ body {
 .submit-btn:hover {
     background-color: #135951;
 }
-/* ======= Lesson 1: Risk Management Page Styles ======= */
-
+/* ================ Lessons Page1 Styles ================ */
 /* --- Global Lesson Styles (Unified for all lessons) --- */
 .lesson-page { 
     padding: 30px 0;
@@ -472,7 +479,7 @@ body {
 
 /* Header Section */
 .lesson-header { 
-    margin-bottom: 50px; 
+    margin-bottom: 30px; 
     text-align: left; 
 }
 
@@ -486,7 +493,7 @@ body {
 .lesson-subtitle {
     font-size: 17px; 
     color: #555; 
-    margin-bottom: 40px; 
+    margin-bottom: 20px; 
 }
 
 .subtitle-long-line {
@@ -499,13 +506,13 @@ body {
 .intro-box {
     background-color: #f9fcfc;
     border: 1px solid #04302b;
-    padding: 30px; 
-    margin: 40px 0; 
+    padding: 20px; 
+    margin: 20px 0; 
     text-align: left;
 }
 
-.intro-box h3, 
-.common-risk-types h3 {
+.intro-box h2, 
+.common-risk-types h2 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #052419;
@@ -536,16 +543,16 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-	min-height: 400px;
+    min-height: 400px;
 }
 
 .side-title-wrapper {
     margin-bottom: 30px;
-    text-align: left;
+    text-align: center;
 }
 
-.side-title-wrapper h3 {
-    font-size: 22px;
+.side-title-wrapper h2 {
+    font-size: 25px;
     color: #052419;
     display: inline-block; 
     border-bottom: 2px solid #052419; 
@@ -558,19 +565,21 @@ body {
     flex: 1; 
     display: flex; 
     flex-direction: column; 
-    justify-content: space-between; /* Pushes button to the bottom */
+    justify-content: flex-start; /* Keeps items at the top near the image */
     align-items: center; 
 }
 
 .illustration-placeholder {
     width: 100%; 
-    height: 300px; 
+    height: 350px;
     border: 1px solid #04302b;
-    background-color: #fff; 
+    background-color: #fff;
     display: flex; 
     align-items: center; 
     justify-content: center; 
     overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .illustration-placeholder img { 
@@ -579,7 +588,50 @@ body {
     object-fit: contain; 
 }
 
-/* --- Navigation Button --- */
+/* Custom Lists Styling */
+.cyber-list {
+    padding-left: 20px;
+}
+
+/* Main list items: disc */
+.cyber-list li {
+    font-weight: bold;
+    color: #04302b;
+    font-size: 18px;
+    margin-bottom: 20px;
+    list-style-type: disc; 
+}
+
+/* Nested list items: circle */
+.nested-list {
+    list-style-type: circle; 
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.nested-list li {
+    font-weight: normal;
+    margin-bottom: 5px;
+    list-style-type: circle; /* Forced circle for nested list */
+}
+
+.nested-list li span {
+    color: #4e5d5b;
+    font-size: 15px;
+    display: inline; 
+}
+
+/* Image Caption Styling */
+.image-side p {
+    font-size: 13px;
+    color: #052419;
+    font-weight: bold;
+    margin-top: 10px; /* Small distance below the image */
+    margin-bottom: 0px; 
+    text-align: center;
+}
+
+/* Navigation Button Styling */
 .next-lesson-btn {
     background-color: #051b1a;
     color: #ffffff;
@@ -587,13 +639,14 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    margin-top: auto; /* Ensures button sticks to the bottom line of the left box */
+    display: inline-block;
+    margin-top: 60px; /* Pushes button down further as requested */
 }
 
 .next-lesson-btn:hover {
     background-color: #135951;
 }
-/*========== Lesson 2 Page Structure ==========*/
+/* ================ Lessons Page2 Styles ================ */
 
 .lesson-header { 
     margin-bottom: 30px; 
@@ -719,8 +772,10 @@ body {
     font-weight: bold; 
     font-style: italic; 
 }
-/*----------------------- JOOD ---------------------*/
+/*------------------ JOOD ----------------*/
 
-/*---------------------- DALIA ---------------------*/
 
-/*---------------------- ARYAM ---------------------*/
+/*----------------- DALIA ----------------*/
+
+
+/*----------------- ARYAM ----------------*/
