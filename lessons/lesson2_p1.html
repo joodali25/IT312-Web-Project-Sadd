@@ -8,15 +8,14 @@
 </head>
 
 <body>
-    <!-- Header -->
     <header class="navbar">
         <div class="container nav-container">
             <div class="nav-logo">
-			<a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
+                <a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
             </div>
             
             <nav class="nav-links">
-                <a href="student-dashboard.html">student Dashboard</a>
+                <a href="student-dashboard.html">Student Dashboard</a>
                 <div class="border-left"></div>
                 <a href="course-content.html">Course Content</a>
                 <div class="border-left"></div>
@@ -27,60 +26,85 @@
         </div>
     </header>
 
-    <!-- Breadcrumbs -->
+   <!-- Breadcrumbs -->
     <nav class="breadcrumbs">
         <div class="container">
             <ol class="trail">
-                <li>Home</li>
+                <li><a href="index.html">Home</a></li>
+                <li class="separator">></li>
+                <li><a href="course-content.html">Course Content</a></li>
+                <li class="separator">></li>
+                <li class="current">Lesson 2</li>
             </ol>
         </div>
     </nav>
-	<main class="container lesson-page">
-    <section class="lesson-header">
-        <h1 class="lesson-title">Introduction to Cybersecurity</h1>
-        <div class="main-title-short-line"></div> 
-        <p class="lesson-subtitle">Part 1: Intro & Key Concepts</p>
-        <div class="subtitle-long-line"></div>
-    </section>
 
-    <section class="intro-box">
-        <h3><span class="intro-icon">💡</span> Introduction:</h3>
-        <p>Cybersecurity protects computer systems, networks, and digital data from attacks or unauthorized access[cite: 18].</p>
-    </section>
+    <main class="container lesson-page">
+        <section class="lesson-header">
+            <h1 class="lesson-title">Introduction to Cybersecurity</h1>
+            <div class="main-title-short-line"></div> 
+            <p class="lesson-subtitle">Part 1: Intro & Key Concepts</p>
+            <div class="subtitle-long-line"></div>
+        </section>
 
-    <section class="lesson-content-grid">
-        <div class="text-side">
-            <div class="side-title-wrapper">
-                <h3>Core Security Areas</h3>
-            </div>
-            <div class="risk-group">
-                <ul class="cyber-list">
-                    <li>Network Security <br> <span>Protects network infrastructure[cite: 20].</span></li>
-                    <li>Application Security <br> <span>Focuses on securing software[cite: 21].</span></li>
-                    <li>Information Security <br> <span>Protects sensitive data[cite: 22].</span></li>
-                    <li>Cloud Security <br> <span>Protects online storage systems[cite: 23].</span></li>
-                </ul>
-            </div>
-        </div>
+        <section class="intro-box">
+            <h2><span class="intro-icon">💡</span> Introduction:</h2>
+            <p>
+                Cybersecurity protects computer systems, networks, and digital data from attacks or unauthorized access. 
+                It is essential for maintaining privacy and ensuring the integrity of information in a digital world.
+            </p>
+        </section>
 
-        <div class="image-side">
-            <div class="illustration-placeholder">
-                <img src="images/cyber-intro.png" alt="Cybersecurity Overview">
+        <section class="lesson-content-grid">
+            <div class="text-side">
+                <div class="side-title-wrapper">
+                    <h2>Core Security Areas</h2>
+                </div>
+                
+                <div class="risk-group">
+                    <ul class="cyber-list">
+                        <li>Network Security
+                            <ul class="nested-list">
+                                <li><span>Protects network infrastructure and hardware.</span></li>
+                            </ul>
+                        </li>
+                        <li>Application Security
+                            <ul class="nested-list">
+                                <li><span>Focuses on securing software and apps.</span></li>
+                            </ul>
+                        </li>
+                        <li>Information Security
+                            <ul class="nested-list">
+                                <li><span>Protects sensitive and private data.</span></li>
+                            </ul>
+                        </li>
+                        <li>Cloud Security
+                            <ul class="nested-list">
+                                <li><span>Protects online storage and cloud systems.</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p class="image-caption">Protecting digital infrastructure across all levels.</p>
-            <div class="next-btn-container">
-                <a href="lesson1_p2.html" class="next-lesson-btn">Next</a>
+
+            <div class="image-side">
+                <div class="illustration-placeholder">
+                    <img src="images/cyber-intro.png" alt="Cybersecurity Overview">
+                </div>
+                <p class="image-caption">Securing the Digital Frontier: Identifying and protecting key security areas to maintain a resilient and trusted environment for organizational assets."</p>
+                
+                <div class="next-btn-container">
+                    <a href="lesson2_p2.html" class="next-lesson-btn">Next</a>
+                </div>
             </div>
-        </div>
-    </section>
-</main>
-   </main>
-    <!-- Footer -->
+        </section>
+    </main>
+
     <footer class="site-footer">
         <div class="container footer-box">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Find Us</h4>
+                <div class="footer-col left">
+                    <p class="footer-title">Find Us</p>
                     <div class="social">
                         <a href="#" class="social-icon">f</a>
                         <a href="#" class="social-icon">ig</a>
@@ -88,14 +112,14 @@
                     </div>
                 </div>
 
-				<div class="footer-col center">
-    <div class="brand">
-        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
-    </div>
-</div>
+                <div class="footer-col center">
+                    <div class="brand">
+                        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
+                    </div>
+                </div>
 
                 <div class="footer-col right">
-                    <h4>Contact info</h4>
+                    <p class="footer-title">Contact info</p>
                     <p>+96XXXXXXXXXX</p>
                     <p>saddacadmey@hotmail.com</p>
                 </div>
