@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SADD | Home</title>
-    <!-- ربط ملف الـ CSS الخارجي -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,8 +12,7 @@
     <header class="navbar">
         <div class="container nav-container">
             <div class="nav-logo">
-                <!-- استبدال الديف بصورة اللوجو -->
-			<a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>                <span>sadd</span>
+			<a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
             </div>
             
             <nav class="nav-links">
@@ -30,14 +28,13 @@
     </header>
 
     <!-- Breadcrumbs -->
-    <nav class="breadcrumbs">
-        <div class="container">
-            <ol class="trail">
-                <li>Home</li>
-            </ol>
-        </div>
-    </nav>
-
+<nav class="breadcrumbs">
+    <div class="container">
+        <ol class="trail">
+			<li class="current"> Home </li>
+        </ol>
+    </div>
+</nav>
     <main class="container">
         <!-- Vision Section -->
         <section class="vision">
@@ -48,38 +45,42 @@ Our vision is to build a pioneering educational gateway that empowers the next g
         </section>
 		<hr class="divider">
         <!-- Our Top Courses Section -->		
-        <section class="category">
+<section class="category">
             <h2 class="cards-title">Our Top Courses</h2>
             <div class="cards-wrapper">
                 <div class="arrow">&lt;</div>
                 <div class="cards">
-                    <!-- Course 1 -->
                     <article class="course-card">
-                        <!-- استبدال الديف بصورة الدورة -->
                         <img src="images/risk-management.png" alt="Risk Management" class="card-img">
                         <h3>Risk Management</h3>
-                        <p>Learn how to identify, assess, and prioritize digital risks to minimize the impact of potential security threats.</p>
+                        <div class="lesson-info">
+                            <p>Learn how to identify, assess, and prioritize digital risks to minimize the impact of potential security threats.</p>
+                        </div>
                     </article>
 
-                    <!-- Course 2 -->
                     <article class="course-card">
                         <img src="images/vulnerability.png" alt="Vulnerability Types" class="card-img">
                         <h3>Common Vulnerability Types</h3>
-                        <p>Dive into the technical weaknesses in software and hardware, such as SQL injection, and how they can be mitigated.</p>
+                        <div class="lesson-info">
+                            <p>Dive into the technical weaknesses in software and hardware, such as SQL injection, and how they can be mitigated.</p>
+                        </div>
                     </article>
 
-                    <!-- Course 3 -->
                     <article class="course-card">
                         <img src="images/mobile-security.png" alt="Mobile Security" class="card-img">
                         <h3>Mobile Security Basics</h3>
-                        <p>Discover the best practices for securing smartphones and tablets against mobile-specific threats and data leakage.</p>
+                        <div class="lesson-info">
+                            <p>Discover the best practices for securing smartphones and tablets against mobile-specific threats and data leakage.</p>
+                        </div>
                     </article>
-					<!-- Course 4 -->
-					<article class="course-card">
-					<img src="images/encryption.png" alt="Encryption" class="card-img">
-					<h3>Encryption</h3>
-					<p>Understand how data is transformed into secure code to ensure privacy and protect sensitive information.</p>
-					</article>
+
+                    <article class="course-card">
+                        <img src="images/encryption.png" alt="Encryption" class="card-img">
+                        <h3>Encryption</h3>
+                        <div class="lesson-info">
+                            <p>Understand how data is transformed into secure code to ensure privacy and protect sensitive information.</p>
+                        </div>
+                    </article>
                 </div>
                 <div class="arrow">&gt;</div>
             </div>
@@ -87,96 +88,93 @@ Our vision is to build a pioneering educational gateway that empowers the next g
 
         <hr class="divider">
 <!-- Feedback Section -->
- <section class="feedback">
-    <h2 class="feedback-title">Students' Feedback on Our Teachers</h2>
-    <div class="feedback-grid">
-        <article class="feedback-card">
-            <div class="user-info">
-                <img src="images/user-icon-woman1.png" alt="User" class="user-avatar">
-                <div class="user-details">
-                    <h4>Shouq</h4>
-                    <div class="stars-list">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star.png" alt="star" class="star-img">
+<section class="feedback">
+            <h2 class="feedback-title">Students' Feedback on Our Teachers</h2>
+            <div class="feedback-grid">
+                
+                <article class="feedback-card">
+                    <div class="user-info">
+                        <img src="images/user-icon-woman1.png" alt="User" class="user-avatar">
+                        <div class="user-details">
+                            <h3>Shouq</h3>
+                            <div class="stars-list">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star.png" alt="star" class="star-img">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <hr class="feedback-divider">
-            <div class="review-content">
-                <p class="review-for">Review for: Dr.Amal</p>
-                <p class="review-text"><q>Dr. Amal makes complex security concepts very easy to understand. Her practical labs are the best part of the course!</q></p>
-            </div>
-        </article>
+                    <hr class="feedback-divider">
+                    <div class="review-content">
+                        <p class="review-for">Review for: Dr.Amal</p>
+                        <p class="review-text"><q>Dr. Amal makes complex security concepts very easy to understand. Her practical labs are the best part of the course!</q></p>
+                    </div> </article>
 
-        <article class="feedback-card">
-            <div class="user-info">
-                <img src="images/user-icon-woman2.png" alt="User" class="user-avatar">
-                <div class="user-details">
-                    <h4>Jana</h4>
-                    <div class="stars-list">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star-gray.png" alt="star" class="star-img">
+                <article class="feedback-card">
+                    <div class="user-info">
+                        <img src="images/user-icon-woman2.png" alt="User" class="user-avatar">
+                        <div class="user-details">
+                            <h3>Jana</h3>
+                            <div class="stars-list">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star-gray.png" alt="star" class="star-img">
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <hr class="feedback-divider">
-            <div class="review-content">
-                <p class="review-for">Review for: Ms.Laila</p>
-                <p class="review-text"><q>Ms. Laila provides excellent, detailed feedback on projects. She is truly dedicated to her students' success.</q></p>
-        </article>
+                    <hr class="feedback-divider">
+                    <div class="review-content">
+                        <p class="review-for">Review for: Ms.Laila</p>
+                        <p class="review-text"><q>Ms. Laila provides excellent, detailed feedback on projects. She is truly dedicated to her students' success.</q></p>
+                    </div> </article>
 
-        <article class="feedback-card">
-            <div class="user-info">
-                <img src="images/user-icon-man1.png" alt="User" class="user-avatar">
-                <div class="user-details">
-                    <h4>Ali</h4>
-                    <div class="stars-list">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star.png" alt="star" class="star-img">
-                        <img src="images/star.png" alt="star" class="star-img">
+                <article class="feedback-card">
+                    <div class="user-info">
+                        <img src="images/user-icon-man1.png" alt="User" class="user-avatar">
+                        <div class="user-details">
+                            <h3>Ali</h3>
+                            <div class="stars-list">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star.png" alt="star" class="star-img">
+                                <img src="images/star.png" alt="star" class="star-img">
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <hr class="feedback-divider">
+                    <div class="review-content">
+                        <p class="review-for">Review for: Dr.Khalid</p>
+                        <p class="review-text"><q>Great instructor! Dr. Khalid’s real-world experience in risk management adds huge value to every lecture.</q></p>
+                    </div> </article>
             </div>
-            <hr class="feedback-divider">
-            <div class="review-content">
-                <p class="review-for">Review for: Dr.Khalid</p>
-                <p class="review-text"><q>Great instructor! Dr. Khalid’s real-world experience in risk management adds huge value to every lecture.</q></p>
-            </div>
-        </article>
-    </div>
-</section>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
+  <!-- Footer -->
+<footer class="site-footer">
         <div class="container footer-box">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Find Us</h4>
-                    <div class="social">
+                    <p class="footer-title">Find Us</p> <div class="social">
                         <a href="#" class="social-icon">f</a>
                         <a href="#" class="social-icon">ig</a>
                         <a href="#" class="social-icon">x</a>
                     </div>
                 </div>
 
-				<div class="footer-col center">
-    <div class="brand">
-        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
-    </div>
-</div>
+                <div class="footer-col center">
+                    <div class="brand">
+                        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
+                    </div>
+                </div>
 
                 <div class="footer-col right">
-                    <h4>Contact info</h4>
-                    <p>+96XXXXXXXXXX</p>
+                    <p class="footer-title">Contact info</p> <p>+96XXXXXXXXXX</p>
                     <p>saddacadmey@hotmail.com</p>
                 </div>
             </div>
