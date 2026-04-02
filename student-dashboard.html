@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Footer -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SADD | Contact Us</title>
+    <title>SADD | Student Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,9 +11,10 @@
         <div class="container nav-container">
             <div class="nav-logo">
                 <a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
-                </div>
+            </div>
+
             <nav class="nav-links">
-                <a href="Student-dashboard.html">student Dashboard</a>
+                <a href="student-dashboard.html">student Dashboard</a>
                 <div class="border-left"></div>
                 <a href="course-content.html">Course Content</a>
                 <div class="border-left"></div>
@@ -29,76 +30,83 @@
             <ol class="trail">
                 <li><a href="index.html">Home</a></li>
                 <li class="separator">></li>
-                <li class="current">Contact Us</li>
+                <li class="current">Student Dashboard</li>
             </ol>
         </div>
     </nav>
-   <main class="container">
 
-    <section class="dashboard-page">
+    <main class="container">
 
-        <!-- العنوان -->
-        <h1 class="dashboard-title">Welcome Student</h1>
+        <section class="dashboard-page">
 
-        <!-- الكروت -->
-        <div class="dashboard-cards">
+            <h1 class="dashboard-title">Welcome Student</h1>
 
-            <!-- كرت الطالب -->
-            <div class="card">
-                <img src="avatar1.png" class="user-img"> <!-- صورة الطالب -->
-                <p>Student name</p>
-                <small>student id</small>
+            <div class="dashboard-cards">
+
+                <div class="card">
+                    <img src="images/avatar1.png" class="user-img" alt="Student">
+                    <p>Student name</p>
+                    <small>student id</small>
+                </div>
+
+                <div class="card">
+                    <div class="result-circle small-circle">
+                        <div class="circle-inner small-inner">
+                            <span class="result-percentage">75%</span>
+                        </div>
+                    </div>
+                    <p>Attendance</p>
+                </div>
+
             </div>
 
-            <!-- كرت النسبة -->
-            <div class="card">
-                <div class="result-circle small-circle">
-                    <div class="circle-inner small-inner">
-                        <span class="result-percentage">75%</span>
+            <div class="info-box">
+
+                <div class="info-left">
+                    <div class="info-item">
+                        <img src="images/college1.png" class="info-icon" alt="College">
+                        <p>college name</p>
+                    </div>
+
+                    <div class="info-item">
+                        <img src="images/college1.png" class="info-icon" alt="Major">
+                        <p>major name</p>
                     </div>
                 </div>
-                <p>Attendance</p>
+
+                <div class="divider"></div>
+
+                <div class="info-right">
+                    <p>student status: Active</p>
+                    <p>Cum GPA: 4.5</p>
+                </div>
+
             </div>
 
-        </div>
+            <h2 class="quick-title">Quick Access</h2>
 
-        <!-- معلومات الطالب -->
-        <div class="info-box">
+            <div class="quick-buttons">
+                <a href="my-notes.html" class="quick-btn">
+                    <img src="images/note1.png" class="quick-icon" alt="Notes">
+                    <span>My notes</span>
+                </a>
 
-            <div class="info-left">
-                <img src="images/college1.png" class="info-icon"> <!-- أيقونة الكلية -->
-                <p>college name</p>
-
-                <img src="images/college1.png" class="info-icon"> <!-- أيقونة التخصص -->
-                <p>major name</p>
+                <a href="teacher-evaluation.html" class="quick-btn">
+                    <img src="images/eval1.png" class="quick-icon" alt="Evaluation">
+                    <span>Teachers Evaluation</span>
+                </a>
             </div>
 
-            <div class="info-right">
-                <img src="images/eval1.png" class="info-icon"> <!-- أيقونة الحالة -->
-                <p>student status: Active</p>
+        </section>
 
-                <p>Cum GPA: 4.5</p>
-            </div>
+    </main>
 
-        </div>
-
-        <!-- Quick Access -->
-        <h2 class="quick-title">Quick Access</h2>
-
-        <div class="quick-buttons">
-            <a href="my-notes.html" class="quick-btn">My notes</a>
-            <a href="teacher-evaluation.html" class="quick-btn">Teachers Evaluation</a>
-        </div>
-
-    </section>
-
-</main>
-  <!-- Footer -->
-<footer class="site-footer">
+    <footer class="site-footer">
         <div class="container footer-box">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <p class="footer-title">Find Us</p> <div class="social">
+                    <p class="footer-title">Find Us</p>
+                    <div class="social">
                         <a href="#" class="social-icon">f</a>
                         <a href="#" class="social-icon">ig</a>
                         <a href="#" class="social-icon">x</a>
@@ -112,7 +120,8 @@
                 </div>
 
                 <div class="footer-col right">
-                    <p class="footer-title">Contact info</p> <p>+96XXXXXXXXXX</p>
+                    <p class="footer-title">Contact info</p>
+                    <p>+96XXXXXXXXXX</p>
                     <p>saddacadmey@hotmail.com</p>
                 </div>
             </div>
@@ -121,4 +130,3 @@
     </footer>
 </body>
 </html>
-
