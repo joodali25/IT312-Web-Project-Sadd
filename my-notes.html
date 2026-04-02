@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!-- Saved Notes -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -34,64 +34,43 @@
         </div>
     </nav>
     <main class="container">
+    <section class="notes-page">
 
- <!-- Main Content Section -->
-    <div class="container">
-        <h2>My Notes</h2>
+        <h1 class="notes-title">My Note</h1>
 
-        <!-- My Saved Notes Section -->
-        <section class="saved-notes">
-            <h3>My saved notes</h3>
-            <form action="#" method="POST">
-                <!-- Example of saved notes with checkboxes -->
-                <div class="note-item">
-                    <input type="checkbox" id="note1" name="note1">
-                    <label for="note1">
-                        <img src="note1.png" alt="Note 1 Image" class="note-image" width="100" height="100"> <!-- Image of the note -->
-                        write the lecture notes
-                    </label>
-                </div>
+        <!-- Saved Notes -->
+        <div class="notes-box saved-notes-box">
+            <h2 class="notes-subtitle">My saved notes</h2>
 
-                <div class="note-item">
-                    <input type="checkbox" id="note2" name="note2">
-                    <label for="note2">
-                        <img src="note1.png" alt="Note 2 Image" class="note-image" width="100" height="100"> <!-- Image of the note -->
-                        do my homework
-                    </label>
-                </div>
+            <form class="saved-notes-form">
+                <label class="saved-note-item">
+                    <input type="checkbox">
+                    <img src="images/note1.png" class="saved-note-icon">
+                    <span>Sed ut perspiciatis unde omnis iste n</span>
+                </label>
 
-                <!-- Delete button for selected notes -->
-                <button type="submit" name="delete" class="delete-btn">Delete Selected</button>
+                <label class="saved-note-item">
+                    <input type="checkbox">
+                    <img src="images/note1.png" class="saved-note-icon">
+                    <span>eaque ipsa quae ab illo inventore veri</span>
+                </label>
+
+                <button type="submit" class="notes-small-btn">Delete selected</button>
             </form>
-        </section>
+        </div>
 
-        <!-- Add New Note Section -->
-        <section class="add-note">
-            <h3>Add New Note</h3>
-            <form action="#" method="POST">
-                <!-- Textarea to write the new note -->
-                <textarea name="note-text" rows="4" placeholder="Enter your note text here..."></textarea>
+        <!-- Add New Note -->
+        <div class="notes-box add-notes-box">
+            <h2 class="notes-subtitle">Add new Note</h2>
 
-                <!-- Dropdown list to select priority -->
-                <label for="priority">Priority:</label>
-                <select name="priority" id="priority">
-                    <option value="1">1 (Low)</option>
-                    <option value="2">2 (Medium)</option>
-                    <option value="3">3 (High)</option>
-                </select>
-
-                <!-- Add button for submitting the new note -->
-                <button type="submit" name="add" class="add-btn">Add Note</button>
+            <form class="add-note-form">
+                <textarea class="notes-textarea" placeholder="Text Area"></textarea>
+                <button type="submit" class="notes-small-btn">Save</button>
             </form>
-        </section>
+        </div>
 
-        <!-- Save button (functionality will be implemented later with JavaScript) -->
-        <section class="save-section">
-            <button type="button" class="save-btn">Save</button>
-        </section>
-    </div>
-
-   </main>
+    </section>
+</main>
   <!-- Footer -->
 <footer class="site-footer">
         <div class="container footer-box">
