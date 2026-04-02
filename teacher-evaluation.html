@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html> <!-- Footer -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SADD | Teachers evaluation</title>
+    <title>SADD | Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,49 +30,54 @@
             <ol class="trail">
                 <li><a href="index.html">Home</a></li>
                 <li class="separator">></li>
-                <li class="current">Teachers evaluation</li>
+                 <li><a href="student-dashboard.html">student dashboard</a></li>
+                <li class="separator">></li>
+                <li class="current">teacher evaluation</li>
             </ol>
         </div>
     </nav>
-    <main class="container">
+   <main class="container">
+    <section class="teacher-page">
 
-  <!-- Main Content Section -->
-    <div class="container">
-        <h2>Teachers Evaluation</h2>
+        <h1 class="teacher-title">Teachers Evaluation</h1>
 
-        <!-- Teacher Evaluation Form -->
-        <section class="teacher-evaluation-form">
-            <form action="#" method="POST">
-                <!-- Teacher Selection Dropdown -->
-                <label for="teacher-name">Teacher name:</label>
-                <select name="teacher-name" id="teacher-name">
-                    <option value="dalia">Dalia</option>
-                    <option value="joad">Joad</option>
-                    <option value="lama">Lama</option>
-                    <option value="aryam">Aryam</option>
+        <div class="teacher-box">
+
+            <div class="teacher-field teacher-name-row">
+                <label for="teacher-name" class="teacher-label-box">Teacher name:</label>
+
+                <select id="teacher-name" class="teacher-select-box">
+                    <option>Dalila</option>
+                    <option>Jood</option>
+                    <option>Lama</option>
+                    <option>Arwa</option>
                 </select>
+            </div>
 
-                <!-- Rating Section (Star Rating) -->
-                <label for="rating">Rating:</label>
-                <div id="rating">
-                    <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
-                    <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
-                    <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
-                    <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
-                    <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            <div class="teacher-field rating-wrapper">
+                <label class="teacher-rating-label">Rating:</label>
+                <div class="rating-stars-box">
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
+                    <span>☆</span>
                 </div>
+            </div>
 
-                <!-- Feedback Section -->
-                <label for="feedback">Feedback:</label>
-                <textarea name="feedback" id="feedback" rows="5" placeholder="Enter your feedback here..."></textarea>
+            <div class="teacher-field feedback-wrapper">
+                <label for="teacher-feedback" class="teacher-feedback-label">Feedback:</label>
+                <textarea id="teacher-feedback" class="teacher-textarea" placeholder="Text Area"></textarea>
+            </div>
 
-                <!-- Submit Button -->
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
-        </section>
-    </div>
+        </div>
 
-   </main>
+        <button type="submit" class="teacher-btn">Submit</button>
+
+    </section>
+</main>
+  
+
   <!-- Footer -->
 <footer class="site-footer">
         <div class="container footer-box">
