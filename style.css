@@ -1124,6 +1124,302 @@ body {
 /* Base Styles */
 body {
     font-family: 'Century Gothic', AppleGothic, sans-serif;
+    margin: 0; /* Reset default browser margins */
+    padding: 0; /* Reset default browser padding */
+    color: #000;
+    background-color: #d5e8ea;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Logo Size Control --- */
+.logo-img {
+    width: 160px;
+    height: auto;
+    display: block; /* for better positioning control */
+}
+
+/* --- Sorting Dropdown --- */
+#sortCriteria {
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Teacher List Section */
+.teacher-list {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+    gap: 20px;
+}
+
+.teacher {
+    text-align: center;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.teacher img {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.teacher-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.teacher-experience {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Header & Navigation */
+.navbar {
+    border-bottom: 2px solid #000; /* Add a line below the header */
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -25px; /* Shift the logo further to the left */
+}
+
+/* Links Area Styling */
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: -50px; /* Add margin to the right side */
+    height: 80px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #135951;
+    padding: 0 60px; /* Horizontal spacing between links */
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 100px;
+    white-space: nowrap;
+}
+
+/* Vertical Divider Line */
+.border-left {
+    border-left: 1.5px solid #045148;
+    height: 45px;
+    display: block;
+    align-self: center; /* Center the line vertically between links */
+}
+
+/* ----- Breadcrumbs Styles ----- */
+.breadcrumbs {
+    background-color: #082d2b;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.breadcrumbs ol.trail {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs li {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Breadcrumbs Links Styling */
+.breadcrumbs li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumbs li a:hover {
+    text-decoration: underline; /* Show underline on hover for accessibility */
+}
+
+/* Separator Symbol (>) Styling */
+.separator {
+    margin: 0 10px;
+    color: #aebfb1;
+    font-weight: normal;
+}
+
+/* Highlight Current Page (Text only, not a link) */
+.current {
+    color: #aebfb1; 
+    font-weight: normal;
+}
+
+/* --- About Us Section --- */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Sorting dropdown and teacher list */
+label {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+/* ----- Card Images Styling ----- */
+.teacher-list {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+    gap: 20px;
+}
+
+.teacher {
+    text-align: center;
+    margin-right: 20px;
+    width: 200px;
+}
+
+.teacher img {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.teacher-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.teacher-experience {
+    font-size: 14px;
+    color: gray;
+}
+
+/* --- Footer Section --- */
+.site-footer {
+    background-color: #051b1a;
+    padding: 60px 0 40px;
+    margin-top: 80px;
+    color: #ffffff;
+}
+
+.footer-grid {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.footer-col {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col .footer-title {
+    color: #ffffff;
+    margin-top: 0; 
+    font-size: 19px; 
+    margin-bottom: 15px;
+    font-weight: bold;
+    display: block; 
+}
+
+/* Styling for phone numbers and sub-text in footer columns */
+.footer-col p, .footer-col span {
+    font-size: 14px; 
+    line-height: 1.6; color: #e0f2f1; 
+}
+
+.footer-col.left {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-col.center {
+    align-items: center; 
+    text-align: center;
+}
+
+.footer-col.right {
+    align-items: flex-end; 
+    text-align: right; 
+}
+
+.brand {
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+}
+
+/* Styling for the site logo in the footer */
+.footer-logo {
+    width: 180px; 
+    height: auto; 
+    display: block;
+}
+
+.social {
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    gap: 15px; 
+}
+
+.social-icon {
+    width: 32px; 
+    height: 32px; 
+    border: 1px solid #ffffff; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none; 
+    color: #ffffff; 
+    font-weight: bold; 
+    border-radius: 50%; 
+}
+
+.social-icon:hover {
+    background-color: #ffffff;
+    color: #051b1a;
+    border-color: #ffffff;
+}
+
+.copyright {
+    display: block; 
+    text-align: center; 
+    margin-top: 50px; 
+    font-size: 12px; 
+    font-weight: bold; 
+    color: #aebfb1; 
+    border-top: 1px solid #3d5a58; 
+    padding-top: 25px;
+}
+/* Base Styles */
+body {
+    font-family: 'Century Gothic', AppleGothic, sans-serif;
     margin: 0;
     padding: 0;
     color: #000;
