@@ -1121,452 +1121,350 @@ body {
     font-size: 18px;
 }
 /*----------------- ARYAM ----------------*/
-/* Base Styles */
-body {
-    font-family: 'Century Gothic', AppleGothic, sans-serif;
-    margin: 0; /* Reset default browser margins */
-    padding: 0; /* Reset default browser padding */
-    color: #000;
-    background-color: #d5e8ea;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* --- Logo Size Control --- */
-.logo-img {
-    width: 160px;
-    height: auto;
-    display: block; /* for better positioning control */
-}
-
-/* --- Sorting Dropdown --- */
-#sortCriteria {
-    margin: 20px;
-    padding: 10px;
-    font-size: 16px;
-}
-
-/* Teacher List Section */
-.teacher-list {
-    display: flex;
-    overflow-x: scroll;
-    padding: 20px;
-    gap: 20px;
-}
-
-.teacher {
+.teacher-page {
     text-align: center;
-    width: 200px;
-    flex-shrink: 0;
+    padding: 60px 0;
 }
 
-.teacher img {
-    width: 100%;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.teacher-name {
-    font-size: 18px;
+.teacher-title {
+    font-size: 32px;
     font-weight: bold;
-}
-
-.teacher-experience {
-    font-size: 14px;
-    color: gray;
-}
-
-/* Header & Navigation */
-.navbar {
-    border-bottom: 2px solid #000; /* Add a line below the header */
-    padding: 20px 0;
-    background-color: #fff;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: -25px; /* Shift the logo further to the left */
-}
-
-/* Links Area Styling */
-.nav-links {
-    display: flex;
-    align-items: center;
-    margin-right: -50px; /* Add margin to the right side */
-    height: 80px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #135951;
-    padding: 0 60px; /* Horizontal spacing between links */
+    margin-bottom: 30px;
     text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 1.2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    min-width: 100px;
-    white-space: nowrap;
 }
 
-/* Vertical Divider Line */
-.border-left {
-    border-left: 1.5px solid #045148;
-    height: 45px;
+.teacher-title::after {
+    content: "";
     display: block;
-    align-self: center; /* Center the line vertically between links */
+    width: 260px;
+    height: 2px;
+    background: #000;
+    margin: 10px auto 0;
 }
 
-/* ----- Breadcrumbs Styles ----- */
-.breadcrumbs {
-    background-color: #082d2b;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.breadcrumbs ol.trail {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.breadcrumbs li {
-    font-size: 13px;
-    font-weight: bold;
-}
-
-/* Breadcrumbs Links Styling */
-.breadcrumbs li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.breadcrumbs li a:hover {
-    text-decoration: underline; /* Show underline on hover for accessibility */
-}
-
-/* Separator Symbol (>) Styling */
-.separator {
-    margin: 0 10px;
-    color: #aebfb1;
-    font-weight: normal;
-}
-
-/* Highlight Current Page (Text only, not a link) */
-.current {
-    color: #aebfb1; 
-    font-weight: normal;
-}
-
-/* --- About Us Section --- */
-h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-/* Sorting dropdown and teacher list */
-label {
-    font-size: 16px;
-    margin-left: 20px;
-}
-
-/* ----- Card Images Styling ----- */
-.teacher-list {
-    display: flex;
-    overflow-x: scroll;
-    padding: 20px;
-    gap: 20px;
-}
-
-.teacher {
-    text-align: center;
-    margin-right: 20px;
-    width: 200px;
-}
-
-.teacher img {
-    width: 100%;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.teacher-name {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.teacher-experience {
-    font-size: 14px;
-    color: gray;
-}
-
-/* --- Footer Section --- */
-.site-footer {
-    background-color: #051b1a;
-    padding: 60px 0 40px;
-    margin-top: 80px;
-    color: #ffffff;
-}
-
-.footer-grid {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
-
-.footer-col {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-col .footer-title {
-    color: #ffffff;
-    margin-top: 0; 
-    font-size: 19px; 
-    margin-bottom: 15px;
-    font-weight: bold;
-    display: block; 
-}
-
-/* Styling for phone numbers and sub-text in footer columns */
-.footer-col p, .footer-col span {
-    font-size: 14px; 
-    line-height: 1.6; color: #e0f2f1; 
-}
-
-.footer-col.left {
-    align-items: flex-start;
+.teacher-box {
+    width: 500px;
+    margin: 35px auto 25px;
+    padding: 30px 35px;
+    border: 1px solid #777;
+    background: #fff;
+    box-sizing: border-box;
     text-align: left;
 }
 
-.footer-col.center {
-    align-items: center; 
-    text-align: center;
+.teacher-field {
+    margin-bottom: 25px;
 }
 
-.footer-col.right {
-    align-items: flex-end; 
-    text-align: right; 
-}
-
-.brand {
-    margin: 0; 
+.teacher-name-row {
     display: flex;
-    justify-content: center; 
+    align-items: center;
+    gap: 12px;
 }
 
-/* Styling for the site logo in the footer */
-.footer-logo {
-    width: 180px; 
-    height: auto; 
+.teacher-label-box {
+    width: 170px;
+    border: 1px solid #777;
+    padding: 10px 14px;
+    font-weight: bold;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.teacher-select-box {
+    flex: 1;
+    height: 42px;
+    border: 1px solid #777;
+    padding: 0 10px;
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.rating-wrapper {
+    border: 1px solid #777;
+    padding: 14px 16px;
+}
+
+.teacher-rating-label {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 14px;
+    vertical-align: middle;
+}
+
+.rating-stars-box {
+    display: inline-block;
+    font-size: 28px;
+    letter-spacing: 4px;
+    vertical-align: middle;
+}
+
+.feedback-label {
     display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 
-.social {
-    list-style: none; 
-    padding: 0; 
-    display: flex; 
-    gap: 15px; 
+.teacher-textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #777;
+    padding: 12px;
+    resize: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: #fff;
 }
 
-.social-icon {
-    width: 32px; 
-    height: 32px; 
-    border: 1px solid #ffffff; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-decoration: none; 
-    color: #ffffff; 
-    font-weight: bold; 
-    border-radius: 50%; 
+.teacher-btn {
+    display: block;
+    margin: 12px auto 0;
+    padding: 10px 28px;
+    border: 1px solid #777;
+    background: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}.info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* هذا أهم سطر */
+    padding: 25px 30px;
 }
 
-.social-icon:hover {
-    background-color: #ffffff;
-    color: #051b1a;
-    border-color: #ffffff;
+/* الجهة اليسار */
+.info-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
 }
 
-.copyright {
-    display: block; 
-    text-align: center; 
-    margin-top: 50px; 
-    font-size: 12px; 
-    font-weight: bold; 
-    color: #aebfb1; 
-    border-top: 1px solid #3d5a58; 
-    padding-top: 25px;
-}
-/* Base Styles */
-body {
-    font-family: 'Century Gothic', AppleGothic, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #000;
-    background-color: #d5e8ea;
+/* كل سطر (أيقونة + نص) */
+.info-item {
+    display: flex;
+    align-items: center; /* يخليهم بنفس المستوى */
+    gap: 10px;
 }
 
-/* Main Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+/* الخط بالنص */
+.divider {
+    width: 1px;
+    height: 70px;
+    background: #ccc;
 }
 
-/* Header */
-h2 {
+/* الجهة اليمين */
+.info-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* حجم الأيقونات */
+.info-icon {
+    width: 20px;
+}
+/* ===== My Notes Page ===== */
+.notes-page {
     text-align: center;
-    font-size: 32px;
+    padding: 60px 0;
+}
+
+.notes-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.notes-title::after {
+    content: "";
+    display: block;
+    width: 260px;
+    height: 2px;
+    background: #000;
+    margin: 10px auto 0;
+}
+
+.notes-box {
+    width: 420px;
+    margin: 30px auto;
+    padding: 25px 30px;
+    border: 1px solid #999;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.notes-subtitle {
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
-/* Teacher Evaluation Form */
-.teacher-evaluation-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.notes-subtitle::after {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 2px;
+    background: #bbb;
+    margin: 8px auto 0;
 }
 
-/* Labels */
-.teacher-evaluation-form label {
-    font-size: 18px;
+.saved-notes-form {
+    text-align: left;
+}
+
+.saved-note-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.saved-note-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.add-note-form {
+    text-align: center;
+}
+
+.notes-textarea {
+    width: 100%;
+    height: 110px;
+    border: 1px solid #999;
+    padding: 12px;
+    resize: none;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+}
+
+.notes-small-btn {
+    padding: 8px 18px;
+    border: 1px solid #777;
+    background: #fff;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+
+/* ===== About Us Page ===== */
+.about-page {
+    padding: 50px 0 70px;
+    text-align: center;
+}
+
+.sort-box {
+    width: 180px;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.sort-label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
     color: #333;
 }
 
-/* Teacher Name Dropdown */
-.teacher-evaluation-form select {
+.sort-select {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    padding: 8px 10px;
+    border: 1px solid #777;
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 13px;
 }
 
-/* Rating Section */
-#rating {
+.about-title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.about-title::after {
+    content: "";
+    display: block;
+    width: 520px;
+    height: 2px;
+    background: #bbb;
+    margin: 14px auto 0;
+}
+
+.team-grid {
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 35px;
 }
 
-#rating input[type="radio"] {
-    display: none;
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 في كل صف */
+    gap: 30px;
+    justify-items: center;
+    max-width: 700px;
+    margin: 35px auto;
 }
 
-#rating label {
-    font-size: 30px;
-    color: #f0ad4e;
-    cursor: pointer;
+.team-img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 16px;
 }
 
-#rating input[type="radio"]:checked ~ label {
-    color: #d9534f;
-}
-
-/* Feedback Section */
-.teacher-evaluation-form textarea {
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    resize: vertical;
-}
-
-/* Submit Button */
-.submit-btn {
-    padding: 12px 20px;
-    background-color: #5bc0de;
-    color: #fff;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s;
-}
-
-.submit-btn:hover {
-    background-color: #31b0d5;
-}
-
-/* Form Styles */
-.teacher-evaluation-form {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Dropdown styling */
-.teacher-evaluation-form select {
-    padding: 10px;
-    width: 100%;
+.team-name {
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
 }
 
-/* Rating stars styling */
-#rating label {
-    font-size: 1.5rem;
-    color: #f0ad4e;
-    cursor: pointer;
+.team-exp {
+    font-size: 12px;
+    color: #666;
 }
 
-#rating input[type="radio"]:checked ~ label {
-    color: #d9534f;
+.about-arrow {
+    font-size: 48px;
+    color: #333;
+    margin-top: 30px;
+    line-height: 1;
+}
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
-/* Feedback Section */
-.teacher-evaluation-form textarea {
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    resize: vertical;
+.team-card {
+    width: 220px;
+    border: 1px solid #777;   /* الإطار */
+    border-radius: 10px;      /* نفس شكل الوايرفريم */
+    padding: 20px;
+    text-align: center;
+    background: #fff;
 }
 
-/* Submit Button */
-.submit-btn {
-    padding: 12px 20px;
-    background-color: #5bc0de;
-    color: #fff;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s;
+.team-card img {
+    width: 80px;
+    margin-bottom: 10px;
 }
 
-.submit-btn:hover {
-    background-color: #31b0d5;
+.team-card h4 {
+    margin: 10px 0 5px;
 }
 
-
-
-/*----------------- ARYAM ----------------*/
-
-
+.team-card p {
+    font-size: 13px;
+    color: #555;
+}
