@@ -774,8 +774,247 @@ body {
 }
 /*------------------ JOOD ----------------*/
 
+.quiz-title::after {
+    content: "";
+    display: block;
+    width: 350px;   /* أطول */
+    height: 2px;
+    background: #000;
+    margin: 12px auto 0;
+}
+.quiz-page {
+    background-color: #ffffff;
+    border: 1px solid #052419;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 800px;
+    box-sizing: border-box;
+}
 
+.quiz-title {
+    text-align: center;
+    font-size: 32px;
+    color: #052419;
+    margin-bottom: 35px;
+}
+
+.quiz-form {
+    width: 100%;
+}
+
+.quiz-question {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.quiz-question:last-of-type {
+    border-bottom: none;
+}
+
+.quiz-question-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #052419;
+    margin-bottom: 15px;
+}
+
+.quiz-option {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.quiz-option input[type="radio"] {
+    margin-right: 8px;
+}
+
+.result-page {
+    text-align: center;
+}
+
+.result-box {
+    background-color: #f8fbfb;
+    border: 1px solid #cfdede;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.result-text {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #052419;
+}
+
+.result-message {
+    font-size: 16px;
+    color: #444444;
+    margin-top: 20px;
+}
+
+.result-link-box {
+    margin-top: 30px;
+}
+
+.result-link {
+    text-decoration: none;
+    color: #135951;
+    font-weight: bold;
+}
+
+/* --- Result Page --- */
+
+.result-page {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.result-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* الدائرة */
+.result-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+    
+    /* شكل الحلقة */
+    background: conic-gradient(
+        #0f3d3a 0% 75%,   /* النسبة */
+        #d9d9d9 75% 100% /* الباقي */
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* داخل الدائرة */
+.circle-inner {
+    width: 140px;
+    height: 140px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-percentage {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f3d3a;
+}
+
+/* النص تحت */
+.result-info {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+.result-title::after {
+    content: "";
+    display: block;
+    width: 220px;   /* طول الخط */
+    height: 2px;
+    background: #000;  /* أسود */
+    margin: 10px auto 0;
+}
+
+/* --- Content Page --- */
+
+.content-page {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.content-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* خط تحت العنوان */
+.content-title::after {
+    content: "";
+    width: 250px;
+    height: 2px;
+    background-color: #0f3d3a;
+    display: block;
+    margin: 10px auto 0;
+}
+
+/* الشبكة */
+.lessons-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* الكرت */
+.lesson-card {
+    width: 280px;
+    border: 2px solid #0f3d3a;
+    padding: 15px;
+    background-color: #fff;
+    text-align: left;
+}
+
+/* الصور */
+.lesson-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+}
+
+.lesson-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.lesson-card p {
+    font-size: 13px;
+    color: #444;
+    margin: 5px 0;
+}
+/* روابط الدروس */
+.lesson-card a {
+    color: #000;           /* أسود */
+    
+}
+
+/* عند المرور (اختياري) */
+.lesson-card a:hover {
+    color: #135951; /* لون أخضر خفيف عند hover */
+}
+.content-title::after {
+    content: "";
+    display: block;
+    width: 220px;
+    height: 2px;
+    background: #000;
+    margin: 10px auto 0;
+}
 /*----------------- DALIA ----------------*/
 
 
 /*----------------- ARYAM ----------------*/
+
+
