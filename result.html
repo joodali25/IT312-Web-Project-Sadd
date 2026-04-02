@@ -3,22 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SADD | Home</title>
-    <!-- ربط ملف الـ CSS الخارجي -->
+    <title>SADD | Result</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Header -->
     <header class="navbar">
         <div class="container nav-container">
             <div class="nav-logo">
-                <!-- استبدال الديف بصورة اللوجو -->
-<a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>                <span>sadd</span>
-            </div>
-            
+                <a href="index.html"><img src="images/logo.png" alt="SADD Logo" class="logo-img"></a>
+                </div>
             <nav class="nav-links">
-                <a href="student-dashboard.html">student Dashboard</a>
+                <a href="Student-dashboard.html">student Dashboard</a>
                 <div class="border-left"></div>
                 <a href="course-content.html">Course Content</a>
                 <div class="border-left"></div>
@@ -29,16 +24,26 @@
         </div>
     </header>
 
-    <!-- Breadcrumbs -->
-    <nav class="breadcrumbs">
-        <div class="container">
-            <ol class="trail">
-                <li>Home</li>
-            </ol>
-        </div>
-    </nav>
+   <nav class="breadcrumbs">
+    <div class="container">
+        <ol class="trail">
+            <li><a href="index.html">Home</a></li>
+            <li class="separator">></li>
 
-    <main class="container">
+            <li><a href="course-content.html">Course Content</a></li>
+            <li class="separator">></li>
+
+            <li>Lesson</li>
+            <li class="separator">></li>
+
+            <li><a href="quizes/lesson1_quiz.html">Quiz</a></li>
+            <li class="separator">></li>
+
+            <li class="current">Result</li>
+        </ol>
+    </div>
+</nav>
+     <main class="container">
  <section class="result-page">
 
     <h1 class="result-title">Quiz Result</h1>
@@ -58,28 +63,26 @@
 </section>
 	</main>
  
-    <!-- Footer -->
-    <footer class="site-footer">
+  <!-- Footer -->
+<footer class="site-footer">
         <div class="container footer-box">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h4>Find Us</h4>
-                    <div class="social">
+                    <p class="footer-title">Find Us</p> <div class="social">
                         <a href="#" class="social-icon">f</a>
                         <a href="#" class="social-icon">ig</a>
                         <a href="#" class="social-icon">x</a>
                     </div>
                 </div>
 
-				<div class="footer-col center">
-    <div class="brand">
-        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
-    </div>
-</div>
+                <div class="footer-col center">
+                    <div class="brand">
+                        <img src="images/logo.png" alt="Site Logo" class="footer-logo">
+                    </div>
+                </div>
 
                 <div class="footer-col right">
-                    <h4>Contact info</h4>
-                    <p>+96XXXXXXXXXX</p>
+                    <p class="footer-title">Contact info</p> <p>+96XXXXXXXXXX</p>
                     <p>saddacadmey@hotmail.com</p>
                 </div>
             </div>
@@ -88,5 +91,8 @@
     </footer>
 </body>
 </html>
+
+
+    
 
 
