@@ -1121,7 +1121,153 @@ body {
     font-size: 18px;
 }
 /*----------------- ARYAM ----------------*/
+/* Base Styles */
+body {
+    font-family: 'Century Gothic', AppleGothic, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #d5e8ea;
+}
 
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Teacher Evaluation Form */
+.teacher-evaluation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Labels */
+.teacher-evaluation-form label {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Teacher Name Dropdown */
+.teacher-evaluation-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Rating Section */
+#rating {
+    display: flex;
+    gap: 5px;
+}
+
+#rating input[type="radio"] {
+    display: none;
+}
+
+#rating label {
+    font-size: 30px;
+    color: #f0ad4e;
+    cursor: pointer;
+}
+
+#rating input[type="radio"]:checked ~ label {
+    color: #d9534f;
+}
+
+/* Feedback Section */
+.teacher-evaluation-form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: vertical;
+}
+
+/* Submit Button */
+.submit-btn {
+    padding: 12px 20px;
+    background-color: #5bc0de;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #31b0d5;
+}
+
+/* Form Styles */
+.teacher-evaluation-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown styling */
+.teacher-evaluation-form select {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Rating stars styling */
+#rating label {
+    font-size: 1.5rem;
+    color: #f0ad4e;
+    cursor: pointer;
+}
+
+#rating input[type="radio"]:checked ~ label {
+    color: #d9534f;
+}
+
+/* Feedback Section */
+.teacher-evaluation-form textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: vertical;
+}
+
+/* Submit Button */
+.submit-btn {
+    padding: 12px 20px;
+    background-color: #5bc0de;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #31b0d5;
+}
 
 
 
