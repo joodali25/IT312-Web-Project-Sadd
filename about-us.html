@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Footer -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -29,72 +29,77 @@
             <ol class="trail">
                 <li><a href="index.html">Home</a></li>
                 <li class="separator">></li>
-                <li class="current">Contact Us</li>
+                <li class="current">about Us</li>
             </ol>
         </div>
     </nav>
     <main class="container">
 
- <!-- Sorting dropdown -->
-<h1>Meet Our Team</h1>
-<label for="sortCriteria">Sort By:</label>
-<select id="sortCriteria">
-    <optgroup label="Years of Experience">
-        <option value="lowToHigh">Low to High</option>
-        <option value="highToLow">High to Low</option>
-    </optgroup>
-    <optgroup label="Name">
-        <option value="aToZ">A-Z</option>
-        <option value="zToA">Z-A</option>
-    </optgroup>
-</select>
+    <section class="about-page">
 
-<!-- Teacher list -->
-<div class="teacher-list">
-    <!-- Teacher 1 -->
-    <div class="teacher">
-        <img src="user-icon-man1.png" alt="Prof. Saad">
-        <div class="teacher-name">Prof. Saad</div>
-        <div class="teacher-experience">15+ years of Experience</div>
-    </div>
+        <div class="sort-box">
+            <label for="sort-teachers" class="sort-label">SORT BY:</label>
 
-    <!-- Teacher 2 -->
-    <div class="teacher">
-        <img src="user-icon-man1.png" alt="Dr. Ahmed">
-        <div class="teacher-name">Dr. Ahmed</div>
-        <div class="teacher-experience">10+ years of Experience</div>
-    </div>
+            <select id="sort-teachers" class="sort-select">
+                <optgroup label="Name">
+                    <option>Name (A-Z)</option>
+                    <option>Name (Z-A)</option>
+                </optgroup>
 
-    <!-- Teacher 3 -->
-    <div class="teacher">
-        <img src="teacher3.jpg" alt="Dr. Amal">
-        <div class="user-icon-woman1.png">Dr. Amal</div>
-        <div class="teacher-experience">15+ years of Experience</div>
-    </div>
+                <optgroup label="Experience">
+                    <option>Experience (low - high)</option>
+                    <option>Experience (high - low)</option>
+                </optgroup>
+            </select>
+        </div>
 
-    <!-- Teacher 4 -->
-    <div class="teacher">
-        <img src="user-icon-woman1.png" alt="Ms. Laila">
-        <div class="teacher-name">Ms. Laila</div>
-        <div class="teacher-experience">5+ years of Experience</div>
-    </div>
+        <h1 class="about-title">Meet Our Team</h1>
 
-    <!-- Teacher 5 -->
-    <div class="teacher">
-        <img src="user-icon-man1.png" alt="Dr. Khalid">
-        <div class="teacher-name">Dr. Khalid</div>
-        <div class="teacher-experience">11+ years of Experience</div>
-    </div>
+        <div class="team-grid">
 
-    <!-- Teacher 6 -->
-    <div class="teacher">
-        <img src="user-icon-woman1.png" alt="Ms. Reem">
-        <div class="teacher-name">Ms. Reem</div>
-        <div class="teacher-experience">3+ years of Experience</div>
-    </div>
-</div>
+            <div class="team-card">
+                <img src="images/user-icon-man1.png" alt="Prof. Saad" class="team-img">
+                <h3 class="team-name">Prof. Saad</h3>
+                <p class="team-exp">19+ years Of Experience</p>
+            </div>
 
-   </main>
+            <div class="team-card">
+                <img src="images/user-icon-man1.png" alt="Dr. Ahmed" class="team-img">
+                <h3 class="team-name">Dr. Ahmed</h3>
+                <p class="team-exp">10+ years Of Experience</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/user-icon-woman1.png" class="team-img">
+                <h3 class="team-name">Dr. Amal</h3>
+                <p class="team-exp">15+ years Of Experience</p>
+            </div>
+
+            <div class="team-card">
+            <img src="images/user-icon-woman1.png" class="team-img">
+                <h3 class="team-name">Ms. Laila</h3>
+                <p class="team-exp">5+ years Of Experience</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/user-icon-man1.png" alt="Dr. Khalid" class="team-img">
+                <h3 class="team-name">Dr. Khalid</h3>
+                <p class="team-exp">11+ years Of Experience</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/user-icon-woman1.png" class="team-img">
+                <h3 class="team-name">Ms. Reem</h3>
+                <p class="team-exp">3+ years Of Experience</p>
+            </div>
+
+        </div>
+
+        <div class="about-arrow">⌄</div>
+
+    </section>
+
+</main>
   <!-- Footer -->
 <footer class="site-footer">
         <div class="container footer-box">
