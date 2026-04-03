@@ -1019,10 +1019,11 @@ body {
     padding: 60px 0;
 }
 
-/* العنوان + الخط */
+/* العنوان */
 .dashboard-title {
     font-size: 28px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .dashboard-title::after {
@@ -1031,7 +1032,7 @@ body {
     width: 250px;
     height: 2px;
     background: #000;
-    margin: 10px auto 30px;
+    margin: 10px auto 0;
 }
 
 /* الكروت */
@@ -1039,44 +1040,104 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 30px;
+    margin: 35px 0 30px;
 }
 
 .card {
-    border: 1px solid #ccc;
+    width: 200px;
+    min-height: 200px;
+    border: 1px solid #ddd;
     padding: 20px;
-    width: 180px;
     border-radius: 10px;
+    text-align: center;
+    background: #fff;
+    box-sizing: border-box;
 }
 
-/* الدائرة الصغيرة */
-.circle-small {
-    width: 80px;
-    height: 80px;
+.user-img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* دائرة النسبة */
+.small-circle {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
     border-radius: 50%;
-    background: #ddd;
+    background: conic-gradient(
+        #0f3d3a 0% 75%,
+        #d9d9d9 75% 100%
+    );
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 10px;
+}
+
+.small-inner {
+    width: 78px;
+    height: 78px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-inner .result-percentage {
+    font-size: 18px;
     font-weight: bold;
+    color: #0f3d3a;
 }
 
 /* بوكس المعلومات */
 .info-box {
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 400px;
-    margin: 0 auto 40px;
+    width: 500px;
+    margin: 0 auto 35px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 22px 25px;
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
+    align-items: center;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.info-left,
+.info-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.divider {
+    width: 1px;
+    height: 80px;
+    background: #ccc;
 }
 
 /* Quick Access */
 .quick-title {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .quick-title::after {
@@ -1085,10 +1146,9 @@ body {
     width: 200px;
     height: 2px;
     background: #000;
-    margin: 10px auto 20px;
+    margin: 10px auto 0;
 }
 
-/* الأزرار */
 .quick-buttons {
     display: flex;
     justify-content: center;
@@ -1096,29 +1156,21 @@ body {
 }
 
 .quick-btn {
-    border: 1px solid #000;
-    padding: 10px 20px;
+    border: 1px solid #999;
+    padding: 10px 18px;
     text-decoration: none;
     color: #000;
+    background: #fff;
     border-radius: 8px;
-}
-/* نسخة أصغر من دائرة الرزولت */
-.small-circle {
-    width: 120px;
-    height: 120px;
-    background: conic-gradient(
-        #0f3d3a 0% 75%,
-        #d9d9d9 75% 100%
-    );
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.small-inner {
-    width: 80px;
-    height: 80px;
-}
-
-.small-inner .result-percentage {
-    font-size: 18px;
+.quick-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 /*----------------- ARYAM ----------------*/
 .teacher-page {
