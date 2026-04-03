@@ -1,5 +1,5 @@
 
-    <!DOCTYPE html> <!-- t -->
+    <!DOCTYPE html> <!-- tea -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -41,50 +41,54 @@
 
         <h1 class="teacher-title">Teachers Evaluation</h1>
 
-        <div class="teacher-box">
+        <form action="teacher-evaluation.html" method="GET">
 
-            <div class="teacher-field teacher-name-row">
-                <label for="teacher-name" class="teacher-label-box">Teacher name:</label>
+            <div class="teacher-box">
 
-                <select id="teacher-name" class="teacher-select-box">
-                    <option>Dalila</option>
-                    <option>Jood</option>
-                    <option>Lama</option>
-                    <option>Arwa</option>
-                </select>
+                <div class="teacher-field teacher-name-row">
+                    <label for="teacher-name" class="teacher-label-box">Teacher name:</label>
+
+                    <select id="teacher-name" class="teacher-select-box" name="teacher-name">
+                        <option>Dalila</option>
+                        <option>Jood</option>
+                        <option>Lama</option>
+                        <option>Arwa</option>
+                    </select>
+                </div>
+
+                <div class="teacher-field rating-wrapper">
+                    <label class="teacher-rating-label">Rating:</label>
+
+                    <div class="rating-stars-box">
+
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">★</label>
+
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+
+                    </div>
+                </div>
+
+                <div class="teacher-field feedback-wrapper">
+                    <label for="teacher-feedback" class="teacher-feedback-label">Feedback:</label>
+                    <textarea id="teacher-feedback" class="teacher-textarea" name="teacher-feedback" placeholder="Text Area"></textarea>
+                </div>
+
             </div>
 
-           <div class="teacher-field rating-wrapper">
-    <label class="teacher-rating-label">Rating:</label>
+            <button type="submit" class="teacher-btn">Submit</button>
 
-    <div class="rating-stars-box">
-
-        <input type="radio" id="star5" name="rating" value="5">
-        <label for="star5">★</label>
-
-        <input type="radio" id="star4" name="rating" value="4">
-        <label for="star4">★</label>
-
-        <input type="radio" id="star3" name="rating" value="3">
-        <label for="star3">★</label>
-
-        <input type="radio" id="star2" name="rating" value="2">
-        <label for="star2">★</label>
-
-        <input type="radio" id="star1" name="rating" value="1">
-        <label for="star1">★</label>
-
-    </div>
-</div>
-
-            <div class="teacher-field feedback-wrapper">
-                <label for="teacher-feedback" class="teacher-feedback-label">Feedback:</label>
-                <textarea id="teacher-feedback" class="teacher-textarea" placeholder="Text Area"></textarea>
-            </div>
-
-        </div>
-
-        <button type="submit" class="teacher-btn">Submit</button>
+        </form>
 
     </section>
 </main>
