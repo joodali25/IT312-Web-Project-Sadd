@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- my Notes -->
+<!DOCTYPE html><!-- my Notes1 -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -64,24 +64,31 @@
         <!-- Add New Note -->
         <div class="note-box">
 
-    <h3 class="note-title">Add new Note</h3>
+            <h3 class="note-title">Add new Note</h3>
 
-    <!-- priority (فوق يمين) -->
-    <select class="priority-select">
-        <option disabled selected>Priority</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-    </select>
+            <!-- الفورم (هذا المهم) -->
+            <form action="my-notes.html">
 
-    <!-- textarea -->
-    <textarea class="note-text" placeholder="Text Area"></textarea>
+                <!-- priority -->
+                <select class="priority-select">
+                    <option disabled selected>Priority</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
 
-    <button class="note-btn">Save</button>
+                <!-- textarea -->
+                <textarea class="note-text" placeholder="Text Area"></textarea>
 
-</div>
+                <!-- زر الحفظ -->
+                <button type="submit" class="note-btn">Save</button>
+
+            </form>
+
+        </div>
 
     </section>
+
 </main>
   <!-- Footer -->
 <footer class="site-footer">
