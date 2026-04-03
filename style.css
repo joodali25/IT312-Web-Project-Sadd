@@ -1318,6 +1318,33 @@ body {
 .info-icon {
     width: 20px;
 }
+.rating-stars-box {
+    display: flex;
+    flex-direction: row-reverse; /* عشان الترتيب يكون صح */
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.rating-stars-box input {
+    display: none;
+}
+
+.rating-stars-box label {
+    font-size: 28px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* لما تختارين نجمة */
+.rating-stars-box input:checked ~ label {
+    color: gold;
+}
+
+/* hover effect */
+.rating-stars-box label:hover,
+.rating-stars-box label:hover ~ label {
+    color: gold;
+}
 /* ===== My Notes Page ===== */
 .notes-page {
     text-align: center;
