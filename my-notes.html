@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- Saved Notes -->
+<!DOCTYPE html><!-- my Notes -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -60,14 +60,24 @@
         </div>
 
         <!-- Add New Note -->
-        <div class="notes-box add-notes-box">
-            <h2 class="notes-subtitle">Add new Note</h2>
+        <div class="note-box">
 
-            <form class="add-note-form">
-                <textarea class="notes-textarea" placeholder="Text Area"></textarea>
-                <button type="submit" class="notes-small-btn">Save</button>
-            </form>
-        </div>
+    <h3 class="note-title">Add new Note</h3>
+
+    <!-- priority (فوق يمين) -->
+    <select class="priority-select">
+        <option disabled selected>Priority</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+
+    <!-- textarea -->
+    <textarea class="note-text" placeholder="Text Area"></textarea>
+
+    <button class="note-btn">Save</button>
+
+</div>
 
     </section>
 </main>
