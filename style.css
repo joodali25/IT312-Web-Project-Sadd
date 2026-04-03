@@ -1000,9 +1000,8 @@ body {
     
 }
 
-/* عند المرور (اختياري) */
 .lesson-card a:hover {
-    color: #135951; /* لون أخضر خفيف عند hover */
+    color: #135951; 
 }
 .content-title::after {
     content: "";
@@ -1280,7 +1279,7 @@ body {
 }.info-box {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* هذا أهم سطر */
+    align-items: center; 
     padding: 25px 30px;
 }
 
@@ -1320,7 +1319,7 @@ body {
 }
 .rating-stars-box {
     display: flex;
-    flex-direction: row-reverse; /* عشان الترتيب يكون صح */
+    flex-direction: row-reverse; 
     justify-content: flex-start;
     gap: 5px;
 }
@@ -1434,7 +1433,7 @@ body {
     margin: 30px auto;
     border: 1px solid #777;
     padding: 30px;
-    position: relative; /* مهم عشان نحرك ال dropdown */
+    position: relative; 
     background: #fff;
 }
 
@@ -1525,7 +1524,7 @@ body {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 في كل صف */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
     justify-items: center;
     max-width: 700px;
@@ -1567,8 +1566,8 @@ body {
 
 .team-card {
     width: 220px;
-    border: 1px solid #777;   /* الإطار */
-    border-radius: 10px;      /* نفس شكل الوايرفريم */
+    border: 1px solid #777;   
+    border-radius: 10px;     
     padding: 20px;
     text-align: center;
     background: #fff;
