@@ -1,3 +1,4 @@
+//========= Contact us page ==========
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("contactForm");
 
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-//Contact us page
+
 // 1. الساعة الحقيقية - [مطابق لمحاضرة 11 في استخدام setInterval]
 function showTime() {
     const clock = document.getElementById('real-time-clock');
@@ -73,10 +74,9 @@ if (btn) {
         window.scrollTo({top: 0, behavior: 'smooth'});
     };
 }
-
+// ======= Home Page ===========
 // 3. تبديل السيم (Theme Switcher)
 // --- 3. تبديل الثيم وحفظه (Theme Switcher with Local Storage) ---
-// [تم تعديل classList إلى style.property لضمان الالتزام بمحاضرة 11 (DOM Modification)]
 const themeBtn = document.getElementById("theme-toggle");
 
 // أولاً: عند تحميل أي صفحة، نتحقق هل المستخدم اختار الثيم الغامق سابقاً؟ (محاضرة 10)
@@ -202,7 +202,7 @@ if (nextBtn && prevBtn && container) {
     }
 }
 
-//Lesson Page 1 
+// ======= Lesson Page 1 =========
 document.addEventListener("DOMContentLoaded", function() {
     const myLessons = [
         "lesson1_p1.html", "lesson2_p1.html", 
@@ -220,3 +220,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 3000);
     }
 });
+//------------------- Jood ----------------------
+
+//------------------- Dalia ----------------------
+
+//------------------- Aryam ----------------------
+
