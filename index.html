@@ -23,6 +23,7 @@
                 <a href="contact-us.html">Contact Us</a>
                 <div class="border-left"></div>
                 <a href="about-us.html">About Us</a>
+				<button id="theme-toggle" style="margin-left: 10px; cursor: pointer;">Switch Theme</button>
             </nav>
         </div>
     </header>
@@ -43,50 +44,52 @@
 Our vision is to build a pioneering educational gateway that empowers the next generation of cybersecurity leaders. We strive to create a safe and interactive digital environment where students
  can master essential security skills, fostering a culture of continuous learning and innovation to protect our collective digital future in an increasingly connected and complex world. </p>
         </section>
-		<hr class="divider">
+		<hr class="divider-home">
         <!-- Our Top Courses Section -->		
 <section class="category">
-            <h2 class="cards-title">Our Top Courses</h2>
-            <div class="cards-wrapper">
-                <div class="arrow">&lt;</div>
-                <div class="cards">
-                    <article class="course-card">
-                        <img src="images/risk-management.png" alt="Risk Management" class="card-img">
-                        <h3>Risk Management</h3>
-                        <div class="lesson-info">
-                            <p>Learn how to identify, assess, and prioritize digital risks to minimize the impact of potential security threats.</p>
-                        </div>
-                    </article>
-
-                    <article class="course-card">
-                        <img src="images/vulnerability.png" alt="Vulnerability Types" class="card-img">
-                        <h3>Common Vulnerability Types</h3>
-                        <div class="lesson-info">
-                            <p>Dive into the technical weaknesses in software and hardware, such as SQL injection, and how they can be mitigated.</p>
-                        </div>
-                    </article>
-
-                    <article class="course-card">
-                        <img src="images/mobile-security.png" alt="Mobile Security" class="card-img">
-                        <h3>Mobile Security Basics</h3>
-                        <div class="lesson-info">
-                            <p>Discover the best practices for securing smartphones and tablets against mobile-specific threats and data leakage.</p>
-                        </div>
-                    </article>
-
-                    <article class="course-card">
-                        <img src="images/encryption.png" alt="Encryption" class="card-img">
-                        <h3>Encryption</h3>
-                        <div class="lesson-info">
-                            <p>Understand how data is transformed into secure code to ensure privacy and protect sensitive information.</p>
-                        </div>
-                    </article>
+    <h2 class="cards-title">Our Top Courses</h2>
+    <div class="cards-wrapper">
+        <div class="arrow" id="prevBtn" style="cursor: pointer;">&lt;</div>
+        
+        <div class="cards" id="coursesContainer">
+            <article class="course-card">
+                <img src="images/risk-management.png" alt="Risk Management" class="card-img">
+                <h3>Risk Management</h3>
+                <div class="lesson-info">
+                    <p>Learn how to identify, assess, and prioritize digital risks to minimize the impact of potential security threats.</p>
                 </div>
-                <div class="arrow">&gt;</div>
-            </div>
-        </section>
+            </article>
 
-        <hr class="divider">
+            <article class="course-card">
+                <img src="images/vulnerability.png" alt="Vulnerability Types" class="card-img">
+                <h3>Common Vulnerability Types</h3>
+                <div class="lesson-info">
+                    <p>Dive into the technical weaknesses in software and hardware, such as SQL injection, and how they can be mitigated.</p>
+                </div>
+            </article>
+
+            <article class="course-card">
+                <img src="images/mobile-security.png" alt="Mobile Security" class="card-img">
+                <h3>Mobile Security Basics</h3>
+                <div class="lesson-info">
+                    <p>Discover the best practices for securing smartphones and tablets against mobile-specific threats and data leakage.</p>
+                </div>
+            </article>
+
+            <article class="course-card">
+                <img src="images/encryption.png" alt="Encryption" class="card-img">
+                <h3>Encryption</h3>
+                <div class="lesson-info">
+                    <p>Understand how data is transformed into secure code to ensure privacy and protect sensitive information.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="arrow" id="nextBtn" style="cursor: pointer;">&gt;</div>
+    </div>
+</section>
+
+        <hr class="divider-home">
 <!-- Feedback Section -->
 <section class="feedback">
             <h2 class="feedback-title">Students' Feedback on Our Teachers</h2>
@@ -157,7 +160,8 @@ Our vision is to build a pioneering educational gateway that empowers the next g
 
   <!-- Footer -->
 <footer class="site-footer">
-        <div class="container footer-box">
+    <div class="container footer-box">
+        <div id="real-time-clock" style="text-align: center; margin-bottom: 10px; font-weight: bold;"></div>
             <div class="footer-grid">
                 <div class="footer-col">
                     <p class="footer-title">Find Us</p> <div class="social">
@@ -181,5 +185,7 @@ Our vision is to build a pioneering educational gateway that empowers the next g
             <small class="copyright">@2026 SADD Academy. All Rights Reserved</small>
         </div>
     </footer>
+<button id="backToTop" title="Go to top">↑</button>
+<script src="script.js"></script>
 </body>
 </html>
