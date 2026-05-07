@@ -221,7 +221,127 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 //------------------- Jood ----------------------
+//========= Quiz Page ==========
+window.onload = function () {
 
+    //========= Quiz Page ==========
+    var quizForm = document.getElementById("quizForm");
+
+    if (quizForm) {
+        quizForm.onsubmit = function () {
+
+            var lessonName = quizForm.getAttribute("data-lesson");
+            var questions = ["q1", "q2", "q3"];
+            var score = 0;
+
+            for (var i = 0; i < questions.length; i++) {
+                var answers = document.getElementsByName(questions[i]);
+                var selectedAnswer = null;
+
+                for (var j = 0; j < answers.length; j++) {
+                    if (answers[j].checked) {
+                        selectedAnswer = answers[j];
+                    }
+                }
+
+                if (selectedAnswer == null) {
+                    alert("Please answer all questions.");
+                    return false;
+                }
+
+                if (selectedAnswer.value == "correct") {
+                    score++;
+                }
+            }
+
+            var percentage = Math.round((score / questions.length) * 100);
+
+            var bestKey = lessonName + "_bestScore";
+            var oldScore = localStorage.getItem(bestKey);
+
+            if (oldScore == null || percentage > Number(oldScore)) {
+                localStorage.setItem(bestKey, percentage);
+            }
+
+            localStorage.setItem("currentScore", percentage);
+            localStorage.setItem("currentLesson", lessonName);
+
+            window.location.href = "../result.html";
+
+            return false;
+        };
+    }
+
+
+    //========= Result Page ==========
+    var resultPercentage = document.getElementById("resultPercentage");
+    var currentScoreText = document.getElementById("currentScore");
+    var bestScoreText = document.getElementById("bestScore");
+    var resultCircle = document.getElementById("resultCircle");
+
+    if (resultPercentage && currentScoreText && bestScoreText && resultCircle) {
+        var currentScore = localStorage.getItem("currentScore") || 0;
+        var currentLesson = localStorage.getItem("currentLesson");
+        var bestScore = localStorage.getItem(currentLesson + "_bestScore") || 0;
+
+        resultPercentage.innerHTML = currentScore + "%";
+        currentScoreText.innerHTML = currentScore + "%";
+        bestScoreText.innerHTML = bestScore + "%";
+
+        resultCircle.style.background =
+            "conic-gradient(#0f3d3a 0% " + currentScore + "%, #d9d9d9 " + currentScore + "% 100%)";
+    }
+
+
+    //========= Course Content More Button ==========
+    var moreBtn = document.getElementById("moreLessonsBtn");
+    var firstLessons = document.getElementsByClassName("first-lesson");
+    var extraLessons = document.getElementsByClassName("extra-lesson");
+
+    if (moreBtn) {
+        moreBtn.onclick = function () {
+            for (var k = 0; k < firstLessons.length; k++) {
+                firstLessons[k].className += " hide-lesson";
+            }
+
+            for (var l = 0; l < extraLessons.length; l++) {
+                extraLessons[l].className += " show-lesson";
+            }
+
+            moreBtn.style.display = "none";
+        };
+    }
+
+
+    //========= Dashboard Quiz Scores ==========
+    var scoresContainer = document.getElementById("quizScoresContainer");
+    var scoresBody = document.getElementById("quizScoresBody");
+
+    if (scoresContainer && scoresBody) {
+        var lessons = [
+            { key: "lesson6_bestScore", name: "Risk Management" },
+            { key: "lesson2_bestScore", name: "Common Cyber Attacks" },
+            { key: "lesson3_bestScore", name: "Encryption" },
+            { key: "lesson4_bestScore", name: "Mobile Security Basics" },
+            { key: "lesson1_bestScore", name: "Introduction to Cybersecurity" },
+            { key: "lesson5_bestScore", name: "Common Vulnerability Types" }
+        ];
+
+        scoresBody.innerHTML = "";
+
+        for (var m = 0; m < lessons.length; m++) {
+            var scoreValue = localStorage.getItem(lessons[m].key);
+
+            var row = document.createElement("tr");
+
+            row.innerHTML =
+                "<td>" + lessons[m].name + "</td>" +
+                "<td>" + (scoreValue == null ? "None" : scoreValue + "%") + "</td>";
+
+            scoresBody.appendChild(row);
+        }
+    }
+};
 //------------------- Dalia ----------------------
 
 //------------------- Aryam ----------------------
