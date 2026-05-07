@@ -218,23 +218,20 @@ window.onload = function () {
 
 
     //========= Course Content More Button ==========
+document.addEventListener("DOMContentLoaded", function () {
     var moreBtn = document.getElementById("moreLessonsBtn");
-    var firstLessons = document.getElementsByClassName("first-lesson");
     var extraLessons = document.getElementsByClassName("extra-lesson");
 
     if (moreBtn) {
         moreBtn.onclick = function () {
-            for (var k = 0; k < firstLessons.length; k++) {
-                firstLessons[k].className += " hide-lesson";
-            }
-
-            for (var l = 0; l < extraLessons.length; l++) {
-                extraLessons[l].className += " show-lesson";
+            for (var i = 0; i < extraLessons.length; i++) {
+                extraLessons[i].style.display = "block";
             }
 
             moreBtn.style.display = "none";
         };
     }
+});
 
 
     //========= Dashboard Quiz Scores ==========
