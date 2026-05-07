@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- q5 5 -->
+<!DOCTYPE html><!-- q5  -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -44,29 +44,31 @@
     <section class="quiz-page">
         <h1 class="quiz-title">Quiz: Common Vulnerability Types</h1>
 
-        <form class="quiz-form" action="../result.html">
+        <form class="quiz-form" id="quizForm" data-lesson="lesson5">
+
             <div class="quiz-question">
                 <p class="quiz-question-text">1) What does SQL Injection target?</p>
-                <label class="quiz-option"><input type="radio" name="q1"> Images</label>
-                <label class="quiz-option"><input type="radio" name="q1"> Databases</label>
-                <label class="quiz-option"><input type="radio" name="q1"> Emails</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="wrong"> Images</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="correct"> Databases</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="wrong"> Emails</label>
             </div>
 
             <div class="quiz-question">
                 <p class="quiz-question-text">2) What is a weak password risk?</p>
-                <label class="quiz-option"><input type="radio" name="q2"> Faster login</label>
-                <label class="quiz-option"><input type="radio" name="q2"> Account takeover</label>
-                <label class="quiz-option"><input type="radio" name="q2"> Better security</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="wrong"> Faster login</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="correct"> Account takeover</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="wrong"> Better security</label>
             </div>
 
             <div class="quiz-question">
                 <p class="quiz-question-text">3) What should developers do to reduce vulnerabilities?</p>
-                <label class="quiz-option"><input type="radio" name="q3"> Ignore updates</label>
-                <label class="quiz-option"><input type="radio" name="q3"> Validate input and update systems</label>
-                <label class="quiz-option"><input type="radio" name="q3"> Use simple passwords</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="wrong"> Ignore updates</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="correct"> Validate input and update systems</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="wrong"> Use simple passwords</label>
             </div>
 
             <button type="submit" class="submit-btn">Submit</button>
+
         </form>
     </section>
 </main>
@@ -97,7 +99,7 @@
             <small class="copyright">@2026 SADD Academy. All Rights Reserved</small>
         </div>
     </footer>
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
 
