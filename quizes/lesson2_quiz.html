@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- q2 2-->
+<!DOCTYPE html><!-- q2 -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -44,29 +44,31 @@
     <section class="quiz-page">
         <h1 class="quiz-title">Quiz: Common Cyber Attacks</h1>
 
-       <form class="quiz-form" action="../result.html">
+        <form class="quiz-form" id="quizForm" data-lesson="lesson2">
+
             <div class="quiz-question">
                 <p class="quiz-question-text">1) What is phishing?</p>
-                <label class="quiz-option"><input type="radio" name="q1"> A type of firewall</label>
-                <label class="quiz-option"><input type="radio" name="q1"> A trick to steal user information</label>
-                <label class="quiz-option"><input type="radio" name="q1"> A software update</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="wrong"> A type of firewall</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="correct"> A trick to steal user information</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="wrong"> A software update</label>
             </div>
 
             <div class="quiz-question">
                 <p class="quiz-question-text">2) What does ransomware do?</p>
-                <label class="quiz-option"><input type="radio" name="q2"> Deletes all files</label>
-                <label class="quiz-option"><input type="radio" name="q2"> Locks files until payment is made</label>
-                <label class="quiz-option"><input type="radio" name="q2"> Speeds up the system</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="wrong"> Deletes all files</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="correct"> Locks files until payment is made</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="wrong"> Speeds up the system</label>
             </div>
 
             <div class="quiz-question">
                 <p class="quiz-question-text">3) What is the goal of a DDoS attack?</p>
-                <label class="quiz-option"><input type="radio" name="q3"> Improve network speed</label>
-                <label class="quiz-option"><input type="radio" name="q3"> Overload servers and stop services</label>
-                <label class="quiz-option"><input type="radio" name="q3"> Encrypt files</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="wrong"> Improve network speed</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="correct"> Overload servers and stop services</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="wrong"> Encrypt files</label>
             </div>
 
             <button type="submit" class="submit-btn">Submit</button>
+
         </form>
     </section>
 </main>
@@ -97,7 +99,7 @@
             <small class="copyright">@2026 SADD Academy. All Rights Reserved</small>
         </div>
     </footer>
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
 
