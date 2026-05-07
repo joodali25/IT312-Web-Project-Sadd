@@ -979,6 +979,8 @@ body {
 
 /* --- Content Page --- */
 
+/* --- Content Page --- */
+
 .content-page {
     text-align: center;
     padding: 50px 0;
@@ -988,20 +990,17 @@ body {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 40px;
-    position: relative;
 }
 
-/* خط تحت العنوان */
 .content-title::after {
     content: "";
-    width: 250px;
-    height: 2px;
-    background-color: #0f3d3a;
     display: block;
+    width: 220px;
+    height: 2px;
+    background: #000;
     margin: 10px auto 0;
 }
 
-/* الشبكة */
 .lessons-grid {
     display: flex;
     flex-wrap: wrap;
@@ -1009,13 +1008,14 @@ body {
     gap: 30px;
 }
 
-/* الكرت */
+/* الكروت */
 .lesson-card {
     width: 280px;
     border: 2px solid #0f3d3a;
     padding: 15px;
     background-color: #fff;
     text-align: left;
+    border-radius: 12px;
 }
 
 /* الصور */
@@ -1024,6 +1024,7 @@ body {
     height: 150px;
     object-fit: cover;
     border: 1px solid #333;
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
@@ -1037,22 +1038,32 @@ body {
     color: #444;
     margin: 5px 0;
 }
-/* روابط الدروس */
+
 .lesson-card a {
-    color: #000;           /* أسود */
-    
+    color: #000;
+    text-decoration: none;
 }
 
 .lesson-card a:hover {
-    color: #135951; 
+    color: #135951;
 }
-.content-title::after {
-    content: "";
-    display: block;
-    width: 220px;
-    height: 2px;
-    background: #000;
-    margin: 10px auto 0;
+
+
+/* زر More */
+.more-lessons-btn {
+    margin-top: 35px;
+    padding: 12px 35px;
+    background-color: #0f3d3a;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.more-lessons-btn:hover {
+    background-color: #135951;
 }
 /*----------------- DALIA ----------------*/
 /* الصفحة */
