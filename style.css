@@ -1587,7 +1587,9 @@ body {
 
 
 
-/* ===== About Us Page ===== */
+
+   
+   /* ===== About Us Page ===== */
 .about-page {
     padding: 50px 0 70px;
     text-align: center;
@@ -1631,26 +1633,32 @@ body {
     margin: 14px auto 0;
 }
 
+/* horizontal scroll */
 .team-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 28px;
-    margin-top: 35px;
+    flex-wrap: nowrap;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 760px;
+    margin: 35px auto;
+    padding: 15px 10px 25px;
 }
 
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px;
-    justify-items: center;
-    max-width: 700px;
-    margin: 35px auto;
+.team-card {
+    flex: 0 0 220px;
+    width: 220px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    box-sizing: border-box;
 }
 
 .team-img {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     display: block;
     margin: 0 auto 16px;
@@ -1671,42 +1679,22 @@ body {
 .about-arrow {
     font-size: 48px;
     color: #333;
-    margin-top: 30px;
+    margin-top: 20px;
     line-height: 1;
 }
-.team-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+
+/* scrollbar style */
+.team-grid::-webkit-scrollbar {
+    height: 8px;
 }
 
-.team-card {
-    width: 220px;
-    border: 1px solid #777;   
-    border-radius: 10px;     
-    padding: 20px;
-    text-align: center;
-    background: #fff;
+.team-grid::-webkit-scrollbar-thumb {
+    background-color: #0f3d3a;
+    border-radius: 10px;
 }
 
-.team-card img {
-    width: 80px;
-    margin-bottom: 10px;
-}
-
-.team-card h4 {
-    margin: 10px 0 5px;
-}
-
-.team-card p {
-    font-size: 13px;
-    color: #555;
-}
-
-.table-section {
-    overflow-x: auto; 
-    display: block;
+.team-grid::-webkit-scrollbar-track {
+    background-color: #ddd;
 }
 /*-------------- Phase 3 ---------------*/
 img {
