@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- q1 1-->
+<!DOCTYPE html><!-- q1 -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -44,26 +44,26 @@
     <section class="quiz-page">
         <h1 class="quiz-title">Quiz: Introduction to Cybersecurity</h1>
 
-        <form class="quiz-form" action="../result.html">
+        <form class="quiz-form" id="quizForm" data-lesson="lesson1">
             <div class="quiz-question">
                 <p class="quiz-question-text">1) What does cybersecurity protect?</p>
-                <label class="quiz-option"><input type="radio" name="q1"> Physical buildings</label>
-                <label class="quiz-option"><input type="radio" name="q1"> Computer systems and data</label>
-                <label class="quiz-option"><input type="radio" name="q1"> Printed documents</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="wrong"> Physical buildings</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="correct"> Computer systems and data</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="wrong"> Printed documents</label>
             </div>
 
             <div class="quiz-question">
                 <p class="quiz-question-text">2) Which type of security focuses on protecting software?</p>
-                <label class="quiz-option"><input type="radio" name="q2"> Network Security</label>
-                <label class="quiz-option"><input type="radio" name="q2"> Application Security</label>
-                <label class="quiz-option"><input type="radio" name="q2"> Cloud Security</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="wrong"> Network Security</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="correct"> Application Security</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="wrong"> Cloud Security</label>
             </div>
 
             <div class="quiz-question">
                 <p class="quiz-question-text">3) What is used to protect networks?</p>
-                <label class="quiz-option"><input type="radio" name="q3"> Passwords</label>
-                <label class="quiz-option"><input type="radio" name="q3"> Firewalls</label>
-                <label class="quiz-option"><input type="radio" name="q3"> Emails</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="wrong"> Passwords</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="correct"> Firewalls</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="wrong"> Emails</label>
             </div>
 
             <button type="submit" class="submit-btn">Submit</button>
@@ -97,7 +97,7 @@
             <small class="copyright">@2026 SADD Academy. All Rights Reserved</small>
         </div>
     </footer>
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
 
