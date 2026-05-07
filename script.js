@@ -243,17 +243,29 @@ if (scoresContainer && scoresBody) {
         { key: "lesson5_bestScore", name: "Common Vulnerability Types" }
     ];
 
+    var hasScores = false;
     scoresBody.innerHTML = "";
 
-    for (var m = 0; m < lessons.length; m++) {
-        var scoreValue = localStorage.getItem(lessons[m].key);
-        var row = document.createElement("tr");
+    for (var i = 0; i < lessons.length; i++) {
+        var scoreValue = localStorage.getItem(lessons[i].key);
 
-        row.innerHTML =
-            "<td>" + lessons[m].name + "</td>" +
-            "<td>" + (scoreValue == null ? "None" : scoreValue + "%") + "</td>";
+        if (scoreValue != null) {
+            hasScores = true;
 
-        scoresBody.appendChild(row);
+            var row = document.createElement("tr");
+
+            row.innerHTML =
+                "<td>" + lessons[i].name + "</td>" +
+                "<td>" + scoreValue + "%</td>";
+
+            scoresBody.appendChild(row);
+        }
+    }
+
+    if (hasScores) {
+        scoresContainer.style.display = "block";
+    } else {
+        scoresContainer.style.display = "none";
     }
 }
 //------------------- Dalia ----------------------
