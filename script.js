@@ -345,4 +345,60 @@ window.onload = function () {
 //------------------- Dalia ----------------------
 
 //------------------- Aryam ----------------------
+// ============================================================
+// الجزء التكميلي الخاص بمتطلبات المشروع (RegEx, Timers, LocalStorage)
+// ============================================================
 
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. إضافة ساعة حية في التذييل (Timer - محاضرة 11)
+    // تأكدي أن لديكِ عنصر في الـ HTML يحمل id="real-time-clock"
+    function updateLiveClock() {
+        const clockElement = document.getElementById('real-time-clock');
+        if (clockElement) {
+            const now = new Date();
+            clockElement.innerText = "Current Time: " + now.toLocaleTimeString();
+        }
+    }
+    setInterval(updateLiveClock, 1000); // تحديث كل ثانية
+    updateLiveClock();
+
+    // 2. التحقق المتقدم من الأسماء (RegEx - محاضرة 12)
+    // هذا الجزء يضيف حماية إضافية للفورم الموجود مسبقاً دون حذفه
+    const contactForm = document.getElementById("contactForm");
+    if (contactForm) {
+        contactForm.addEventListener("submit", function(event) {
+            const nameField = document.getElementById("name");
+            if (nameField) {
+                const nameValue = nameField.value.trim();
+                
+                // القاعدة 1: منع البدء بأرقام (تطبيق مباشر لـ RegEx)
+                const startsWithNumber = /^\d/; 
+                if (startsWithNumber.test(nameValue)) {
+                    alert("عذراً: يجب ألا يبدأ الاسم برقم (متطلب RegEx)");
+                    nameField.style.border = "2px solid red";
+                    event.preventDefault(); // إيقاف الإرسال
+                    return;
+                }
+
+                // القاعدة 2: التأكد من وجود مسافة (اسم أول وأخير) باستخدام indexOf (محاضرة 9)
+                if (nameValue.indexOf(" ") === -1) {
+                    alert("الرجاء إدخال الاسم كاملاً (الأول والأخير)");
+                    nameField.style.border = "2px solid red";
+                    event.preventDefault();
+                    return;
+                }
+            }
+        });
+    }
+
+    // 3. حفظ آخر وقت زيارة للمستخدم (LocalStorage - محاضرة 10)
+    // هذا يثبت للدكتورة فهمك لكيفية تخزين البيانات واسترجاعها
+    const lastVisit = localStorage.getItem("lastVisitDate");
+    if (lastVisit) {
+        console.log("Last visit was on: " + lastVisit);
+        // يمكنك إظهارها في الـ console أو في نص صغير بأسفل الصفحة
+    }
+    localStorage.setItem("lastVisitDate", new Date().toLocaleString());
+
+});
