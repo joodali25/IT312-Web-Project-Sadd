@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- das -->
+<!DOCTYPE html> <!-- student das -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -35,71 +35,89 @@
         </div>
     </nav>
 
-    <main class="container">
+   <main class="container">
 
-        <section class="dashboard-page">
+    <section class="dashboard-page">
 
-            <h1 class="dashboard-title">Welcome Student</h1>
+        <h1 class="dashboard-title">Welcome Student</h1>
 
-            <div class="dashboard-cards">
+        <div class="dashboard-cards">
 
-                <div class="card">
-                    <img src="images/avatar1.png" class="user-img" alt="Student">
-                    <p>Student Dalia</p>
-                    <small>445666761 id</small>
-                </div>
-
-                <div class="card">
-                    <div class="result-circle small-circle">
-                        <div class="circle-inner small-inner">
-                            <span class="result-percentage">75%</span>
-                        </div>
-                    </div>
-                    <p>Attendance</p>
-                </div>
-
+            <div class="card">
+                <img src="images/avatar1.png" class="user-img" alt="Student">
+                <p>Student Dalia</p>
+                <small>445666761 id</small>
             </div>
 
-            <div class="info-box">
-
-                <div class="info-left">
-                    <div class="info-item">
-                        <img src="images/college1.png" class="info-icon" alt="College">
-                        <p>college name</p>
-                    </div>
-
-                    <div class="info-item">
-                        <img src="images/college1.png" class="info-icon" alt="Major">
-                        <p>major name</p>
+            <div class="card">
+                <div class="result-circle small-circle">
+                    <div class="circle-inner small-inner">
+                        <span class="result-percentage">75%</span>
                     </div>
                 </div>
+                <p>Attendance</p>
+            </div>
 
-                <div class="divider"></div>
+        </div>
 
-                <div class="info-right">
-                    <p>student status: Active</p>
-                    <p>Cum GPA: 4.5</p>
+        <div class="info-box">
+
+            <div class="info-left">
+                <div class="info-item">
+                    <img src="images/college1.png" class="info-icon" alt="College">
+                    <p>college name</p>
                 </div>
 
+                <div class="info-item">
+                    <img src="images/college1.png" class="info-icon" alt="Major">
+                    <p>major name</p>
+                </div>
             </div>
 
-            <h2 class="quick-title">Quick Access</h2>
+            <div class="divider"></div>
 
-            <div class="quick-buttons">
-                <a href="my-notes.html" class="quick-btn">
-                    <img src="images/note1.png" class="quick-icon" alt="Notes">
-                    <span>My notes</span>
-                </a>
-
-                <a href="teacher-evaluation.html" class="quick-btn">
-                    <img src="images/eval1.png" class="quick-icon" alt="Evaluation">
-                    <span>Teachers Evaluation</span>
-                </a>
+            <div class="info-right">
+                <p>student status: Active</p>
+                <p>Cum GPA: 4.5</p>
             </div>
 
-        </section>
+        </div>
 
-    </main>
+        <!-- Dynamic Quiz Scores Table -->
+        <div id="quizScoresContainer" class="quiz-scores-box">
+            <h2 class="quiz-scores-title">Quiz Scores</h2>
+
+            <table class="quiz-scores-table">
+                <thead>
+                    <tr>
+                        <th>Lesson</th>
+                        <th>Best Score</th>
+                    </tr>
+                </thead>
+
+                <tbody id="quizScoresBody">
+                    <!-- JavaScript will add rows here -->
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="quick-title">Quick Access</h2>
+
+        <div class="quick-buttons">
+            <a href="my-notes.html" class="quick-btn">
+                <img src="images/note1.png" class="quick-icon" alt="Notes">
+                <span>My notes</span>
+            </a>
+
+            <a href="teacher-evaluation.html" class="quick-btn">
+                <img src="images/eval1.png" class="quick-icon" alt="Evaluation">
+                <span>Teachers Evaluation</span>
+            </a>
+        </div>
+
+    </section>
+
+</main>
   <!-- Footer -->
 <footer class="site-footer">
     <div class="container footer-box">
