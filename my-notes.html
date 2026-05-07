@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- my Notes1 -->
+<!DOCTYPE html><!-- my Notes -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -36,59 +36,61 @@
         </div>
     </nav>
     <main class="container">
-    <section class="notes-page">
+<section class="notes-page">
 
-        <h1 class="notes-title">My Note</h1>
+    <h1 class="notes-title">My Note</h1>
 
-        <!-- Saved Notes -->
-        <div class="notes-box saved-notes-box">
-            <h2 class="notes-subtitle">My saved notes</h2>
+    <!-- Saved Notes -->
+    <div class="notes-box saved-notes-box">
+        <h2 class="notes-subtitle">My saved notes</h2>
 
-            <form class="saved-notes-form">
-                <label class="saved-note-item">
-                    <input type="checkbox">
-                    <img src="images/note1.png" class="saved-note-icon">
-                    <span>lean a sec lecture exam and slove it</span>
-                </label>
+        <form class="saved-notes-form" action="my-notes.html">
+            <label class="saved-note-item">
+                <input type="checkbox">
+                <img src="images/note1.png" class="saved-note-icon">
+                <span>learn a sec lecture exam and solve it</span>
+            </label>
 
-                <label class="saved-note-item">
-                    <input type="checkbox">
-                    <img src="images/note1.png" class="saved-note-icon">
-                    <span>reslove assi network tmrw, homework after</span>
-                </label>
+            <label class="saved-note-item">
+                <input type="checkbox">
+                <img src="images/note1.png" class="saved-note-icon">
+                <span>resolve assi network tomorrow</span>
+            </label>
 
-                <button type="submit" class="notes-small-btn">Delete selected</button>
-            </form>
-        </div>
+            <!-- زر الحذف -->
+            <button type="submit" class="notes-small-btn">Delete</button>
+        </form>
+    </div>
 
-        <!-- Add New Note -->
-        <div class="note-box">
+    <!-- Add New Note -->
+    <div class="note-box">
 
-            <h3 class="note-title">Add new Note</h3>
+        <h3 class="note-title">Add new Note</h3>
 
-            <!-- الفورم (هذا المهم) -->
-            <form action="my-notes.html">
+        <form action="my-notes.html">
 
-                <!-- priority -->
-                <select class="priority-select">
-                    <option disabled selected>Priority</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                </select>
+            <!-- priority -->
+            <select class="priority-select" name="priority">
+                <option disabled selected>Priority</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
 
-                <!-- textarea -->
-                <textarea class="note-text" placeholder="Text Area"></textarea>
+            <!-- textarea -->
+            <textarea class="note-text" name="note-text" placeholder="Text Area"></textarea>
 
-                <!-- زر الحفظ -->
+            <!-- 🔥 الأزرار -->
+            <div class="note-buttons">
+                <button type="submit" class="note-btn">Add</button>
                 <button type="submit" class="note-btn">Save</button>
+            </div>
 
-            </form>
+        </form>
 
-        </div>
+    </div>
 
-    </section>
-
+</section>
 </main>
   <!-- Footer -->
 <footer class="site-footer">
