@@ -7,70 +7,44 @@ body {
     background-color: #d5e8ea;
 }
 
-/* --- تنسيق زر العودة للأعلى المطور --- */
 #backToTop {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    background-color: #58a6ff; /* لون متناسق مع الدارك مود */
+    background-color: #58a6ff; 
     color: #ffffff;
-    border: none;
+    border: 1px solid #333;
     width: 45px;
     height: 45px;
-    border-radius: 50%; /* شكل دائري عصري */
+    border-radius: 50%;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, transform 0.2s;
 }
 
 #backToTop:hover {
     background-color: #1f6feb;
-    transform: scale(1.1); /* تأثير بسيط عند المرور بالماوس */
 }
 
-
-@media screen and (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-    }
-    .nav-links {
-        margin-top: 15px;
-        gap: 10px;
-        font-size: 14px;
-    }
-    .hero-title {
-        font-size: 28px;
-    }
-    .card-img {
-        width: 100%; /* الصور تصبح مرنة */
-    }
-}
 #theme-toggle {
-    background-color: #2c3e50; /* لون غامق يتناسب مع الهوية */
+    background-color: #2c3e50; 
     color: white;
-    border: 2px solid transparent;
+    border: 2px solid #000;
     padding: 8px 18px;
-    border-radius: 25px; /* حواف دائرية */
+    border-radius: 25px; 
     cursor: pointer;
     font-weight: bold;
-    transition: all 0.3s ease; /* حركة ناعمة عند التفاعل */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #theme-toggle:hover {
     background-color: #1a252f;
-    transform: translateY(-2px); /* رفعة بسيطة عند مرور الماوس */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 #theme-toggle:active {
-    transform: translateY(0);
+    background-color: #000;
 }
-
 .container {
     width: 90%;
     max-width: 1200px;
@@ -101,6 +75,8 @@ body {
 }
 
 .nav-container {
+	width: 90%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,6 +111,7 @@ body {
     height: 100%;
     min-width: 100px;
     white-space: nowrap;
+	
 }
 
 /* Vertical Divider Line */
@@ -1078,13 +1055,13 @@ body {
     margin: 10px auto 0;
 }
 /*----------------- DALIA ----------------*/
-
+/* الصفحة */
 .dashboard-page {
     text-align: center;
     padding: 60px 0;
 }
 
-
+/* العنوان */
 .dashboard-title {
     font-size: 28px;
     font-weight: bold;
@@ -1100,7 +1077,7 @@ body {
     margin: 10px auto 0;
 }
 
-
+/* الكروت */
 .dashboard-cards {
     display: flex;
     justify-content: center;
@@ -1127,7 +1104,7 @@ body {
     margin: 0 auto 15px;
 }
 
-
+/* دائرة النسبة */
 .small-circle {
     width: 120px;
     height: 120px;
@@ -1158,7 +1135,7 @@ body {
     color: #0f3d3a;
 }
 
-
+/* بوكس المعلومات */
 .info-box {
     width: 500px;
     margin: 0 auto 35px;
@@ -1198,66 +1175,22 @@ body {
     background: #ccc;
 }
 
-/* Quiz Scores */
-
-.quiz-scores-box {
-    width: 500px;
-    margin: 0 auto 35px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px 25px;
-    box-sizing: border-box;
-}
-
-.quiz-scores-title {
+/* Quick Access */
+.quick-title {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 15px;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
-.quiz-scores-title::after {
+.quick-title::after {
     content: "";
     display: block;
-    width: 160px;
+    width: 200px;
     height: 2px;
     background: #000;
     margin: 10px auto 0;
 }
 
-.quiz-scores-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-}
-
-.quiz-scores-table th {
-    text-align: left;
-    padding: 10px;
-    font-size: 14px;
-    border-bottom: 2px solid #000;
-}
-
-.quiz-scores-table td {
-    padding: 10px;
-    font-size: 14px;
-    border-bottom: 1px solid #eee;
-}
-
-.quiz-scores-table tbody tr:hover {
-    background-color: #f7f7f7;
-}
-
-.quiz-scores-table th:last-child,
-.quiz-scores-table td:last-child {
-    text-align: right;
-}
-
-.quiz-scores-table td:last-child {
-    font-weight: bold;
-    color: #0f3d3a;
-}
 .quick-buttons {
     display: flex;
     justify-content: center;
@@ -1265,23 +1198,20 @@ body {
 }
 
 .quick-btn {
-    width: 170px;
-    min-height: 45px;
     border: 1px solid #999;
-    padding: 10px 15px;
+    padding: 10px 18px;
     text-decoration: none;
     color: #000;
     background: #fff;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 8px;
 }
 
-.quick-btn .quick-icon {
-    width: 22px !important;
-    height: 22px !important;
+.quick-icon {
+    width: 18px;
+    height: 18px;
     object-fit: contain;
 }
 /*----------------- ARYAM ----------------*/
@@ -1396,7 +1326,7 @@ body {
     padding: 25px 30px;
 }
 
-
+/* الجهة اليسار */
 .info-left {
     display: flex;
     flex-direction: column;
@@ -1404,21 +1334,21 @@ body {
     gap: 15px;
 }
 
-
+/* كل سطر (أيقونة + نص) */
 .info-item {
     display: flex;
-    align-items: center;
+    align-items: center; /* يخليهم بنفس المستوى */
     gap: 10px;
 }
 
-
+/* الخط بالنص */
 .divider {
     width: 1px;
     height: 70px;
     background: #ccc;
 }
 
-
+/* الجهة اليمين */
 .info-right {
     display: flex;
     flex-direction: column;
@@ -1426,7 +1356,7 @@ body {
     gap: 10px;
 }
 
-
+/* حجم الأيقونات */
 .info-icon {
     width: 20px;
 }
@@ -1447,12 +1377,12 @@ body {
     cursor: pointer;
 }
 
-
+/* لما تختارين نجمة */
 .rating-stars-box input:checked ~ label {
     color: gold;
 }
 
-
+/* hover effect */
 .rating-stars-box label:hover,
 .rating-stars-box label:hover ~ label {
     color: gold;
@@ -1558,7 +1488,7 @@ body {
 .priority-select {
     position: absolute;
     top: 20px;
-    right: 20px; 
+    right: 20px; /* يخليه فوق يمين */
     width: 90px;
     height: 35px;
     border: 1px solid #777;
@@ -1627,28 +1557,21 @@ body {
     margin: 14px auto 0;
 }
 
-
 .team-grid {
     display: flex;
-    flex-wrap: nowrap;           
-    overflow-x: auto;        
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 28px;
     margin-top: 35px;
-    padding: 10px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-
-.team-card {
-    min-width: 220px;
-    flex: 0 0 220px;
-    border: 1px solid #777;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    background: #fff;
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    justify-items: center;
+    max-width: 700px;
+    margin: 35px auto;
 }
 
 .team-img {
@@ -1677,14 +1600,200 @@ body {
     margin-top: 30px;
     line-height: 1;
 }
-
-
-.team-grid::-webkit-scrollbar {
-    height: 6px;
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
-.team-grid::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 10px;
+.team-card {
+    width: 220px;
+    border: 1px solid #777;   
+    border-radius: 10px;     
+    padding: 20px;
+    text-align: center;
+    background: #fff;
 }
 
+.team-card img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.team-card h4 {
+    margin: 10px 0 5px;
+}
+
+.team-card p {
+    font-size: 13px;
+    color: #555;
+}
+
+.table-section {
+    overflow-x: auto; 
+    display: block;
+}
+/*-------------- Phase 3 ---------------*/
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* for phone and ipad (Media Query) */
+@media screen and (max-width: 768px) {
+    
+    .nav-container, .nav-links {
+        flex-direction: column !important;
+        height: auto !important;
+        width: 100% !important;
+        margin: 10px 0 !important;
+        gap: 10px !important;
+    }
+
+    .nav-links a {
+        padding: 10px 0 !important; 
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .border-left { display: none !important; }
+
+    .lesson-content-grid {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .text-side, .image-side { width: 100% !important; }
+
+    .cards {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    .course-card {
+        flex: 0 0 90% !important;
+        max-width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-container {
+        flex-direction: column !important;
+        padding: 10px 0 !important;
+    }
+    
+    .nav-links {
+        margin-right: 0 !important;
+        height: auto !important;
+        gap: 10px !important;
+    }
+
+    .nav-links a {
+        padding: 10px 15px !important;
+    }
+
+    .border-left {
+        display: none !important; 
+    }
+}
+
+/* smaller phone */
+@media screen and (max-width: 480px) {
+    .hero-title, .vision h1 {
+        font-size: 24px !important;
+    }
+}
+
+/* ============================================================
+   DARK MODE THEME (Comprehensive for all inner pages)
+   ============================================================ */
+
+/* 1. Main Body Background and Default Text Color */
+body.dark-mode {
+    background-color: #0d1117 !important;
+    color: #f0f6fc !important;
+}
+
+/* 2. Header (Navbar), Footer, and Breadcrumbs */
+body.dark-mode .navbar,
+body.dark-mode .site-footer,
+body.dark-mode .breadcrumbs {
+    background-color: #161b22 !important;
+    border-color: #30363d !important;
+}
+
+body.dark-mode .nav-links a,
+body.dark-mode .footer-title,
+body.dark-mode .footer-col p,
+body.dark-mode .copyright,
+body.dark-mode .trail li,
+body.dark-mode .trail a {
+    color: #f0f6fc !important;
+}
+
+/* 3. Text Targeting (Headings, Paragraphs, Labels) for readability */
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
+body.dark-mode h4, body.dark-mode p, body.dark-mode li, 
+body.dark-mode label, body.dark-mode strong, body.dark-mode b,
+body.dark-mode .instructor-name, body.dark-mode .review-text,
+body.dark-mode .quiz-question-text, body.dark-mode .result-text {
+    color: #f0f6fc !important;
+}
+
+/* 4. Containers and Cards (Dashboard, Grid, Lesson Boxes, etc.) */
+body.dark-mode .course-card, 
+body.dark-mode .feedback-card,
+body.dark-mode .contact-container,
+body.dark-mode .lesson-card,
+body.dark-mode .card,
+body.dark-mode .info-box,
+body.dark-mode .teacher-box,
+body.dark-mode .note-box,
+body.dark-mode .intro-box,
+body.dark-mode .text-side,
+body.dark-mode .quiz-page,
+body.dark-mode .result-box,
+body.dark-mode .tip-box,
+body.dark-mode .team-card {
+    background-color: #161b22 !important;
+    border: 1px solid #30363d !important;
+}
+
+/* 5. Tables Customization (Important for lesson pages) */
+body.dark-mode .summary-table td {
+    background-color: #161b22 !important;
+    color: #f0f6fc !important;
+    border-color: #30363d !important;
+}
+
+/* Keep the table header or make it slightly transparent */
+body.dark-mode .table-header-row {
+    opacity: 0.9;
+}
+
+/* 6. Form Inputs and Selection Elements */
+body.dark-mode input, 
+body.dark-mode textarea, 
+body.dark-mode select,
+body.dark-mode .teacher-label-box,
+body.dark-mode .quiz-option {
+    background-color: #0d1117 !important;
+    color: #ffffff !important;
+    border: 1px solid #30363d !important;
+}
+
+/* 7. Buttons (Adding borders to stand out in dark mode) */
+body.dark-mode .submit-btn,
+body.dark-mode .next-lesson-btn,
+body.dark-mode .teacher-btn,
+body.dark-mode .note-btn,
+body.dark-mode .simple-btn,
+body.dark-mode .quick-btn {
+    border: 1px solid #f0f6fc !important;
+}
+
+/* 8. Progress Circles (Results and Dashboard stats) */
+body.dark-mode .circle-inner,
+body.dark-mode .small-inner {
+    background-color: #161b22 !important;
+}
