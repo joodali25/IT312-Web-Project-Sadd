@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- q4 4-->
+<!DOCTYPE html><!-- q4 -->
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -40,33 +40,35 @@
         </ol>
     </div>
 </nav>
-    <main class="container">
+   <main class="container">
     <section class="quiz-page">
         <h1 class="quiz-title">Quiz: Mobile Security Basics</h1>
 
-        <form class="quiz-form" action="../result.html">
+        <form class="quiz-form" id="quizForm" data-lesson="lesson4">
+
             <div class="quiz-question">
                 <p class="quiz-question-text">1) What should you use to protect your phone?</p>
-                <label class="quiz-option"><input type="radio" name="q1"> Weak password</label>
-                <label class="quiz-option"><input type="radio" name="q1"> Strong screen lock</label>
-                <label class="quiz-option"><input type="radio" name="q1"> No lock</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="wrong"> Weak password</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="correct"> Strong screen lock</label>
+                <label class="quiz-option"><input type="radio" name="q1" value="wrong"> No lock</label>
             </div>
 
             <div class="quiz-question">
                 <p class="quiz-question-text">2) Where should you download apps from?</p>
-                <label class="quiz-option"><input type="radio" name="q2"> Any website</label>
-                <label class="quiz-option"><input type="radio" name="q2"> Trusted stores only</label>
-                <label class="quiz-option"><input type="radio" name="q2"> Random links</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="wrong"> Any website</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="correct"> Trusted stores only</label>
+                <label class="quiz-option"><input type="radio" name="q2" value="wrong"> Random links</label>
             </div>
 
             <div class="quiz-question">
                 <p class="quiz-question-text">3) Why should you update your device?</p>
-                <label class="quiz-option"><input type="radio" name="q3"> To change color</label>
-                <label class="quiz-option"><input type="radio" name="q3"> To fix security issues</label>
-                <label class="quiz-option"><input type="radio" name="q3"> To delete apps</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="wrong"> To change color</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="correct"> To fix security issues</label>
+                <label class="quiz-option"><input type="radio" name="q3" value="wrong"> To delete apps</label>
             </div>
 
             <button type="submit" class="submit-btn">Submit</button>
+
         </form>
     </section>
 </main>
@@ -97,7 +99,7 @@
             <small class="copyright">@2026 SADD Academy. All Rights Reserved</small>
         </div>
     </footer>
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
 
