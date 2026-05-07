@@ -977,10 +977,10 @@ body {
     margin: 10px auto 0;
 }
 
-/* --- Content Page --- */
+
+
 
 /* --- Content Page --- */
-
 .content-page {
     text-align: center;
     padding: 50px 0;
@@ -1008,7 +1008,6 @@ body {
     gap: 30px;
 }
 
-/* الكروت */
 .lesson-card {
     width: 280px;
     border: 2px solid #0f3d3a;
@@ -1016,9 +1015,9 @@ body {
     background-color: #fff;
     text-align: left;
     border-radius: 12px;
+    box-sizing: border-box;
 }
 
-/* الصور */
 .lesson-img {
     width: 100%;
     height: 150px;
@@ -1039,21 +1038,23 @@ body {
     margin: 5px 0;
 }
 
+/* روابط الدروس */
 .lesson-card a {
     color: #000;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .lesson-card a:hover {
     color: #135951;
+    text-decoration: none;
 }
-
 
 /* زر More */
 .more-lessons-btn {
-    margin-top: 35px;
-    padding: 12px 35px;
-    background-color: #0f3d3a;
+    display: block;
+    margin: 35px auto 0;
+    padding: 12px 45px;
+    background-color: #052419;
     color: white;
     border: none;
     border-radius: 25px;
@@ -1063,7 +1064,7 @@ body {
 }
 
 .more-lessons-btn:hover {
-    background-color: #135951;
+    background-color: #0f3d3a;
 }
 /*----------------- DALIA ----------------*/
 /* الصفحة */
